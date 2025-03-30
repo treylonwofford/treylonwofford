@@ -1,0 +1,17 @@
+baseURL = "https://treylonwofford.io/"
+languageCode = "en"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+pluralizelisttitles = false
+
+[permalinks]
+posts = "/blog/:year/:month/:day/:slug/"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[markup.goldmark.renderer]
+unsafe= true
+
+paginate = 10
+summaryLength = 0
