@@ -3,8 +3,8 @@
 
 Small static website based on [Hugo](https://gohugo.io), styled with [Congo](https://jpanther.github.io).
 
-Domain: https://jamesmillner.dev
-Hosted: Netlify with SSL
+Domain: https://treylonwofford.pages.dev/
+Hosted: Cloudflare with SSL
 
 ## Requirements
 
