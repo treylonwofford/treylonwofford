@@ -4,8 +4,8 @@ defaultContentLanguage = "en"
 enableRobotsTXT = true
 pluralizelisttitles = false
 
-[permalinks]
-posts = "/blog/:year/:month/:day/:slug/"
+# [permalinks]
+# posts = "/blog/:year/:month/:day/:slug/"
 
 [outputs]
 home = [ "HTML", "RSS", "JSON" ]

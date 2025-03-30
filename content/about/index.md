@@ -27,11 +27,15 @@ I also leverage engineering-specific resources and detailed technical notes to d
 
 I'm open to IAM, PAM and IGA roles.
 
-Rather than duplicate my experience on here, my full professional experience can be found over on my [Resume](/Resume/Treylon_Wofford_resume2025.docx.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
+Rather than duplicate my experience on here, my full professional experience can be found over on my [Resume](/Resume/Resume_Treylon.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
 
 ### Certifications
 
-[Okta certified Professional](https://www.linkedin.com/in/treylon-wofford/)
+Okta Certified Professional-Expected: 04/2025
+
+[Asana Workflow Specialist](https://certifications.asana.com/e45fd965-9891-43eb-9b20-b0affd421282#acc.qr1R9sBV) 
+
+[Google Project Management](https://coursera.org/share/958cad647c27da085b4bb5e6875e01e6) 
 
 ### Other Technical Experience
 
