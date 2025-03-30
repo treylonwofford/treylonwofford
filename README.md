@@ -1,4 +1,4 @@
-# Personal Website / Blog
+# Personal Website
 [![Netlify Status](https://api.netlify.com/api/v1/badges/28846d65-8170-4a7c-959e-bfdd71b2a5f4/deploy-status)](https://app.netlify.com/sites/infallible-stonebraker-2512f1/deploys)
 
 Small static website based on [Hugo](https://gohugo.io), styled with [Congo](https://jpanther.github.io).
