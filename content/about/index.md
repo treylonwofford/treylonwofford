@@ -35,7 +35,9 @@ Okta Certified Professional-Expected: 04/2025
 
 [Asana Workflow Specialist](https://certifications.asana.com/e45fd965-9891-43eb-9b20-b0affd421282#acc.qr1R9sBV) 
 
-[Google Project Management](https://coursera.org/share/958cad647c27da085b4bb5e6875e01e6) 
+[Google Project Management](https://coursera.org/share/958cad647c27da085b4bb5e6875e01e6)
+
+[FinOps Certified Practitioner](https://verify.skilljar.com/c/ryocjk9uqr6q) 
 
 ### Other Technical Experience
 
