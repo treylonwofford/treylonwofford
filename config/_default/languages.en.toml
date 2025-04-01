@@ -17,7 +17,7 @@ image = "img/avatar.jpg"
 headline = "IAM Engineer"
 links = [
   { youtube = "https://www.youtube.com/@museNetcreations" },
-  { github = "https://github.com/james-millner" },
+  { github = "https://github.com/treylonwofford" },
   { linkedin = "https://www.linkedin.com/in/treylon-wofford/" },
 #  { email = "treylonwofford2@gmail.com" }
 ]
