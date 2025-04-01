@@ -31,7 +31,7 @@ Rather than duplicate my experience on here, my full professional experience can
 
 ### Certifications
 
-Okta Certified Professional-Expected: 04/2025
+[Okta Certified Professional](https://www.credly.com/badges/6b8b6d6a-3cc2-4317-9dde-dad1c2991bdd/public_url) 
 
 [Asana Workflow Specialist](https://certifications.asana.com/e45fd965-9891-43eb-9b20-b0affd421282#acc.qr1R9sBV) 
 
