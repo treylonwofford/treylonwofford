@@ -110,5 +110,7 @@ You can modify roles by editing the `groups` claim mapping in your Okta admin da
 
 This project is licensed under the MIT License. Feel free to fork and modify it.
 
+---
 
+For further details: [github](https://github.com/treylonwofford/okta-rbac-webapp)
 
