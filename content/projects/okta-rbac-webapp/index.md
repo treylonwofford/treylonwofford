@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: "dartsnow"
-title: "Okta RBAC Web App (Python + Flask)"
-date: 2025-03-29
+title: "🏷️Okta RBAC Web App (Python + Flask)"
+date: 2025-04-02
 showAuthor: true
 showDate: true
 showReadingTime: true
@@ -87,7 +87,7 @@ You can modify roles by editing the `groups` claim mapping in your Okta admin da
 ## 📁 File Structure
 
 ```
-.
+okta-rbac-webapp/
 ├── okta_rbac_webapp.py       # Main Flask application
 ├── requirements.txt          # Python dependencies
 ├── .env.example              # Example environment config
@@ -104,13 +104,6 @@ You can modify roles by editing the `groups` claim mapping in your Okta admin da
 4. Assign groups to users (used for roles).
 5. Enable `groups` claim in ID token under Security > API > Authorization Servers > Claims.
 
----
-
-## 📜 License
-
-This project is licensed under the MIT License. Feel free to fork and modify it.
-
----
 
 For further details: [github](https://github.com/treylonwofford/okta-rbac-webapp)
 
