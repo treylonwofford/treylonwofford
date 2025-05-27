@@ -11,6 +11,6 @@ Hi there! 👋
 IAM professional passionate about fitness and food based in Atlanta, GA. 
 I'm currently pursuing roles in IAM, PAM, and IGA, so feel free to look through my resume to discover how my expertise can enhance your organization's security strategy and drive innovation.
 
-{{< button href="/Resume/Resume_Treylon.pdf" target="_self" >}}
+{{< button href="/Resume/TW_Resume.pdf" target="_self" >}}
 Resume
 {{< /button >}}

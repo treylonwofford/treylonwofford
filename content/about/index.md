@@ -27,7 +27,7 @@ I also leverage engineering-specific resources and detailed technical notes to d
 
 I'm open to IAM, PAM and IGA roles.
 
-Rather than duplicate my experience on here, my full professional experience can be found over on my [Resume](/Resume/Resume_Treylon.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
+Rather than duplicate my experience on here, my full professional experience can be found over on my [Resume](/Resume/TW_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
 
 ### Education
 
