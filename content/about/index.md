@@ -29,6 +29,11 @@ I'm open to IAM, PAM and IGA roles.
 
 Rather than duplicate my experience on here, my full professional experience can be found over on my [Resume](/Resume/Resume_Treylon.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
 
+### Education
+
+#### University of Advancing Technology
+- Associates degree in Human-Computer Intercation(HCI)
+
 ### Certifications
 
 [Okta Certified Professional](https://www.credly.com/badges/6b8b6d6a-3cc2-4317-9dde-dad1c2991bdd/public_url) 
