@@ -14,7 +14,7 @@ rtl = false
 [params.author]
 name = "Treylon Wofford"
 image = "img/avatar.jpg"
-headline = "IAM Engineer"
+headline = "Quantum Computing Specialist"
 links = [
   { youtube = "https://www.youtube.com/@museNetcreations" },
   { github = "https://github.com/treylonwofford" },

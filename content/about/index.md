@@ -9,59 +9,54 @@ showReadingTime: false
 
 ### Hi :wave:
 
-My name is Treylon Wofford, and I'm currently located in [Atlanta, GA](https://www.google.com/maps/place/Atlanta,+GA/) but was born in a small town called [Marshall, TX](https://www.google.com/maps/place/Marshall,+TX/). 
+My name is Treylon Wofford, and I'm currently located in [Atlanta, GA](https://www.google.com/maps/place/Atlanta,+GA/) but was born in a small town called [Marshall, TX](https://www.google.com/maps/place/Marshall,+TX/).
 
-I'm a IAM engineer specialising in Okta and Entra ID, identity-driven solutions. I have designed and implemented comprehensive security frameworks that streamline access management and bolster system integrity. My role involves collaborating closely with cross-functional teams to ensure that identity protocols align with both business objectives and regulatory requirements. I continuously evaluate emerging technologies to enhance security measures and optimize user experience.
+I'm a Quantum Computing Specialist with a deep passion for quantum algorithms, qubit architecture, and quantum error correction. I bring hands-on experience exploring the boundaries of quantum systems and am passionate about pushing what's possible in this rapidly evolving space. My focus lies in understanding how quantum computing can reshape the future of technology from optimization problems to cryptography and beyond.
 
-Beyond my professional life, I have a strong interest in fitness. I enjoy exploring the Atlanta Beltline, which offers a perfect blend of scenic beauty and an active community, making every workout a refreshing experience. Whether I'm running, cycling, or walking, the Beltline inspires me to push my limits and maintain a balanced, energetic lifestyle.
+Beyond my technical pursuits, I have a strong interest in fitness. I enjoy exploring the Atlanta Beltline, which offers a perfect blend of scenic beauty and an active community, making every workout a refreshing experience. Whether I'm running, cycling, or walking, the Beltline inspires me to push my limits and maintain a balanced, energetic lifestyle.
 
 ![ATL beltline](images/atl_belt.jpg "Sunny day on the ATL Beltline.")
 
-### IAM Specific Notes
+### Quantum Computing Notes
 
-I continuously expand my expertise in the IAM space by engaging in practical, hands-on projects and staying up-to-date with industry trends. I actively participate in learning communities and professional forums, which provide valuable insights and real-world case studies that enhance my technical acumen. By collaborating with fellow engineers and thought leaders, I gain diverse perspectives that challenge and refine my approach to complex identity management challenges. 
+I continuously deepen my knowledge in the quantum computing space through hands-on experimentation, research, and engagement with the broader quantum community. I actively follow developments from leading institutions and organizations pushing the frontier of quantum hardware and software. By diving into real-world quantum problems and collaborating with fellow enthusiasts, I refine my understanding of quantum mechanics, circuit design, and error mitigation strategies.
 
-I also leverage engineering-specific resources and detailed technical notes to deepen my understanding of emerging protocols and security best practices. This ongoing commitment to learning not only drives my professional growth but also positions me to contribute innovative solutions in the evolving field of IAM.
+I leverage technical resources, research papers, and simulation tools to stay sharp on emerging quantum protocols and computing paradigms. This ongoing commitment to learning positions me to contribute innovative thinking and fresh perspectives to the evolving world of quantum technology.
 
 ### Experience
 
-I'm open to IAM, PAM and IGA roles.
-
-Rather than duplicate my experience on here, my full professional experience can be found over on my [Resume](/Resume/TW_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
+Rather than duplicate my experience here, my full professional experience can be found over on my [Resume](/Resume/TW_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
 
 ### Education
 
-#### University of Advancing Technology
-- Associates degree in Human-Computer Intercation(HCI)
+#### University of Colorado Boulder
+- Masters in Artificial Intelligence (*starting in Spring 2027*)
 
 ### Certifications
 
-[Okta Certified Professional](https://www.credly.com/badges/6b8b6d6a-3cc2-4317-9dde-dad1c2991bdd/public_url) 
+[Basics of Quantum Information](https://www.credly.com/badges/ed971f53-1464-4cca-9377-2f0c959c5ac5/public_url)
 
-[Asana Workflow Specialist](https://certifications.asana.com/e45fd965-9891-43eb-9b20-b0affd421282#acc.qr1R9sBV) 
+IBM Certified Associate Developer - Quantum Computation using Qiskit v0.2X (*getting the certification in 2026*)
 
-[Google Project Management](https://coursera.org/share/958cad647c27da085b4bb5e6875e01e6)
 
-[FinOps Certified Practitioner](https://verify.skilljar.com/c/ryocjk9uqr6q) 
-
-### Other Technical Experience
+### Technical Experience
 
 #### Programming / Scripting Languages
 
-Python &bull; Bash Scripting &bull; Powershell
+Python &bull; Bash Scripting &bull; Qiskit
 
-#### Security Protocols / Standards
+#### Quantum Frameworks & Concepts
 
-SAML &bull; OAuth &bull; OpenID Connect &bull; WS-Fed &bull; NIST &bull; ISO 27001
+Quantum Circuit Design &bull; Qubit Architecture &bull; Quantum Error Correction (QEC) &bull; Quantum Algorithms &bull; Variational Quantum Eigensolver (VQE) &bull; Quantum Machine Learning (QML) 
 
 #### Operating Systems
 
 Ubuntu &bull; Debian &bull; Windows, especially WSL
 
-#### Cloud Computing and Automation
+#### Cloud & Quantum Platforms
 
-Azure
+IBM Quantum &bull; PennyLane
 
 #### Other Tools
 
-Git &bull; VSCode 
+Git &bull; VSCode &bull; Antigravity &bull; Claude &bull; ChatGPT &bull; Gemini
