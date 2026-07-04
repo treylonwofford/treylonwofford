@@ -5,7 +5,7 @@ title: 'Treylon Wofford'
 
 
 
-Hi there! 👋 Quantum computing enthusiast and fitness & food lover based in Charlotte, NC. I bring hands-on experience in quantum algorithms, qubit architecture, and quantum error correction and I'm passionate about pushing the boundaries of what's possible in this space. Let's connect and explore how my deep knowledge of quantum computing can bring fresh perspectives and drive innovation within your organization.
+Hi there! 👋 I work at the intersection of AI safety and quantum computing. With a background in quantum machine learning and AI optimization, my current focus is alignment research through ARENA's program. This includes decomposing model internals with sparse autoencoders, studying emergent misalignment in finetuned models, implementing RLHF end-to-end, and building evaluations with UK AISI's Inspect framework.
 
 {{< button href="/Resume/TW_Resume.pdf" target="_self" >}}
 Resume

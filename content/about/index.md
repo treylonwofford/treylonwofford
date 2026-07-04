@@ -9,23 +9,15 @@ showReadingTime: false
 
 ### Hi :wave:
 
-My name is Treylon Wofford, and I'm currently located in [Atlanta, GA](https://www.google.com/maps/place/Atlanta,+GA/) but was born in a small town called [Marshall, TX](https://www.google.com/maps/place/Marshall,+TX/).
+My name is Treylon Wofford. I'm based in Atlanta, GA, and originally from a small town called Marshall, TX.
+I'm an Alignment Research Engineer and IBM Qiskit Advocate working at the intersection of AI safety and quantum computing. My background is in quantum machine learning and AI optimization, with hands-on experience in quantum algorithms, qubit architecture, and quantum error correction. My current focus is alignment research through ARENA's program: decomposing model internals with sparse autoencoders, studying emergent misalignment in finetuned models, implementing RLHF end-to-end, and building evaluations with UK AISI's Inspect framework. What drives me is a single question: how do we make advanced AI systems safer and more understandable, and where can quantum computing accelerate that work?
 
-I'm a Quantum Computing Specialist with a deep passion for quantum algorithms, qubit architecture, and quantum error correction. I bring hands-on experience exploring the boundaries of quantum systems and am passionate about pushing what's possible in this rapidly evolving space. My focus lies in understanding how quantum computing can reshape the future of technology from optimization problems to cryptography and beyond.
+Beyond my own projects, I'm active in both communities I work in. On the quantum side, you'll find me in the Qiskit and Unitary Fund Discord communities. On the AI safety side, I'm part of the ARENA and AI Alignment Slack communities, where I stay connected to current research and the people doing it.
 
-Beyond my technical pursuits, I have a strong interest in fitness. I enjoy exploring the Atlanta Beltline, which offers a perfect blend of scenic beauty and an active community, making every workout a refreshing experience. Whether I'm running, cycling, or walking, the Beltline inspires me to push my limits and maintain a balanced, energetic lifestyle.
-
-![ATL beltline](images/atl_belt.jpg "Sunny day on the ATL Beltline.")
-
-### Quantum Computing Notes
-
-I continuously deepen my knowledge in the quantum computing space through hands-on experimentation, research, and engagement with the broader quantum community. I actively follow developments from leading institutions and organizations pushing the frontier of quantum hardware and software. By diving into real-world quantum problems and collaborating with fellow enthusiasts, I refine my understanding of quantum mechanics, circuit design, and error mitigation strategies.
-
-I leverage technical resources, research papers, and simulation tools to stay sharp on emerging quantum protocols and computing paradigms. This ongoing commitment to learning positions me to contribute innovative thinking and fresh perspectives to the evolving world of quantum technology.
 
 ### Experience
 
-Rather than duplicate my experience here, my full professional experience can be found over on my [Resume](/Resume/TW_Resume.pdf) or [LinkedIn](https://www.linkedin.com/in/treylon-wofford/)
+Rather than duplicate my experience here, my full professional experience can be found over on my [resume](/Resume/TW_Resume.pdf) or [my projects](https://treylonwofford.pages.dev/projects/).
 
 ### Education
 
@@ -45,17 +37,21 @@ IBM Certified Associate Developer - Quantum Computation using Qiskit v0.2X (*get
 
 Python &bull; Bash Scripting &bull; Qiskit
 
+#### AI Alignment Frameworks & Tools
+
+- **Interpretability:** TransformerLens &bull; SAELens &bull; nnsight &bull; Sparse Autoencoders &bull; Linear Probes &bull; Activation Steering &bull; Circuit Analysis
+
+- **Evaluations & Control:** Inspect (UK AISI) &bull; Petri &bull; Bloom &bull; Eval Dataset Generation &bull; AI Control Protocols
+
+- **Training & Post-Training:** RLHF (PPO-based) &bull; PyTorch &bull; Hugging Face &bull; Weights & Biases
+
 #### Quantum Frameworks & Concepts
 
-Quantum Circuit Design &bull; Qubit Architecture &bull; Quantum Error Correction (QEC) &bull; Quantum Algorithms &bull; Variational Quantum Eigensolver (VQE) &bull; Quantum Machine Learning (QML) 
+Quantum Circuit Design &bull; Qubit Architecture &bull; Quantum Error Correction (QEC) &bull; Quantum Machine Learning (QML) 
 
 #### Operating Systems
 
 Ubuntu &bull; Debian &bull; Windows, especially WSL
-
-#### Cloud & Quantum Platforms
-
-IBM Quantum &bull; PennyLane
 
 #### Other Tools
 
