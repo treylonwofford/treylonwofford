@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: "global-cli"
-title: "ARENA Program Progress Tracker(Current)"
+title: "ARENA Program Progress Tracker(in progress)"
 date: 2026-07-04
 showAuthor: true
 showDate: true
