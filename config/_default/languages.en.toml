@@ -14,7 +14,7 @@ rtl = false
 [params.author]
 name = "Treylon Wofford"
 image = "img/black_cat_nft_art.png"
-headline = "Interpretability Researcher & IBM Qiskit Advocate"
+headline = "AI Interpretability Researcher & IBM Qiskit Advocate"
 links = [
   { youtube = "http://www.youtube.com/@alginai" },
   { github = "https://github.com/treylonwofford" },
