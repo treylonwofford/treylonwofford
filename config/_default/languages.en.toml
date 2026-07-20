@@ -19,6 +19,6 @@ links = [
   { youtube = "http://www.youtube.com/@alginai" },
   { github = "https://github.com/treylonwofford" },
   { linkedin = "https://www.linkedin.com/in/treylon-wofford/" },
-#  { email = "treylonwofford2@gmail.com" }
+  { email = "treylonwofford2@gmail.com" }
 ]
 
