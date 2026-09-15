@@ -2,7 +2,7 @@
 layout: page
 permalink: "global-cli"
 title: "Choosing Not to Choose: Self-Authored Contradictions Suppress Arbitration in a Memory-Augmented LLM."
-date: 2026-08-15
+date: 2026-08-17
 showAuthor: true
 showDate: true
 showReadingTime: true
