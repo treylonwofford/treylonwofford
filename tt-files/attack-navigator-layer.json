@@ -1,0 +1,453 @@
+{
+  "name": "TraderTraitor (DPRK) \u2013 Nov 2026",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.1.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Procedure-level mappings from the TraderTraitor threat actor profile. Score: 3 = high confidence, 2 = moderate.",
+  "techniques": [
+    {
+      "techniqueID": "T1591.004",
+      "tactic": "reconnaissance",
+      "score": 3,
+      "comment": "Selects developers, DevOps staff and transaction signers at exchanges and their vendors.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, CISA, U.S. Treasury, Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1593.001",
+      "tactic": "reconnaissance",
+      "score": 3,
+      "comment": "Finds targets on LinkedIn and other professional networks.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, FBI (via BleepingComputer)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1585.001",
+      "tactic": "resource-development",
+      "score": 3,
+      "comment": "Fake recruiter personas, increasingly AI-assisted, plus front companies including a spoofed 'AI-powered blockchain intelligence company'.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, The Hacker News"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1583.001",
+      "tactic": "resource-development",
+      "score": 3,
+      "comment": "Registers look-alike data domains (getstockprice[.]com, api.coinpricehub[.]io) and typosquatted HashiCorp registries.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, Safe{Wallet} with Mandiant (via The Hacker News), Cloud Security Alliance Labs"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1608.001",
+      "tactic": "resource-development",
+      "score": 3,
+      "comment": "Stages coding challenges and 'candidate repos' on GitHub.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, Cloud Security Alliance Labs, FBI (via BleepingComputer)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1566.003",
+      "tactic": "initial-access",
+      "score": 3,
+      "comment": "Job offers over LinkedIn and Telegram lead to the payload.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, CISA, U.S. Treasury, Palo Alto Networks Unit 42, FBI (via BleepingComputer)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1195.001",
+      "tactic": "initial-access",
+      "score": 2,
+      "comment": "A Terraform lockfile points at typosquatted provider registries, so `terraform init` runs attacker code.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Cloud Security Alliance Labs"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1195.002",
+      "tactic": "initial-access",
+      "score": 3,
+      "comment": "Injected JavaScript into the Safe{Wallet} web app, reaching Bybit's signers.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Safe{Wallet} with Mandiant (via The Hacker News), FBI"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1199",
+      "tactic": "initial-access",
+      "score": 3,
+      "comment": "Reaches victims through their vendors: Ginco \u2192 DMM, Safe{Wallet} \u2192 Bybit, LayerZero verifier \u2192 KelpDAO.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI (via BleepingComputer), Safe{Wallet} with Mandiant (via The Hacker News), TRM Labs (via The Block)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1204.002",
+      "tactic": "execution",
+      "score": 3,
+      "comment": "Victim runs a trojanized trading app, a coding test, or a Docker 'stock simulator' project.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, CISA, U.S. Treasury, Palo Alto Networks Unit 42, Safe{Wallet} with Mandiant (via The Hacker News)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.006",
+      "tactic": "execution",
+      "score": 3,
+      "comment": "`yaml.load()` deserializes the C2 response into RN Loader; Python stealer modules.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, The Hacker News"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.007",
+      "tactic": "execution",
+      "score": 3,
+      "comment": "Electron/Node.js apps run payloads with child_process; EJS `escapeFunction` abuse.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, CISA, U.S. Treasury, Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1059.004",
+      "tactic": "execution",
+      "score": 2,
+      "comment": "Cursor-spawned shells launch implants with `nohup`; a Bash loader comes from trojanized Terraform providers.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Cloud Security Alliance Labs, The Hacker News"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1480",
+      "tactic": "stealth",
+      "score": 3,
+      "comment": "C2 serves the payload only to validated targets by IP, geolocation, time and headers; everyone else gets benign JSON.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1140",
+      "tactic": "stealth",
+      "score": 3,
+      "comment": "AES-256 encrypted payload decrypted from the 'update' response.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, CISA, U.S. Treasury"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1070.004",
+      "tactic": "stealth",
+      "score": 3,
+      "comment": "RN Loader deletes itself; Safe{Wallet} attacker removed malware and cleared Bash history.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, Safe{Wallet} with Mandiant (via The Hacker News)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1036.005",
+      "tactic": "stealth",
+      "score": 2,
+      "comment": "ROOFDECK runs as a Chromium `--type=renderer` helper; a binary is named after dockerd.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Cloud Security Alliance Labs, Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1553.001",
+      "tactic": "defense-impairment",
+      "score": 2,
+      "comment": "FLATROOF strips `com.apple.quarantine` from ROOFDECK.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Cloud Security Alliance Labs"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1543.001",
+      "tactic": "persistence",
+      "score": 2,
+      "comment": "ROOFDECK persists as a Launch Agent in ~/Library/LaunchAgents.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Cloud Security Alliance Labs"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1555.001",
+      "tactic": "credential-access",
+      "score": 3,
+      "comment": "RN Stealer and FLATROOF take the macOS login keychain.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, Cloud Security Alliance Labs"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552.001",
+      "tactic": "credential-access",
+      "score": 3,
+      "comment": "Collects AWS, Kubernetes and Google Cloud configuration files.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1552.004",
+      "tactic": "credential-access",
+      "score": 3,
+      "comment": "Collects SSH keys; post-compromise theft of private keys.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42, FBI, CISA, U.S. Treasury"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1539",
+      "tactic": "credential-access",
+      "score": 3,
+      "comment": "Session cookies from the Ginco employee used to impersonate them.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI (via BleepingComputer)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1550.001",
+      "tactic": "lateral-movement",
+      "score": 3,
+      "comment": "Hijacked AWS session tokens bypass MFA on the Safe{Wallet} developer's account.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Safe{Wallet} with Mandiant (via The Hacker News)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1078.004",
+      "tactic": "initial-access",
+      "score": 3,
+      "comment": "Operates in the victim's AWS account from VPN IPs with a Kali user agent.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Safe{Wallet} with Mandiant (via The Hacker News)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1102",
+      "tactic": "command-and-control",
+      "score": 2,
+      "comment": "Telegram Bot API (FLATROOF) and Nostr relay dead drops (ROOFDECK) for C2.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Cloud Security Alliance Labs"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1071.001",
+      "tactic": "command-and-control",
+      "score": 3,
+      "comment": "HTTP POST 'update check' and beaconing to look-alike API domains.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, CISA, U.S. Treasury, Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1041",
+      "tactic": "exfiltration",
+      "score": 3,
+      "comment": "RN Stealer exfiltrates over its C2 channel with XOR-keyed tokens.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Palo Alto Networks Unit 42"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1565.003",
+      "tactic": "impact",
+      "score": 3,
+      "comment": "Signers shown a doctored transaction in the Safe interface; DMM transaction request altered in flight.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "Safe{Wallet} with Mandiant (via The Hacker News), FBI (via BleepingComputer)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    },
+    {
+      "techniqueID": "T1657",
+      "tactic": "impact",
+      "score": 3,
+      "comment": "Theft of exchange and protocol funds: $8.4B+ across the incidents here.",
+      "metadata": [
+        {
+          "name": "sources",
+          "value": "FBI, USSS, IRS-CI (via Hackread), FBI, FBI (via BleepingComputer), TRM Labs (via The Block)"
+        }
+      ],
+      "enabled": true,
+      "showSubtechniques": true
+    }
+  ],
+  "gradient": {
+    "colors": [
+      "#ffffff",
+      "#f4a582",
+      "#b2182b"
+    ],
+    "minValue": 0,
+    "maxValue": 3
+  },
+  "legendItems": [
+    {
+      "label": "High confidence",
+      "color": "#b2182b"
+    },
+    {
+      "label": "Moderate confidence",
+      "color": "#f4a582"
+    }
+  ],
+  "hideDisabled": false,
+  "selectSubtechniquesWithParent": false
+}

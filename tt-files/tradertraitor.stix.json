@@ -1,0 +1,3667 @@
+{
+    "type": "bundle",
+    "id": "bundle--e9497f22-9000-43bb-8cbe-27df82ef4773",
+    "objects": [
+        {
+            "type": "marking-definition",
+            "spec_version": "2.1",
+            "id": "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9",
+            "created": "2017-01-20T00:00:00.000Z",
+            "definition_type": "tlp",
+            "name": "TLP:WHITE",
+            "definition": {
+                "tlp": "white"
+            }
+        },
+        {
+            "type": "identity",
+            "spec_version": "2.1",
+            "id": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Treylon Wofford",
+            "identity_class": "individual"
+        },
+        {
+            "type": "intrusion-set",
+            "spec_version": "2.1",
+            "id": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "TraderTraitor",
+            "description": "North Korea (DPRK). U.S. government assesses it as state-sponsored; reporting places it within the Lazarus Group umbrella (ATT&CK G0032). Motive: Revenue generation for the state through theft of cryptocurrency. Targets: Centralized exchanges, wallet and custody providers, cross-chain bridge infrastructure, and the developers, DevOps engineers and signers who can reach them. Increasingly their third-party software vendors.",
+            "aliases": [
+                "Jade Sleet",
+                "UNC4899",
+                "Slow Pisces",
+                "Pressure Chollima",
+                "PUKCHONG"
+            ],
+            "goals": [
+                "Steal cryptocurrency to fund the DPRK state"
+            ],
+            "resource_level": "government",
+            "primary_motivation": "organizational-gain",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                },
+                {
+                    "source_name": "FBI, USSS, IRS-CI (via Hackread)",
+                    "description": "FBI alert: North Korea responsible for $6 billion+ Binance attack (628 addresses) [Admiralty A2]",
+                    "url": "https://hackread.com/fbi-crypto-wallet-addresses-north-korea-binance-hack/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--e869337f-2fbc-597c-85f2-b8e76c269eeb",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Identify Roles",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1591/004",
+                    "external_id": "T1591.004"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--96057578-57b8-5aec-b0ab-e2b6fbc9c84d",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Social Media",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "reconnaissance"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1593/001",
+                    "external_id": "T1593.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b0dd9a65-e076-5997-8550-b9f0ff9076fb",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Social Media Accounts",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1585/001",
+                    "external_id": "T1585.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7f9162c0-ebec-5e1f-b1c1-3804ee87b1ee",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Domains",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1583/001",
+                    "external_id": "T1583.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--6f76a8ac-0b1a-5f95-93c1-fee2510ece45",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Upload Malware",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "resource-development"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1608/001",
+                    "external_id": "T1608.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--5fb6aad0-bfd1-524f-ab63-24374037d654",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Spearphishing via Service",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1566/003",
+                    "external_id": "T1566.003"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--10eddb41-9331-5a6e-a1cd-a8cee846f047",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Compromise Software Dependencies and Development Tools",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1195/001",
+                    "external_id": "T1195.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--4566fa62-b6c0-5eae-b343-ab0087424b0f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Compromise Software Supply Chain",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1195/002",
+                    "external_id": "T1195.002"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7ccf0afa-7adf-5506-8090-598fe331c036",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Trusted Relationship",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1199",
+                    "external_id": "T1199"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--6a8a2893-a08b-5271-bf7b-bb2888b59e1b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Malicious File",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1204/002",
+                    "external_id": "T1204.002"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--782ba76f-c5cd-53ef-b2b5-eb23d4c60df9",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Python",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1059/006",
+                    "external_id": "T1059.006"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--3c9192b4-0a0f-5694-b1c8-0819304a0441",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "JavaScript",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1059/007",
+                    "external_id": "T1059.007"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--68d0ffd0-aec8-5ca8-bbed-ed48a4164562",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Unix Shell",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "execution"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1059/004",
+                    "external_id": "T1059.004"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--c39d74dd-f4d4-5e4b-ba8d-8d1e7d05cf45",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Execution Guardrails",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "stealth"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1480",
+                    "external_id": "T1480"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--5714f993-4a17-5f82-9973-b5c81313e9c7",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Deobfuscate/Decode Files or Information",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "stealth"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1140",
+                    "external_id": "T1140"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--5802ba4e-9ccb-57fc-851a-cb15a6b9cdaa",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "File Deletion",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "stealth"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1070/004",
+                    "external_id": "T1070.004"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--cb924c05-fbfe-5118-80f9-130bc25addb3",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Match Legitimate Resource Name or Location",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "stealth"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1036/005",
+                    "external_id": "T1036.005"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--d64ac30f-f69e-5c5c-8723-3636731ef30d",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Gatekeeper Bypass",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "defense-impairment"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1553/001",
+                    "external_id": "T1553.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7de2821e-68db-5ad7-b8f9-c78c45fdece2",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Launch Agent",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "persistence"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1543/001",
+                    "external_id": "T1543.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--e484c620-6ecc-5b10-866d-016e9e420f9f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Keychain",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1555/001",
+                    "external_id": "T1555.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--895a3995-322d-50f3-a017-02d5c4bdf3a4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Credentials In Files",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1552/001",
+                    "external_id": "T1552.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--3a2707fb-d853-53e7-9782-9f133e5cd4d4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Private Keys",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1552/004",
+                    "external_id": "T1552.004"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--a31bd602-1810-5b7f-ac23-04c658790e0f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Steal Web Session Cookie",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "credential-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1539",
+                    "external_id": "T1539"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--0af21485-92ff-5e00-94c3-1d5e8d7de29a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Application Access Token",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "lateral-movement"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1550/001",
+                    "external_id": "T1550.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--433be7bf-7910-5d17-90f4-5c7a0619e5e8",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Cloud Accounts",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "initial-access"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1078/004",
+                    "external_id": "T1078.004"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--98df5c98-6171-52ed-a256-3d523b9f961b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Web Service",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1102",
+                    "external_id": "T1102"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--64c148f6-8026-5fe9-bbec-a08ed160144e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Web Protocols",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "command-and-control"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1071/001",
+                    "external_id": "T1071.001"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--077bf9a5-7e6f-5be6-8523-c2b4b2595264",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Exfiltration Over C2 Channel",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "exfiltration"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1041",
+                    "external_id": "T1041"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--b1e07a99-4325-5d9c-8a3d-f23234a14c01",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Runtime Data Manipulation",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "impact"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1565/003",
+                    "external_id": "T1565.003"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "attack-pattern",
+            "spec_version": "2.1",
+            "id": "attack-pattern--7fe4feef-59d1-5742-8aec-9628b13b0396",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Financial Theft",
+            "kill_chain_phases": [
+                {
+                    "kill_chain_name": "mitre-attack",
+                    "phase_name": "impact"
+                }
+            ],
+            "external_references": [
+                {
+                    "source_name": "mitre-attack",
+                    "url": "https://attack.mitre.org/techniques/T1657",
+                    "external_id": "T1657"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--b41761cb-f0af-5eec-9cbd-bb8de65c6553",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Manuscrypt",
+            "description": "Windows/macOS RAT delivered by trojanized trading apps",
+            "is_family": true,
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--4514546a-f3ae-5bbe-b1eb-89694ed4deb1",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "PLOTTWIST",
+            "description": "Second stage on the Safe{Wallet} developer Mac",
+            "is_family": true,
+            "external_references": [
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--b91b21be-cac8-52c2-940d-2bab551e6c83",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "RN Loader",
+            "description": "Python loader delivered through YAML deserialization",
+            "is_family": true,
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--a1b82f60-8535-5c52-b4d8-9cb7324a2615",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "RN Stealer",
+            "description": "macOS Python infostealer (keychain, SSH, cloud configs)",
+            "is_family": true,
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--313dd3ae-60da-5d2f-8a8b-96ca083e9ab5",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "FLATROOF",
+            "description": "macOS staging implant (alias macOS.Gaslight), Telegram C2",
+            "is_family": true,
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                },
+                {
+                    "source_name": "The Hacker News",
+                    "description": "FBI links North Korea's TraderTraitor to record $6.43 billion Binance crypto heist [Admiralty C2]",
+                    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "malware",
+            "spec_version": "2.1",
+            "id": "malware--e39fe317-4a3c-592e-8aa3-87845fc79dda",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "ROOFDECK",
+            "description": "macOS backdoor, Nostr dead-drop C2, Launch Agent persistence",
+            "is_family": true,
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                },
+                {
+                    "source_name": "The Hacker News",
+                    "description": "FBI links North Korea's TraderTraitor to record $6.43 billion Binance crypto heist [Admiralty C2]",
+                    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--a83b5fd6-9770-5f1c-9112-44add8456d0e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "TraderTraitor trojanized-app campaign (2022-04)",
+            "description": "Fake recruitment messages lead DevOps staff to install trojanized 'crypto trading' Electron apps that drop the Manuscrypt RAT.",
+            "first_seen": "2022-04-01T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--c7fac610-d412-5672-b3e6-c39c30f3f711",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "DMM Bitcoin (2024-05)",
+            "description": "LinkedIn 'recruiter' gives a Ginco employee a GitHub coding test with malicious Python; stolen session cookies give access to Ginco's systems; a legitimate DMM transaction request is manipulated. 4,502.9 BTC lost. Loss: $308,000,000.",
+            "first_seen": "2024-05-01T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--f7c8abc1-33df-522f-9eab-4124457ce78c",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Bybit (2025-02-21)",
+            "description": "Safe{Wallet} developer's Mac compromised Feb 4 via a Docker 'stock simulator' project calling getstockprice[.]com; AWS session tokens hijacked to bypass MFA; JavaScript injected into the Safe web app so Bybit's signers approved a malicious contract upgrade. Loss: $1,460,000,000.",
+            "first_seen": "2025-02-21T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "FBI",
+                    "description": "North Korea Responsible for $1.5 Billion Bybit Hack (PSA I-022625-PSA) [Admiralty A1]",
+                    "url": "https://www.ic3.gov/PSA/2025/PSA250226"
+                },
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                },
+                {
+                    "source_name": "Author's own investigation",
+                    "description": "Bybit Heist Trace: three laundering branches verified on-chain (Case TR-2025-0221) [Admiralty B1]",
+                    "url": "https://etherscan.io/address/0x47666fab8bd0ac7003bce3f5c3585383f09486e2"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--f177af15-c90a-50d1-8a6d-f31b890b2665",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Coding-challenge campaign (2025 (H1))",
+            "description": "Fake recruiters send GitHub coding challenges; targeted visitors receive YAML payloads that deserialize into RN Loader and RN Stealer, which take keychains, SSH keys and AWS/Kubernetes/GCP configs.",
+            "first_seen": "2025-01-01T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--469bcb35-ec36-5153-aeb5-ab90470e000f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Terraform / Cursor campaign (2026-03 \u2192 06)",
+            "description": "Fake interview with a Terraform project whose lockfile points at typosquatted HashiCorp registries; FLATROOF and ROOFDECK macOS implants activate when a Cursor workspace opens.",
+            "first_seen": "2026-03-01T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--cec6a2a2-ff14-59a9-8a45-05664a0aa5a9",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "KelpDAO (LayerZero bridge) (2026-04-18)",
+            "description": "Single-verifier LayerZero bridge configuration exploited by compromising RPC infrastructure; about 116,500 rsETH drained. Funds moved quickly into Bitcoin through THORChain. Loss: $292,000,000.",
+            "first_seen": "2026-04-18T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "TRM Labs (via The Block)",
+                    "description": "North Korea accounts for 76% of 2026 crypto hack losses [Admiralty B2]",
+                    "url": "https://www.theblock.co/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs"
+                },
+                {
+                    "source_name": "Cointelegraph",
+                    "description": "North Korean hackers' $578M April: the KelpDAO exploit [Admiralty C3]",
+                    "url": "https://cointelegraph.com/features/north-korean-hackers-578m-april-kelp-dao-exploit"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "campaign",
+            "spec_version": "2.1",
+            "id": "campaign--6473d3db-1805-5805-8c36-daf0be8d5e01",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "Binance (2026-10-29)",
+            "description": "Control of hot-wallet signing infrastructure. On Ethereum, one transaction carried 50 EIP-7702 authorizations that turned the hot wallet into an attacker-controlled sweeper; most funds left in about 20 minutes. Binance first pointed to a compromised engineer's laptop, then 'additional points of breach'. Loss: $6,360,000,000.",
+            "first_seen": "2026-10-29T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "TRM Labs",
+                    "description": "North Korea steals USD 6.36 billion from Binance in the largest hack in history [Admiralty B1]",
+                    "url": "https://www.trmlabs.com/resources/blog/north-korea-steals-usd-6-36-billion-from-binance-in-the-largest-hack-in-history"
+                },
+                {
+                    "source_name": "Al Jazeera",
+                    "description": "Binance says $6.3bn stolen in biggest crypto heist in history: What we know [Admiralty C2]",
+                    "url": "https://www.aljazeera.com/news/2026/10/30/binance-says-6-3bn-stolen-in-biggest-crypto-heist-in-history-what-we-know"
+                },
+                {
+                    "source_name": "FBI, USSS, IRS-CI (via Hackread)",
+                    "description": "FBI alert: North Korea responsible for $6 billion+ Binance attack (628 addresses) [Admiralty A2]",
+                    "url": "https://hackread.com/fbi-crypto-wallet-addresses-north-korea-binance-hack/"
+                },
+                {
+                    "source_name": "The Hacker News",
+                    "description": "FBI links North Korea's TraderTraitor to record $6.43 billion Binance crypto heist [Admiralty C2]",
+                    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--467ea3ce-d92e-5b29-bd2a-ed7192f8bde0",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "getstockprice.com",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'getstockprice.com']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--bfa0603a-a02f-568b-892b-b21b181a2e39",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.clubinfo.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.clubinfo.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--53ac1ba8-f767-5932-8e81-0ede58473f8e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "getstockprice.info",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'getstockprice.info']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--45620a58-8b51-5291-98d6-33a1a994dcef",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.stockinfo.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.stockinfo.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--eb238ef9-59da-5247-b85c-fbc202f232d0",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.logoeye.net",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.logoeye.net']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--e83ecbd1-566b-58b3-a0c9-ed201dd2451e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "en.wfinance.org",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'en.wfinance.org']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--32643e52-e7e8-5fb3-b400-57f815b4cb93",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "en.stocksindex.org",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'en.stocksindex.org']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b9615bb8-0e6e-59c5-bf70-735e99cccca7",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.jqueryversion.net",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.jqueryversion.net']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d8dfc376-9e93-5aa1-95f8-b9fcd30fe5d5",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "en.stockslab.org",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'en.stockslab.org']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--67ff620c-f9e2-5795-a053-f22274e9b1bb",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "update.jquerycloud.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'update.jquerycloud.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5c83d12c-d5b3-5f2e-822f-55b56e81e476",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.soccerlab.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.soccerlab.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--9dcb80ba-3376-5c8e-a4c2-c13d7fb10347",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.coinpricehub.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.coinpricehub.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0b6b11ec-5397-5bbe-8c2f-236782d6a3fe",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.leaguehub.net",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.leaguehub.net']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--2f8c3153-0192-5784-9fb5-4505b6bbd6ee",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.clublogos.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.clublogos.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f19fe298-51c1-59df-80bc-03cb7b0495bf",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.jquery-release.com",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.jquery-release.com']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--f056ec41-ae5f-59ac-ba8c-74a0be833a51",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "cdn.logosports.net",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'cdn.logosports.net']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--b0f65426-f1c0-51e8-bf52-4fd103f8bdf0",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "skypredict.org",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'skypredict.org']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--28d393e0-2e05-5610-90d8-696d640ed8ed",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.bitzone.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.bitzone.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--822f4d09-4262-5fae-85fe-210a1261cb62",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "weatherdatahub.org",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'weatherdatahub.org']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6fa521c2-f91d-5695-b106-ca7fcdc319cd",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.ethzone.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.ethzone.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--6332f577-e3ca-53ca-a076-27920d177e47",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.fivebit.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.fivebit.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--a93096a6-8abc-53d8-bc5a-e1259176fd3e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "blockprices.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'blockprices.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fdf70e37-cd96-54d9-b554-ef9259f537fe",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.coinhar.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.coinhar.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--71b7cf86-a4c2-5907-b9c9-3d707acd6d04",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "mavenradar.com",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'mavenradar.com']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--c864342a-63cb-546c-93ee-53fb710a01ff",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "indobit.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'indobit.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--d5f5e5e0-5fcc-55f4-900a-ebc2728a797b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "api.thaibit.io",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'api.thaibit.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--afbfd812-db37-5c62-b90d-105134efc61f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "chainanalyser.com",
+            "description": "TraderTraitor coding-challenge C2 (Slow Pisces)",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'chainanalyser.com']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2025-01-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--43fed1ef-52b9-511f-aa5e-3c6f0af1be3a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "registry.hashicorp-aws.com",
+            "description": "Typosquatted Terraform provider registry",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'registry.hashicorp-aws.com']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2026-03-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--fb94b57f-820b-53cf-840e-43d932fa49af",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "registry.hashicorp-terraform.io",
+            "description": "Typosquatted Terraform provider registry",
+            "indicator_types": [
+                "malicious-activity"
+            ],
+            "pattern": "[domain-name:value = 'registry.hashicorp-terraform.io']",
+            "pattern_type": "stix",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "pattern_version": "2.1",
+            "valid_from": "2026-03-01T00:00:00Z",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--79db8436-c9c5-5e0a-ade1-b7abac22bc63",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "0x47666Fab8bd0Ac7003bce3f5C3585383F09486E2",
+            "description": "Bybit Exploiter 1: received 401,346.77 ETH",
+            "indicator_types": [
+                "attribution"
+            ],
+            "pattern": "[x-crypto-wallet:address = '0x47666Fab8bd0Ac7003bce3f5C3585383F09486E2']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2025-02-21T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Author's own investigation",
+                    "description": "Bybit Heist Trace: three laundering branches verified on-chain (Case TR-2025-0221) [Admiralty B1]",
+                    "url": "https://etherscan.io/address/0x47666fab8bd0ac7003bce3f5c3585383f09486e2"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--4f61bda2-b9a6-51b6-a184-e6799e5e3c8e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "0x0fa09C3A328792253f8dee7116848723b72a6d2e",
+            "description": "Bybit attacker: sent sweepETH call",
+            "indicator_types": [
+                "attribution"
+            ],
+            "pattern": "[x-crypto-wallet:address = '0x0fa09C3A328792253f8dee7116848723b72a6d2e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2025-02-21T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Author's own investigation",
+                    "description": "Bybit Heist Trace: three laundering branches verified on-chain (Case TR-2025-0221) [Admiralty B1]",
+                    "url": "https://etherscan.io/address/0x47666fab8bd0ac7003bce3f5c3585383f09486e2"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--5782e02b-9d89-5a7d-a71e-aab73e716a7a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "0xA4B2Fd68593B6F34E51cB9eDB66E71c1B4Ab449e",
+            "description": "Bybit Exploiter 2: stETH liquidation",
+            "indicator_types": [
+                "attribution"
+            ],
+            "pattern": "[x-crypto-wallet:address = '0xA4B2Fd68593B6F34E51cB9eDB66E71c1B4Ab449e']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2025-02-21T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Author's own investigation",
+                    "description": "Bybit Heist Trace: three laundering branches verified on-chain (Case TR-2025-0221) [Admiralty B1]",
+                    "url": "https://etherscan.io/address/0x47666fab8bd0ac7003bce3f5c3585383f09486e2"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--ae7a1ebf-9e95-5b72-9005-151f07b4358f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "0xdD90071D52F20e85c89802e5Dc1eC0A7B6475f92",
+            "description": "Bybit Exploiter 5: layering source",
+            "indicator_types": [
+                "attribution"
+            ],
+            "pattern": "[x-crypto-wallet:address = '0xdD90071D52F20e85c89802e5Dc1eC0A7B6475f92']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2025-02-21T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Author's own investigation",
+                    "description": "Bybit Heist Trace: three laundering branches verified on-chain (Case TR-2025-0221) [Admiralty B1]",
+                    "url": "https://etherscan.io/address/0x47666fab8bd0ac7003bce3f5c3585383f09486e2"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--da6e3d3f-9fb9-5708-89dc-584980b25289",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "191du9ivk3k5YekuXFgtkoVei6pK76wZmf",
+            "description": "Bybit funds: THORChain swap destination",
+            "indicator_types": [
+                "attribution"
+            ],
+            "pattern": "[x-crypto-wallet:address = '191du9ivk3k5YekuXFgtkoVei6pK76wZmf']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2025-03-03T00:00:00Z",
+            "external_references": [
+                {
+                    "source_name": "Author's own investigation",
+                    "description": "Bybit Heist Trace: three laundering branches verified on-chain (Case TR-2025-0221) [Admiralty B1]",
+                    "url": "https://etherscan.io/address/0x47666fab8bd0ac7003bce3f5c3585383f09486e2"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--035ceff4-7c20-57c8-bb8d-4dd93de686d6",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Selects developers, DevOps staff and transaction signers at exchanges and their vendors. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--e869337f-2fbc-597c-85f2-b8e76c269eeb",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                },
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0f08aaaa-e893-570d-9e54-cccaa7aca418",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Finds targets on LinkedIn and other professional networks. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--96057578-57b8-5aec-b0ab-e2b6fbc9c84d",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0046bf0b-05fb-5e30-acff-4f1d57f3312b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Fake recruiter personas, increasingly AI-assisted, plus front companies including a spoofed 'AI-powered blockchain intelligence company'. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--b0dd9a65-e076-5997-8550-b9f0ff9076fb",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "The Hacker News",
+                    "description": "FBI links North Korea's TraderTraitor to record $6.43 billion Binance crypto heist [Admiralty C2]",
+                    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--664847ca-db63-58a5-95d0-251d9645ee2e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Registers look-alike data domains (getstockprice[.]com, api.coinpricehub[.]io) and typosquatted HashiCorp registries. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--7f9162c0-ebec-5e1f-b1c1-3804ee87b1ee",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                },
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ff8d754b-dcd4-5ee0-97e7-52332699be83",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Stages coding challenges and 'candidate repos' on GitHub. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--6f76a8ac-0b1a-5f95-93c1-fee2510ece45",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                },
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc24fe64-03c1-5009-9492-9858b6863f41",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Job offers over LinkedIn and Telegram lead to the payload. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--5fb6aad0-bfd1-524f-ab63-24374037d654",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                },
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc7f5ac9-f10f-56ae-afd1-de59684361cd",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "A Terraform lockfile points at typosquatted provider registries, so `terraform init` runs attacker code. (confidence: moderate)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--10eddb41-9331-5a6e-a1cd-a8cee846f047",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--61baa65c-1285-50b2-bc56-b520cfd6779a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Injected JavaScript into the Safe{Wallet} web app, reaching Bybit's signers. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--4566fa62-b6c0-5eae-b343-ab0087424b0f",
+            "external_references": [
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                },
+                {
+                    "source_name": "FBI",
+                    "description": "North Korea Responsible for $1.5 Billion Bybit Hack (PSA I-022625-PSA) [Admiralty A1]",
+                    "url": "https://www.ic3.gov/PSA/2025/PSA250226"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e93beef5-aa6f-5621-b8b6-ba871d52f602",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Reaches victims through their vendors: Ginco \u2192 DMM, Safe{Wallet} \u2192 Bybit, LayerZero verifier \u2192 KelpDAO. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--7ccf0afa-7adf-5506-8090-598fe331c036",
+            "external_references": [
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                },
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                },
+                {
+                    "source_name": "TRM Labs (via The Block)",
+                    "description": "North Korea accounts for 76% of 2026 crypto hack losses [Admiralty B2]",
+                    "url": "https://www.theblock.co/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cb99b0d5-5152-5f99-8b5d-b4d90475c219",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Victim runs a trojanized trading app, a coding test, or a Docker 'stock simulator' project. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--6a8a2893-a08b-5271-bf7b-bb2888b59e1b",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                },
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9b8967d9-c48f-5bc0-ad4e-d8f3f7150dcf",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "`yaml.load()` deserializes the C2 response into RN Loader; Python stealer modules. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--782ba76f-c5cd-53ef-b2b5-eb23d4c60df9",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "The Hacker News",
+                    "description": "FBI links North Korea's TraderTraitor to record $6.43 billion Binance crypto heist [Admiralty C2]",
+                    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0e4e7ce0-3b9f-5a6b-a013-c0b323b890b6",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Electron/Node.js apps run payloads with child_process; EJS `escapeFunction` abuse. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--3c9192b4-0a0f-5694-b1c8-0819304a0441",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                },
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0bf11e91-bdae-5992-a0fa-d9d2cdcd5070",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Cursor-spawned shells launch implants with `nohup`; a Bash loader comes from trojanized Terraform providers. (confidence: moderate)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--68d0ffd0-aec8-5ca8-bbed-ed48a4164562",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                },
+                {
+                    "source_name": "The Hacker News",
+                    "description": "FBI links North Korea's TraderTraitor to record $6.43 billion Binance crypto heist [Admiralty C2]",
+                    "url": "https://thehackernews.com/2026/11/fbi-links-north-koreas-tradertraitor-to.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--cc5e3404-3f3a-5f84-930f-3d4cd86416a4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "C2 serves the payload only to validated targets by IP, geolocation, time and headers; everyone else gets benign JSON. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--c39d74dd-f4d4-5e4b-ba8d-8d1e7d05cf45",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--30e7b4ed-e479-5f48-a209-889626cf5094",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "AES-256 encrypted payload decrypted from the 'update' response. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--5714f993-4a17-5f82-9973-b5c81313e9c7",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--430efe19-123d-53e6-aaa1-046bd77d39a9",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "RN Loader deletes itself; Safe{Wallet} attacker removed malware and cleared Bash history. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--5802ba4e-9ccb-57fc-851a-cb15a6b9cdaa",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c1386d54-656b-542e-91a0-975342979bdc",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "ROOFDECK runs as a Chromium `--type=renderer` helper; a binary is named after dockerd. (confidence: moderate)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--cb924c05-fbfe-5118-80f9-130bc25addb3",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                },
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--226f8e3c-eea9-5b5f-9013-2df153d66b2b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "FLATROOF strips `com.apple.quarantine` from ROOFDECK. (confidence: moderate)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--d64ac30f-f69e-5c5c-8723-3636731ef30d",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--86cf70e2-4258-57cf-9702-bbd8a64dd9b4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "ROOFDECK persists as a Launch Agent in ~/Library/LaunchAgents. (confidence: moderate)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--7de2821e-68db-5ad7-b8f9-c78c45fdece2",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9f32f433-83f5-5fdd-b81b-05e250e8fe4b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "RN Stealer and FLATROOF take the macOS login keychain. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--e484c620-6ecc-5b10-866d-016e9e420f9f",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--18e71694-90bc-5e83-a1fb-426296d79229",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Collects AWS, Kubernetes and Google Cloud configuration files. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--895a3995-322d-50f3-a017-02d5c4bdf3a4",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1b2c3190-91f5-51a9-9b78-ae2983a09f05",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Collects SSH keys; post-compromise theft of private keys. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--3a2707fb-d853-53e7-9782-9f133e5cd4d4",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                },
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--80b81e96-e87e-53dd-a635-f50278cd531b",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Session cookies from the Ginco employee used to impersonate them. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--a31bd602-1810-5b7f-ac23-04c658790e0f",
+            "external_references": [
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5a6f291b-1761-58ae-9fc1-401a995eaa69",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Hijacked AWS session tokens bypass MFA on the Safe{Wallet} developer's account. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--0af21485-92ff-5e00-94c3-1d5e8d7de29a",
+            "external_references": [
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3d79d8b2-6a76-50f7-abf7-1914a3bd99b1",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Operates in the victim's AWS account from VPN IPs with a Kali user agent. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--433be7bf-7910-5d17-90f4-5c7a0619e5e8",
+            "external_references": [
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--6257f530-61fb-5da6-947e-2de73645606e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Telegram Bot API (FLATROOF) and Nostr relay dead drops (ROOFDECK) for C2. (confidence: moderate)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--98df5c98-6171-52ed-a256-3d523b9f961b",
+            "external_references": [
+                {
+                    "source_name": "Cloud Security Alliance Labs",
+                    "description": "Jade Sleet triggers macOS backdoors through Cursor AI (research note) [Admiralty B3]",
+                    "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-jade-sleet-cursor-backdoor-20260921-csa-st/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--564464f4-d836-520f-930b-1a1b58ab0dfa",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "HTTP POST 'update check' and beaconing to look-alike API domains. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--64c148f6-8026-5fe9-bbec-a08ed160144e",
+            "external_references": [
+                {
+                    "source_name": "FBI, CISA, U.S. Treasury",
+                    "description": "TraderTraitor: North Korean State-Sponsored APT Targets Blockchain Companies (AA22-108A) [Admiralty A2]",
+                    "url": "https://www.cisa.gov/ncas/alerts/aa22-108a"
+                },
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--92eb9cdb-f3be-5bb0-92d8-fe4a9dfb1cb0",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "RN Stealer exfiltrates over its C2 channel with XOR-keyed tokens. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--077bf9a5-7e6f-5be6-8523-c2b4b2595264",
+            "external_references": [
+                {
+                    "source_name": "Palo Alto Networks Unit 42",
+                    "description": "Slow Pisces Targets Developers With Coding Challenges and Introduces New Customized Python Malware [Admiralty B1]",
+                    "url": "https://unit42.paloaltonetworks.com/slow-pisces-new-custom-malware/"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc0b06ff-a203-591e-95c5-5c37c12cd1eb",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Signers shown a doctored transaction in the Safe interface; DMM transaction request altered in flight. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--b1e07a99-4325-5d9c-8a3d-f23234a14c01",
+            "external_references": [
+                {
+                    "source_name": "Safe{Wallet} with Mandiant (via The Hacker News)",
+                    "description": "Safe{Wallet} confirms North Korean TraderTraitor hackers compromised developer machine [Admiralty B2]",
+                    "url": "https://thehackernews.com/2025/03/safewallet-confirms-north-korean.html"
+                },
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--608b336a-32b9-5fe2-ad17-ee0b34fcf880",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "description": "Theft of exchange and protocol funds: $8.4B+ across the incidents here. (confidence: high)",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "attack-pattern--7fe4feef-59d1-5742-8aec-9628b13b0396",
+            "external_references": [
+                {
+                    "source_name": "FBI, USSS, IRS-CI (via Hackread)",
+                    "description": "FBI alert: North Korea responsible for $6 billion+ Binance attack (628 addresses) [Admiralty A2]",
+                    "url": "https://hackread.com/fbi-crypto-wallet-addresses-north-korea-binance-hack/"
+                },
+                {
+                    "source_name": "FBI",
+                    "description": "North Korea Responsible for $1.5 Billion Bybit Hack (PSA I-022625-PSA) [Admiralty A1]",
+                    "url": "https://www.ic3.gov/PSA/2025/PSA250226"
+                },
+                {
+                    "source_name": "FBI (via BleepingComputer)",
+                    "description": "TraderTraitor attribution for the DMM Bitcoin theft (with DC3 and Japan NPA) [Admiralty A2]",
+                    "url": "https://www.bleepingcomputer.com/news/security/fbi-links-north-korean-hackers-to-308-million-crypto-heist"
+                },
+                {
+                    "source_name": "TRM Labs (via The Block)",
+                    "description": "North Korea accounts for 76% of 2026 crypto hack losses [Admiralty B2]",
+                    "url": "https://www.theblock.co/post/399569/north-korea-accounts-for-76-of-2026-crypto-hack-losses-with-theft-since-2017-topping-6-billion-trm-labs"
+                }
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5cfb6043-596b-50d2-8cd6-059060ae74a3",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "malware--b41761cb-f0af-5eec-9cbd-bb8de65c6553",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0e841c52-470e-5a61-8863-65c1c584f444",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "malware--4514546a-f3ae-5bbe-b1eb-89694ed4deb1",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--375c0546-31f9-5c3c-b924-4f3dac171b86",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "malware--b91b21be-cac8-52c2-940d-2bab551e6c83",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fe8cfe15-29bb-5c9c-b92c-8418a51ed9f0",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "malware--a1b82f60-8535-5c52-b4d8-9cb7324a2615",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7edd0bcd-390d-5ce4-8f62-a2f3f4e31dfd",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "malware--313dd3ae-60da-5d2f-8a8b-96ca083e9ab5",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--00ed9c75-b1fc-5afa-b812-d965770c6724",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "uses",
+            "source_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "target_ref": "malware--e39fe317-4a3c-592e-8aa3-87845fc79dda",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1baf0aa3-59f4-5f25-b37a-8c3bc1350953",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--a83b5fd6-9770-5f1c-9112-44add8456d0e",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0f00d0de-bcc9-54b2-bbe3-b5b1d6f1cb80",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--c7fac610-d412-5672-b3e6-c39c30f3f711",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4ed33db6-266f-560a-a51f-2e4b9fb6c1c1",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--f7c8abc1-33df-522f-9eab-4124457ce78c",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5f5a0836-98e6-5104-8f3e-15bcedc6155d",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--f177af15-c90a-50d1-8a6d-f31b890b2665",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--c1f0440d-b462-5412-88f1-54ab525e1588",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--469bcb35-ec36-5153-aeb5-ab90470e000f",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3d067e05-26d2-56a7-be6e-a939275d2bd2",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--cec6a2a2-ff14-59a9-8a45-05664a0aa5a9",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2d79a483-b3e6-55af-b541-1503f7b6cae0",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "attributed-to",
+            "source_ref": "campaign--6473d3db-1805-5805-8c36-daf0be8d5e01",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f22e7874-7954-5963-8e95-7474f7b2928f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--467ea3ce-d92e-5b29-bd2a-ed7192f8bde0",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--705b8b39-d91e-5c0a-a407-6a991bbb7162",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--bfa0603a-a02f-568b-892b-b21b181a2e39",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--276aeab3-ea13-5afb-86e3-9f9e9f9116c7",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--53ac1ba8-f767-5932-8e81-0ede58473f8e",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--32e0cd16-81e6-5c59-b587-7e6c854454b6",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--45620a58-8b51-5291-98d6-33a1a994dcef",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--38497b3b-3bc7-5764-8aec-b99e308e3650",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--eb238ef9-59da-5247-b85c-fbc202f232d0",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fc1b36b4-db9d-591e-90ce-4da39a02d63a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--e83ecbd1-566b-58b3-a0c9-ed201dd2451e",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--0eb81cb0-d633-5361-839a-9602007a278a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--32643e52-e7e8-5fb3-b400-57f815b4cb93",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a38ee60c-fc89-5516-8ed5-db71b7b961e4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b9615bb8-0e6e-59c5-bf70-735e99cccca7",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--99d78318-6064-5048-89cd-49d91a87d274",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d8dfc376-9e93-5aa1-95f8-b9fcd30fe5d5",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--efd4f817-f024-5ed6-864a-7e802246c57e",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--67ff620c-f9e2-5795-a053-f22274e9b1bb",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--66aa69c9-a80b-5b1c-bcc9-29dbe31848c6",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5c83d12c-d5b3-5f2e-822f-55b56e81e476",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f8917cac-a26b-579e-a233-0a6d1a84a754",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--9dcb80ba-3376-5c8e-a4c2-c13d7fb10347",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--aaaa8df0-fd3e-57c0-ac4e-09de6da03829",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--0b6b11ec-5397-5bbe-8c2f-236782d6a3fe",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3a540514-be0b-5ea3-95de-8e420fe984de",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--2f8c3153-0192-5784-9fb5-4505b6bbd6ee",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dad4439b-d657-51c8-8159-957d7340ccb4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f19fe298-51c1-59df-80bc-03cb7b0495bf",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--eb06c240-4bb6-5595-8b50-f86c01d73252",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--f056ec41-ae5f-59ac-ba8c-74a0be833a51",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--f9a45f35-c027-5324-80c0-28706f6c3c1f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--b0f65426-f1c0-51e8-bf52-4fd103f8bdf0",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3dc635d2-4763-5eba-abc2-35ee6e2701f7",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--28d393e0-2e05-5610-90d8-696d640ed8ed",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--28c236dc-832e-5a58-bb2e-051fbf0b605a",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--822f4d09-4262-5fae-85fe-210a1261cb62",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--be352af1-a95e-50e4-b839-f0314c264b91",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6fa521c2-f91d-5695-b106-ca7fcdc319cd",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--824a8c0c-10d3-5d09-9762-0f277580257c",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--6332f577-e3ca-53ca-a076-27920d177e47",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e1a36a89-0914-5e34-9856-c1820031012f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--a93096a6-8abc-53d8-bc5a-e1259176fd3e",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b866ccaf-d6a1-5ea3-8fe6-aae8060291e4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fdf70e37-cd96-54d9-b554-ef9259f537fe",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5367b295-9eb7-53a6-b129-af401e2cadfb",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--71b7cf86-a4c2-5907-b9c9-3d707acd6d04",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--df078238-d901-5b78-b9c1-7a10c5e685ab",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--c864342a-63cb-546c-93ee-53fb710a01ff",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--47c0e9e5-2ca0-514d-acdb-4785be36ee1c",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--d5f5e5e0-5fcc-55f4-900a-ebc2728a797b",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--efacf737-de7f-5daf-9c8c-281ad851df26",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--afbfd812-db37-5c62-b90d-105134efc61f",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--fcf372c6-2e12-5a2f-b361-d51e2d6fa9fb",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--43fed1ef-52b9-511f-aa5e-3c6f0af1be3a",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--1acdd5cf-6971-514d-a9ef-cd5e3d29f992",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--fb94b57f-820b-53cf-840e-43d932fa49af",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--2e1cc12b-70ec-5004-820c-67c673ce729f",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--79db8436-c9c5-5e0a-ade1-b7abac22bc63",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b044ec12-4183-52c5-8c5d-c8059fc4c347",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--4f61bda2-b9a6-51b6-a184-e6799e5e3c8e",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--20469aad-8989-5387-8a9b-984d080e0ebe",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--5782e02b-9d89-5a7d-a71e-aab73e716a7a",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3125d637-2d1b-5bc0-9aa1-7f519cb285fd",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--ae7a1ebf-9e95-5b72-9005-151f07b4358f",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--a3b54a54-9c34-56d3-bd88-b1b78efa1297",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "relationship_type": "indicates",
+            "source_ref": "indicator--da6e3d3f-9fb9-5708-89dc-584980b25289",
+            "target_ref": "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        },
+        {
+            "type": "report",
+            "spec_version": "2.1",
+            "id": "report--99467190-a25a-547d-9666-c6306409dab4",
+            "created_by_ref": "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+            "created": "2026-11-08T12:00:00.000Z",
+            "modified": "2026-11-08T12:00:00.000Z",
+            "name": "TraderTraitor: threat actor profile (Nov 2026)",
+            "description": "Threat actor profile of North Korea's TraderTraitor for exchange and custody security teams.",
+            "report_types": [
+                "threat-actor"
+            ],
+            "published": "2026-11-08T12:00:00Z",
+            "object_refs": [
+                "identity--2fcafec1-2eeb-5679-afc0-c20063dece74",
+                "intrusion-set--5f58f370-dfd1-5e02-b309-f41045b1daab",
+                "attack-pattern--e869337f-2fbc-597c-85f2-b8e76c269eeb",
+                "attack-pattern--96057578-57b8-5aec-b0ab-e2b6fbc9c84d",
+                "attack-pattern--b0dd9a65-e076-5997-8550-b9f0ff9076fb",
+                "attack-pattern--7f9162c0-ebec-5e1f-b1c1-3804ee87b1ee",
+                "attack-pattern--6f76a8ac-0b1a-5f95-93c1-fee2510ece45",
+                "attack-pattern--5fb6aad0-bfd1-524f-ab63-24374037d654",
+                "attack-pattern--10eddb41-9331-5a6e-a1cd-a8cee846f047",
+                "attack-pattern--4566fa62-b6c0-5eae-b343-ab0087424b0f",
+                "attack-pattern--7ccf0afa-7adf-5506-8090-598fe331c036",
+                "attack-pattern--6a8a2893-a08b-5271-bf7b-bb2888b59e1b",
+                "attack-pattern--782ba76f-c5cd-53ef-b2b5-eb23d4c60df9",
+                "attack-pattern--3c9192b4-0a0f-5694-b1c8-0819304a0441",
+                "attack-pattern--68d0ffd0-aec8-5ca8-bbed-ed48a4164562",
+                "attack-pattern--c39d74dd-f4d4-5e4b-ba8d-8d1e7d05cf45",
+                "attack-pattern--5714f993-4a17-5f82-9973-b5c81313e9c7",
+                "attack-pattern--5802ba4e-9ccb-57fc-851a-cb15a6b9cdaa",
+                "attack-pattern--cb924c05-fbfe-5118-80f9-130bc25addb3",
+                "attack-pattern--d64ac30f-f69e-5c5c-8723-3636731ef30d",
+                "attack-pattern--7de2821e-68db-5ad7-b8f9-c78c45fdece2",
+                "attack-pattern--e484c620-6ecc-5b10-866d-016e9e420f9f",
+                "attack-pattern--895a3995-322d-50f3-a017-02d5c4bdf3a4",
+                "attack-pattern--3a2707fb-d853-53e7-9782-9f133e5cd4d4",
+                "attack-pattern--a31bd602-1810-5b7f-ac23-04c658790e0f",
+                "attack-pattern--0af21485-92ff-5e00-94c3-1d5e8d7de29a",
+                "attack-pattern--433be7bf-7910-5d17-90f4-5c7a0619e5e8",
+                "attack-pattern--98df5c98-6171-52ed-a256-3d523b9f961b",
+                "attack-pattern--64c148f6-8026-5fe9-bbec-a08ed160144e",
+                "attack-pattern--077bf9a5-7e6f-5be6-8523-c2b4b2595264",
+                "attack-pattern--b1e07a99-4325-5d9c-8a3d-f23234a14c01",
+                "attack-pattern--7fe4feef-59d1-5742-8aec-9628b13b0396",
+                "malware--b41761cb-f0af-5eec-9cbd-bb8de65c6553",
+                "malware--4514546a-f3ae-5bbe-b1eb-89694ed4deb1",
+                "malware--b91b21be-cac8-52c2-940d-2bab551e6c83",
+                "malware--a1b82f60-8535-5c52-b4d8-9cb7324a2615",
+                "malware--313dd3ae-60da-5d2f-8a8b-96ca083e9ab5",
+                "malware--e39fe317-4a3c-592e-8aa3-87845fc79dda",
+                "campaign--a83b5fd6-9770-5f1c-9112-44add8456d0e",
+                "campaign--c7fac610-d412-5672-b3e6-c39c30f3f711",
+                "campaign--f7c8abc1-33df-522f-9eab-4124457ce78c",
+                "campaign--f177af15-c90a-50d1-8a6d-f31b890b2665",
+                "campaign--469bcb35-ec36-5153-aeb5-ab90470e000f",
+                "campaign--cec6a2a2-ff14-59a9-8a45-05664a0aa5a9",
+                "campaign--6473d3db-1805-5805-8c36-daf0be8d5e01",
+                "indicator--467ea3ce-d92e-5b29-bd2a-ed7192f8bde0",
+                "indicator--bfa0603a-a02f-568b-892b-b21b181a2e39",
+                "indicator--53ac1ba8-f767-5932-8e81-0ede58473f8e",
+                "indicator--45620a58-8b51-5291-98d6-33a1a994dcef",
+                "indicator--eb238ef9-59da-5247-b85c-fbc202f232d0",
+                "indicator--e83ecbd1-566b-58b3-a0c9-ed201dd2451e",
+                "indicator--32643e52-e7e8-5fb3-b400-57f815b4cb93",
+                "indicator--b9615bb8-0e6e-59c5-bf70-735e99cccca7",
+                "indicator--d8dfc376-9e93-5aa1-95f8-b9fcd30fe5d5",
+                "indicator--67ff620c-f9e2-5795-a053-f22274e9b1bb",
+                "indicator--5c83d12c-d5b3-5f2e-822f-55b56e81e476",
+                "indicator--9dcb80ba-3376-5c8e-a4c2-c13d7fb10347",
+                "indicator--0b6b11ec-5397-5bbe-8c2f-236782d6a3fe",
+                "indicator--2f8c3153-0192-5784-9fb5-4505b6bbd6ee",
+                "indicator--f19fe298-51c1-59df-80bc-03cb7b0495bf",
+                "indicator--f056ec41-ae5f-59ac-ba8c-74a0be833a51",
+                "indicator--b0f65426-f1c0-51e8-bf52-4fd103f8bdf0",
+                "indicator--28d393e0-2e05-5610-90d8-696d640ed8ed",
+                "indicator--822f4d09-4262-5fae-85fe-210a1261cb62",
+                "indicator--6fa521c2-f91d-5695-b106-ca7fcdc319cd",
+                "indicator--6332f577-e3ca-53ca-a076-27920d177e47",
+                "indicator--a93096a6-8abc-53d8-bc5a-e1259176fd3e",
+                "indicator--fdf70e37-cd96-54d9-b554-ef9259f537fe",
+                "indicator--71b7cf86-a4c2-5907-b9c9-3d707acd6d04",
+                "indicator--c864342a-63cb-546c-93ee-53fb710a01ff",
+                "indicator--d5f5e5e0-5fcc-55f4-900a-ebc2728a797b",
+                "indicator--afbfd812-db37-5c62-b90d-105134efc61f",
+                "indicator--43fed1ef-52b9-511f-aa5e-3c6f0af1be3a",
+                "indicator--fb94b57f-820b-53cf-840e-43d932fa49af",
+                "indicator--79db8436-c9c5-5e0a-ade1-b7abac22bc63",
+                "indicator--4f61bda2-b9a6-51b6-a184-e6799e5e3c8e",
+                "indicator--5782e02b-9d89-5a7d-a71e-aab73e716a7a",
+                "indicator--ae7a1ebf-9e95-5b72-9005-151f07b4358f",
+                "indicator--da6e3d3f-9fb9-5708-89dc-584980b25289",
+                "relationship--035ceff4-7c20-57c8-bb8d-4dd93de686d6",
+                "relationship--0f08aaaa-e893-570d-9e54-cccaa7aca418",
+                "relationship--0046bf0b-05fb-5e30-acff-4f1d57f3312b",
+                "relationship--664847ca-db63-58a5-95d0-251d9645ee2e",
+                "relationship--ff8d754b-dcd4-5ee0-97e7-52332699be83",
+                "relationship--fc24fe64-03c1-5009-9492-9858b6863f41",
+                "relationship--fc7f5ac9-f10f-56ae-afd1-de59684361cd",
+                "relationship--61baa65c-1285-50b2-bc56-b520cfd6779a",
+                "relationship--e93beef5-aa6f-5621-b8b6-ba871d52f602",
+                "relationship--cb99b0d5-5152-5f99-8b5d-b4d90475c219",
+                "relationship--9b8967d9-c48f-5bc0-ad4e-d8f3f7150dcf",
+                "relationship--0e4e7ce0-3b9f-5a6b-a013-c0b323b890b6",
+                "relationship--0bf11e91-bdae-5992-a0fa-d9d2cdcd5070",
+                "relationship--cc5e3404-3f3a-5f84-930f-3d4cd86416a4",
+                "relationship--30e7b4ed-e479-5f48-a209-889626cf5094",
+                "relationship--430efe19-123d-53e6-aaa1-046bd77d39a9",
+                "relationship--c1386d54-656b-542e-91a0-975342979bdc",
+                "relationship--226f8e3c-eea9-5b5f-9013-2df153d66b2b",
+                "relationship--86cf70e2-4258-57cf-9702-bbd8a64dd9b4",
+                "relationship--9f32f433-83f5-5fdd-b81b-05e250e8fe4b",
+                "relationship--18e71694-90bc-5e83-a1fb-426296d79229",
+                "relationship--1b2c3190-91f5-51a9-9b78-ae2983a09f05",
+                "relationship--80b81e96-e87e-53dd-a635-f50278cd531b",
+                "relationship--5a6f291b-1761-58ae-9fc1-401a995eaa69",
+                "relationship--3d79d8b2-6a76-50f7-abf7-1914a3bd99b1",
+                "relationship--6257f530-61fb-5da6-947e-2de73645606e",
+                "relationship--564464f4-d836-520f-930b-1a1b58ab0dfa",
+                "relationship--92eb9cdb-f3be-5bb0-92d8-fe4a9dfb1cb0",
+                "relationship--fc0b06ff-a203-591e-95c5-5c37c12cd1eb",
+                "relationship--608b336a-32b9-5fe2-ad17-ee0b34fcf880",
+                "relationship--5cfb6043-596b-50d2-8cd6-059060ae74a3",
+                "relationship--0e841c52-470e-5a61-8863-65c1c584f444",
+                "relationship--375c0546-31f9-5c3c-b924-4f3dac171b86",
+                "relationship--fe8cfe15-29bb-5c9c-b92c-8418a51ed9f0",
+                "relationship--7edd0bcd-390d-5ce4-8f62-a2f3f4e31dfd",
+                "relationship--00ed9c75-b1fc-5afa-b812-d965770c6724",
+                "relationship--1baf0aa3-59f4-5f25-b37a-8c3bc1350953",
+                "relationship--0f00d0de-bcc9-54b2-bbe3-b5b1d6f1cb80",
+                "relationship--4ed33db6-266f-560a-a51f-2e4b9fb6c1c1",
+                "relationship--5f5a0836-98e6-5104-8f3e-15bcedc6155d",
+                "relationship--c1f0440d-b462-5412-88f1-54ab525e1588",
+                "relationship--3d067e05-26d2-56a7-be6e-a939275d2bd2",
+                "relationship--2d79a483-b3e6-55af-b541-1503f7b6cae0",
+                "relationship--f22e7874-7954-5963-8e95-7474f7b2928f",
+                "relationship--705b8b39-d91e-5c0a-a407-6a991bbb7162",
+                "relationship--276aeab3-ea13-5afb-86e3-9f9e9f9116c7",
+                "relationship--32e0cd16-81e6-5c59-b587-7e6c854454b6",
+                "relationship--38497b3b-3bc7-5764-8aec-b99e308e3650",
+                "relationship--fc1b36b4-db9d-591e-90ce-4da39a02d63a",
+                "relationship--0eb81cb0-d633-5361-839a-9602007a278a",
+                "relationship--a38ee60c-fc89-5516-8ed5-db71b7b961e4",
+                "relationship--99d78318-6064-5048-89cd-49d91a87d274",
+                "relationship--efd4f817-f024-5ed6-864a-7e802246c57e",
+                "relationship--66aa69c9-a80b-5b1c-bcc9-29dbe31848c6",
+                "relationship--f8917cac-a26b-579e-a233-0a6d1a84a754",
+                "relationship--aaaa8df0-fd3e-57c0-ac4e-09de6da03829",
+                "relationship--3a540514-be0b-5ea3-95de-8e420fe984de",
+                "relationship--dad4439b-d657-51c8-8159-957d7340ccb4",
+                "relationship--eb06c240-4bb6-5595-8b50-f86c01d73252",
+                "relationship--f9a45f35-c027-5324-80c0-28706f6c3c1f",
+                "relationship--3dc635d2-4763-5eba-abc2-35ee6e2701f7",
+                "relationship--28c236dc-832e-5a58-bb2e-051fbf0b605a",
+                "relationship--be352af1-a95e-50e4-b839-f0314c264b91",
+                "relationship--824a8c0c-10d3-5d09-9762-0f277580257c",
+                "relationship--e1a36a89-0914-5e34-9856-c1820031012f",
+                "relationship--b866ccaf-d6a1-5ea3-8fe6-aae8060291e4",
+                "relationship--5367b295-9eb7-53a6-b129-af401e2cadfb",
+                "relationship--df078238-d901-5b78-b9c1-7a10c5e685ab",
+                "relationship--47c0e9e5-2ca0-514d-acdb-4785be36ee1c",
+                "relationship--efacf737-de7f-5daf-9c8c-281ad851df26",
+                "relationship--fcf372c6-2e12-5a2f-b361-d51e2d6fa9fb",
+                "relationship--1acdd5cf-6971-514d-a9ef-cd5e3d29f992",
+                "relationship--2e1cc12b-70ec-5004-820c-67c673ce729f",
+                "relationship--b044ec12-4183-52c5-8c5d-c8059fc4c347",
+                "relationship--20469aad-8989-5387-8a9b-984d080e0ebe",
+                "relationship--3125d637-2d1b-5bc0-9aa1-7f519cb285fd",
+                "relationship--a3b54a54-9c34-56d3-bd88-b1b78efa1297"
+            ],
+            "object_marking_refs": [
+                "marking-definition--613f2e26-407d-48c7-9eca-b8e91df99dc9"
+            ]
+        }
+    ]
+}

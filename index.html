@@ -1,0 +1,1175 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Treylon Wofford</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: header, then two equal columns of project tiles. Opening a tile expands it in place
+   and widens its column to ~80%; then a three-up "Additional work" row and publications. */
+:root {
+  --bg: #F3F4F1;
+  --surface: #FFFFFF;
+  --ink: #16191B;
+  --muted: #5B6360;
+  --line: #DADED8;
+  --accent: #1F5BD6;
+  --accent-soft: #E4EBFA;
+  --shade: rgba(10, 14, 18, .66);
+  --logo-plate: transparent;
+  --low: #14975A; --caution: #B58900; --high: #D9631A; --critical: #D7263D;
+  --c-credentials: #D6336C; --c-payment_redirect: #D9631A; --c-odd_payment: #B58900; --c-link: #1C7ED6; --c-urgency: #7C3AED;
+  --c-threat: #D7263D; --c-impersonation: #0F9A92; --c-too_good: #5C940D; --c-rapport: #C2255C; --c-secrecy: #5F6B7A;
+  --f-display: "Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "IBM Plex Sans", "Segoe UI", Roboto, Arial, sans-serif;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+  --radius: 14px;
+  --ease: cubic-bezier(.2, .7, .2, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111416; --surface: #181C1F; --ink: #E9ECEA; --muted: #9AA39F;
+    --line: #2A3033; --accent: #86A8F5; --accent-soft: #1B2540; color-scheme: dark; --logo-plate: #E9ECEA;
+    --low: #2FBF71; --caution: #F2C94C; --high: #FF8A3D; --critical: #FF4D5E;
+    --c-credentials: #FF6B8B; --c-payment_redirect: #FF8A3D; --c-odd_payment: #F2C94C; --c-link: #5AB0FF; --c-urgency: #C084FC;
+    --c-threat: #FF4D5E; --c-impersonation: #38D0C8; --c-too_good: #A3E635; --c-rapport: #F472B6; --c-secrecy: #94A3B8;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111416; --surface: #181C1F; --ink: #E9ECEA; --muted: #9AA39F;
+  --line: #2A3033; --accent: #86A8F5; --accent-soft: #1B2540; color-scheme: dark; --logo-plate: #E9ECEA;
+    --low: #2FBF71; --caution: #F2C94C; --high: #FF8A3D; --critical: #FF4D5E;
+    --c-credentials: #FF6B8B; --c-payment_redirect: #FF8A3D; --c-odd_payment: #F2C94C; --c-link: #5AB0FF; --c-urgency: #C084FC;
+    --c-threat: #FF4D5E; --c-impersonation: #38D0C8; --c-too_good: #A3E635; --c-rapport: #F472B6; --c-secrecy: #94A3B8;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font: 400 16.5px/1.6 var(--f-body); }
+a { color: var(--accent); text-underline-offset: 3px; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+h1, h2, h3, h4 { margin: 0; font-family: var(--f-display); text-wrap: balance; }
+p { margin: 0; }
+button { font: inherit; color: inherit; }
+
+.wrap {
+  max-width: 1240px; margin: 0 auto;
+  padding-left: max(24px, env(safe-area-inset-left, 0px));
+  padding-right: max(24px, env(safe-area-inset-right, 0px));
+  padding-block: 76px 48px;
+}
+
+/* ---------- header ---------- */
+header { display: grid; gap: 22px; padding-bottom: 72px; }
+.top { display: flex; justify-content: space-between; align-items: flex-start; gap: 24px 40px; flex-wrap: wrap; }
+.id { display: flex; align-items: center; gap: 24px; flex: 1 1 520px; min-width: 0; }
+.photo { width: 140px; height: 140px; flex: none; display: block; background: var(--line); padding: 3px;
+  clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%); }
+.photo svg { display: block; width: 100%; height: 100%; clip-path: polygon(50% 0, 93.3% 25%, 93.3% 75%, 50% 100%, 6.7% 75%, 6.7% 25%); }
+.who { display: grid; gap: 10px; min-width: 0; }
+h1 { font-size: clamp(40px, 6.5vw, 68px); line-height: 1.02; font-weight: 700; letter-spacing: -.025em; }
+.edu { list-style: none; margin: 0; padding: 0; display: grid; gap: 3px; color: var(--muted); font-size: 15.5px; line-height: 1.45; }
+.edu strong { color: var(--ink); font-weight: 600; }
+.edu .adv { margin-bottom: 6px; font-size: 14.5px; }
+.affil { display: flex; gap: 14px; padding-top: 10px; align-items: center; }
+.logo-img { height: 72px; width: auto; max-width: 100%; display: block; }
+.logo-img.logo-sm { height: 40px; box-sizing: content-box; padding: 7px 9px; border-radius: 8px; background: var(--logo-plate); }
+.logo { height: 44px; padding: 0 14px; border-radius: 8px; border: 1px dashed var(--line); display: grid; place-items: center;
+  font: 500 11px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.oneliner { max-width: 900px; margin: 0 auto; text-align: center; font-size: 21px; line-height: 1.5; text-wrap: balance; }
+.contact { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.contact a { padding: 10px 20px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  color: var(--ink); text-decoration: none; font-weight: 600; font-size: 15px; transition: border-color .15s, color .15s, background .15s; }
+.contact a:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-soft); }
+
+.label { font: 700 clamp(26px, 3vw, 34px)/1.2 var(--f-display); text-align: center; letter-spacing: -.015em; }
+.label.sm { font-size: 24px; }
+
+/* ---------- tiles ---------- */
+.tile-wrap { position: relative; min-width: 0; transition: transform .25s var(--ease); }
+.tile-wrap:hover { transform: translateY(-2px); }
+.tile { position: relative; display: block; width: 100%; padding: 0; border: 0; cursor: pointer; text-align: left;
+  border-radius: var(--radius); overflow: hidden; background: #101416; aspect-ratio: 16 / 7; max-width: 100%;
+  transition: box-shadow .25s var(--ease); }
+.tile:hover { box-shadow: 0 10px 28px -14px rgba(10, 20, 40, .45); }
+.tile video, .frame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; background: #101416; }
+.frame video { object-fit: contain; }
+.tile canvas, .frame canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.tile .name { position: absolute; left: 0; right: 0; bottom: 0; z-index: 1; padding: 36px 18px 14px; color: #fff;
+  background: linear-gradient(to top, var(--shade), transparent); font: 500 19px/1.25 var(--f-body); }
+.tile .sub { display: block; font-size: 13px; opacity: .85; margin-top: 3px; }
+.tile .years { position: absolute; top: 10px; right: 10px; z-index: 1; font: 500 12px/1 var(--f-mono); color: #fff;
+  background: rgba(10, 14, 18, .55); padding: 5px 7px; border-radius: 4px; font-variant-numeric: tabular-nums; }
+.tile.soon { background: var(--accent-soft); border: 1px dashed var(--accent); }
+.tile.soon .name { background: none; color: var(--ink); }
+.tile.soon .sub { color: var(--muted); opacity: 1; }
+.tile.soon .years { background: var(--surface); color: var(--muted); }
+.tile.soon::before { content: attr(data-badge); position: absolute; top: 14px; left: 18px; font: 500 12px var(--f-mono); color: var(--accent); }
+.paper-btn { position: absolute; right: 12px; bottom: 12px; z-index: 2; font: 600 13px/1 var(--f-body); color: #16191B;
+  text-decoration: none; background: rgba(255, 255, 255, .94); padding: 7px 11px; border-radius: 999px; box-shadow: 0 1px 3px rgba(0,0,0,.25); }
+.paper-btn:hover { color: #1F5BD6; }
+.tile-wrap.has-paper .name { padding-right: 86px; }
+
+/* ---------- two columns ---------- */
+.columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 48px; align-items: start;
+  transition: grid-template-columns .5s var(--ease); }
+.columns[data-open="a"] { grid-template-columns: minmax(0, 4fr) minmax(0, 1fr); }
+.columns[data-open="b"] { grid-template-columns: minmax(0, 1fr) minmax(0, 4fr); }
+.col { display: grid; gap: 22px; min-width: 0; align-content: start; }
+.col-list { display: grid; gap: 28px; }
+/* widened column: other tiles get shorter so the open project stays the focus */
+.columns[data-open="a"] [data-col="a"] .tile, .columns[data-open="b"] [data-col="b"] .tile { aspect-ratio: 16 / 4.5; }
+/* narrowed column: compact tiles */
+.columns[data-open="a"] [data-col="b"] .tile, .columns[data-open="b"] [data-col="a"] .tile { aspect-ratio: 4 / 3; }
+.columns[data-open="a"] [data-col="b"] .name, .columns[data-open="b"] [data-col="a"] .name { font-size: 15px; padding: 28px 12px 10px; }
+.columns[data-open="a"] [data-col="b"] .sub, .columns[data-open="b"] [data-col="a"] .sub,
+.columns[data-open="a"] [data-col="b"] .paper-btn, .columns[data-open="b"] [data-col="a"] .paper-btn { display: none; }
+
+/* ---------- expanded project ---------- */
+.panel { border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line);
+  padding: 24px 26px 28px; display: grid; gap: 18px; scroll-margin-top: 20px; animation: open .45s var(--ease); }
+@keyframes open { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.panel-head { display: flex; align-items: start; justify-content: space-between; gap: 16px; }
+.panel h3 { font-size: clamp(22px, 2.6vw, 28px); font-weight: 700; line-height: 1.2; }
+.meta, .authors { font-size: 14px; color: var(--muted); margin-top: 6px; }
+.authors { margin-top: 4px; }
+.authors strong { color: var(--ink); font-weight: 600; }
+.close { flex: none; width: 36px; height: 36px; border-radius: 50%; border: 1px solid var(--line); background: var(--bg);
+  cursor: pointer; color: var(--muted); display: grid; place-items: center; padding: 0; }
+.close:hover { color: var(--ink); border-color: var(--muted); }
+.media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.media figure { margin: 0; display: grid; gap: 6px; min-width: 0; }
+.media figure.wide { grid-column: 1 / -1; }
+.media figcaption { font-size: 13px; color: var(--muted); }
+.frame { position: relative; aspect-ratio: 16 / 9; max-width: 100%; border-radius: 10px; overflow: hidden; background: #101416; }
+.frame .badge { position: absolute; top: 8px; left: 10px; z-index: 1; font: 500 10.5px var(--f-mono); letter-spacing: .06em;
+  text-transform: uppercase; color: #fff; background: rgba(0,0,0,.45); padding: 3px 6px; border-radius: 4px; }
+.blurb { max-width: 68ch; display: grid; gap: 10px; }
+.role { max-width: 68ch; font-size: 15px; color: var(--muted); }
+.role span { font-weight: 600; color: var(--ink); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; list-style: none; margin: 0; padding: 0; }
+.tags li { font: 500 12px/1 var(--f-mono); color: var(--accent); background: var(--accent-soft); padding: 6px 8px; border-radius: 4px; }
+.links { display: flex; flex-wrap: wrap; gap: 8px 20px; font-weight: 500; font-size: 15px; }
+
+/* ---------- live Tells demo inside the panel ---------- */
+.demo { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 20px; align-items: start;
+  border: 1px solid var(--line); border-radius: 12px; padding: 18px; background: var(--bg); }
+.demo-in { display: grid; gap: 10px; min-width: 0; }
+.demo .live { display: inline-flex; align-items: center; gap: 7px; font: 500 12px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.demo .live::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--low); }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { font-size: 13px; padding: 5px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+.chips button:hover { border-color: var(--accent); color: var(--accent); }
+.chips button.on { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.demo textarea { width: 100%; min-height: 168px; resize: vertical; font: 400 14px/1.5 var(--f-body); color: var(--ink);
+  background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 10px 12px; }
+.demo textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.demo-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.btn { font-weight: 600; font-size: 14px; padding: 8px 16px; border-radius: 999px; cursor: pointer; border: 1px solid var(--accent); background: var(--accent); color: var(--surface); }
+.btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
+.demo .hint { font-size: 12.5px; color: var(--muted); }
+.demo-out { display: grid; gap: 14px; min-width: 0; }
+.res-top { display: flex; gap: 16px; align-items: center; }
+.gauge { position: relative; width: 108px; height: 108px; flex: none; }
+.gauge svg { display: block; transform: rotate(-90deg); }
+.gauge .num { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+.gauge b { display: block; font: 700 30px/1 var(--f-mono); font-variant-numeric: tabular-nums; }
+.gauge small { font-size: 11px; color: var(--muted); }
+.rating { display: inline-block; font: 600 12px/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: #fff; padding: 6px 9px; border-radius: 5px; }
+.archetype { font-weight: 600; margin-top: 6px; }
+.res-sum { font-size: 14px; color: var(--muted); margin-top: 2px; }
+.demo .lbl { font: 500 11.5px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.flags { display: grid; gap: 7px; }
+.flag { border: 1px solid var(--line); border-left: 4px solid var(--fc); border-radius: 8px; padding: 8px 11px; background: var(--surface); }
+.flag .hd { display: flex; justify-content: space-between; gap: 10px; font-weight: 600; font-size: 14px; }
+.flag .pts { font: 600 12px var(--f-mono); color: var(--fc); white-space: nowrap; }
+.flag .ev { font-size: 12.5px; color: var(--muted); margin-top: 3px; overflow-wrap: anywhere; }
+.flag .why { font-size: 13px; color: var(--muted); margin-top: 3px; }
+.hlmsg { font-size: 14px; line-height: 1.6; white-space: pre-wrap; overflow-wrap: anywhere; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; }
+mark.hl { background: color-mix(in srgb, var(--fc) 24%, transparent); color: var(--ink); border-bottom: 2px solid var(--fc); border-radius: 3px; padding: 0 1px; transition: opacity .15s; }
+mark.hl.dim { opacity: .35; }
+.steps { margin: 0; padding-left: 20px; font-size: 14px; display: grid; gap: 3px; }
+@media (max-width: 900px) { .demo { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- additional + pubs ---------- */
+.additional { display: grid; gap: 18px; padding-top: 96px; }
+.additional-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; align-items: start; }
+.additional-list .tile { aspect-ratio: 16 / 9; }
+.additional-list .panel { grid-column: 1 / -1; }
+.pubs-section { display: grid; gap: 18px; padding-top: 96px; }
+.pubs { list-style: none; margin: 0 auto; padding: 0; width: 100%; max-width: 920px; }
+.pubs li { display: grid; grid-template-columns: 3.5rem minmax(0, 1fr); gap: 16px; padding-block: 16px; border-top: 1px solid var(--line); }
+.pubs li:first-child { border-top: 0; }
+.pubs .yr { font: 500 14px/1.7 var(--f-mono); color: var(--muted); font-variant-numeric: tabular-nums; }
+.pubs .t { font-weight: 600; color: var(--ink); text-decoration: none; }
+.pubs .t:hover { color: var(--accent); text-decoration: underline; }
+.pubs .a { margin-top: 4px; font-size: 15px; color: var(--muted); }
+.pubs .a strong { color: var(--ink); }
+.pubs .v { margin-top: 2px; font-size: 14px; color: var(--muted); font-style: italic; }
+.pubs .v a { font-style: normal; }
+
+footer { margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--line); display: flex; flex-wrap: wrap;
+  justify-content: space-between; gap: 12px; font-size: 14px; color: var(--muted); }
+
+@media (max-width: 760px) {
+  .wrap { padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 62px 40px; }
+  .id { gap: 16px; align-items: start; }
+  .photo { width: 84px; height: 84px; }
+  .affil { padding-top: 0; }
+  .logo-img { height: 56px; }
+  .logo-img.logo-sm { height: 32px; }
+  .oneliner { font-size: 18px; }
+  .columns, .columns[data-open="a"], .columns[data-open="b"] { grid-template-columns: minmax(0, 1fr); }
+  .columns[data-open] .col .tile { aspect-ratio: 16 / 7; }
+  .columns[data-open] .col .name { font-size: 19px; padding: 36px 18px 14px; }
+  .columns[data-open] .col .sub, .columns[data-open] .col .paper-btn { display: block; }
+  .additional-list { grid-template-columns: minmax(0, 1fr); }
+  .media { grid-template-columns: minmax(0, 1fr); }
+  .panel { padding: 18px; }
+  .pubs li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+}
+/* morph animation between layouts (browsers with View Transitions) */
+::view-transition-group(*) { animation-duration: .42s; animation-timing-function: cubic-bezier(.3, 0, .1, 1); }
+::view-transition-old(*), ::view-transition-new(*) { animation-duration: inherit; animation-timing-function: inherit; }
+::view-transition-old(root) { display: none; }
+::view-transition-new(root) { animation: none; }
+.vt .columns { transition: none; }
+.morph .panel { animation: none; }
+/* ---------- light / dark switch ---------- */
+.theme-toggle { position: fixed; z-index: 20;
+  top: calc(16px + env(safe-area-inset-top, 0px)); left: calc(16px + env(safe-area-inset-left, 0px));
+  width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line); background: var(--surface);
+  color: var(--ink); display: grid; place-items: center; padding: 0; cursor: pointer;
+  box-shadow: 0 2px 8px -2px rgba(10, 20, 40, .18); transition: color .15s, border-color .15s, transform .2s var(--ease); }
+.theme-toggle:hover { color: var(--accent); border-color: var(--accent); }
+.theme-toggle:active { transform: scale(.94); }
+.theme-toggle svg { width: 19px; height: 19px; }
+.theme-toggle .sun { display: none; }
+.is-dark .theme-toggle .sun { display: block; }
+.is-dark .theme-toggle .moon { display: none; }
+@media (max-width: 760px) { .theme-toggle { top: calc(12px + env(safe-area-inset-top, 0px)); left: calc(12px + env(safe-area-inset-left, 0px)); width: 38px; height: 38px; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .columns, .tile, .tile-wrap { transition: none; }
+  .panel { animation: none; }
+  .tile-wrap:hover { transform: none; }
+}
+</style>
+
+<button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch to dark mode">
+  <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+  <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M2.5 12h2.2M19.3 12h2.2M5.3 5.3l1.6 1.6M17.1 17.1l1.6 1.6M5.3 18.7l1.6-1.6M17.1 6.9l1.6-1.6"/></svg>
+</button>
+
+<div class="wrap">
+  <header>
+    <div class="top">
+      <div class="id">
+        <div class="photo" role="img" aria-label="Pixel-art avatar of a hooded investigator with a glowing visor"><svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" shape-rendering="crispEdges"><defs><linearGradient id="nftbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b1f7a"/><stop offset=".55" stop-color="#16346b"/><stop offset="1" stop-color="#0b5a63"/></linearGradient></defs><rect width="24" height="24" fill="url(#nftbg)"/><rect x="1" y="2" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="3" y="2" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="2" y="4" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="20" y="3" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="22" y="5" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="21" y="1" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="1" y="15" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="2" y="17" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="21" y="15" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="22" y="13" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="19" y="7" width="1" height="1" fill="#ffffff" opacity=".14"/><rect x="4" y="7" width="1" height="1" fill="#ffffff" opacity=".14"/><path d="M1.5 3.5H3.5M2.5 3.5V4.5M20.5 2.5V5.5H22.5M21.5 14.5H22.5V13.5M1.5 16.5H2.5V17.5" stroke="#2fe0d0" stroke-width=".3" opacity=".45" fill="none"/><rect x="9" y="2" width="6" height="1" fill="#1c2240"/><rect x="7" y="3" width="10" height="1" fill="#1c2240"/><rect x="6" y="4" width="4" height="1" fill="#1c2240"/><rect x="10" y="4" width="4" height="1" fill="#3d4a8a"/><rect x="14" y="4" width="4" height="1" fill="#1c2240"/><rect x="5" y="5" width="3" height="1" fill="#1c2240"/><rect x="8" y="5" width="2" height="1" fill="#3d4a8a"/><rect x="10" y="5" width="4" height="1" fill="#2b3566"/><rect x="14" y="5" width="2" height="1" fill="#3d4a8a"/><rect x="16" y="5" width="3" height="1" fill="#1c2240"/><rect x="5" y="6" width="2" height="1" fill="#1c2240"/><rect x="7" y="6" width="2" height="1" fill="#3d4a8a"/><rect x="9" y="6" width="6" height="1" fill="#2b3566"/><rect x="15" y="6" width="2" height="1" fill="#3d4a8a"/><rect x="17" y="6" width="2" height="1" fill="#1c2240"/><rect x="4" y="7" width="2" height="1" fill="#1c2240"/><rect x="6" y="7" width="2" height="1" fill="#3d4a8a"/><rect x="8" y="7" width="3" height="1" fill="#2b3566"/><rect x="11" y="7" width="2" height="1" fill="#b57a52"/><rect x="13" y="7" width="3" height="1" fill="#2b3566"/><rect x="16" y="7" width="2" height="1" fill="#3d4a8a"/><rect x="18" y="7" width="2" height="1" fill="#1c2240"/><rect x="4" y="8" width="2" height="1" fill="#1c2240"/><rect x="6" y="8" width="1" height="1" fill="#3d4a8a"/><rect x="7" y="8" width="2" height="1" fill="#2b3566"/><rect x="9" y="8" width="6" height="1" fill="#b57a52"/><rect x="15" y="8" width="2" height="1" fill="#2b3566"/><rect x="17" y="8" width="1" height="1" fill="#3d4a8a"/><rect x="18" y="8" width="2" height="1" fill="#1c2240"/><rect x="4" y="9" width="2" height="1" fill="#1c2240"/><rect x="6" y="9" width="1" height="1" fill="#3d4a8a"/><rect x="7" y="9" width="1" height="1" fill="#2b3566"/><rect x="8" y="9" width="8" height="1" fill="#b57a52"/><rect x="16" y="9" width="1" height="1" fill="#2b3566"/><rect x="17" y="9" width="1" height="1" fill="#3d4a8a"/><rect x="18" y="9" width="2" height="1" fill="#1c2240"/><rect x="3" y="10" width="2" height="1" fill="#1c2240"/><rect x="5" y="10" width="1" height="1" fill="#3d4a8a"/><rect x="6" y="10" width="12" height="1" fill="#0a1a2a"/><rect x="18" y="10" width="1" height="1" fill="#3d4a8a"/><rect x="19" y="10" width="2" height="1" fill="#1c2240"/><rect x="3" y="11" width="2" height="1" fill="#1c2240"/><rect x="5" y="11" width="1" height="1" fill="#3d4a8a"/><rect x="6" y="11" width="1" height="1" fill="#0a1a2a"/><rect x="7" y="11" width="1" height="1" fill="#2fe0d0"/><rect x="8" y="11" width="2" height="1" fill="#e9fffc"/><rect x="10" y="11" width="4" height="1" fill="#2fe0d0"/><rect x="14" y="11" width="1" height="1" fill="#e9fffc"/><rect x="15" y="11" width="2" height="1" fill="#2fe0d0"/><rect x="17" y="11" width="1" height="1" fill="#0a1a2a"/><rect x="18" y="11" width="1" height="1" fill="#3d4a8a"/><rect x="19" y="11" width="2" height="1" fill="#1c2240"/><rect x="3" y="12" width="2" height="1" fill="#1c2240"/><rect x="5" y="12" width="1" height="1" fill="#3d4a8a"/><rect x="6" y="12" width="1" height="1" fill="#0a1a2a"/><rect x="7" y="12" width="1" height="1" fill="#0f7f86"/><rect x="8" y="12" width="1" height="1" fill="#2fe0d0"/><rect x="9" y="12" width="1" height="1" fill="#0f7f86"/><rect x="10" y="12" width="1" height="1" fill="#2fe0d0"/><rect x="11" y="12" width="1" height="1" fill="#0f7f86"/><rect x="12" y="12" width="1" height="1" fill="#2fe0d0"/><rect x="13" y="12" width="3" height="1" fill="#0f7f86"/><rect x="16" y="12" width="1" height="1" fill="#2fe0d0"/><rect x="17" y="12" width="1" height="1" fill="#0a1a2a"/><rect x="18" y="12" width="1" height="1" fill="#3d4a8a"/><rect x="19" y="12" width="2" height="1" fill="#1c2240"/><rect x="4" y="13" width="1" height="1" fill="#1c2240"/><rect x="5" y="13" width="1" height="1" fill="#3d4a8a"/><rect x="6" y="13" width="12" height="1" fill="#0a1a2a"/><rect x="18" y="13" width="1" height="1" fill="#3d4a8a"/><rect x="19" y="13" width="1" height="1" fill="#1c2240"/><rect x="4" y="14" width="1" height="1" fill="#1c2240"/><rect x="5" y="14" width="1" height="1" fill="#3d4a8a"/><rect x="6" y="14" width="1" height="1" fill="#2b3566"/><rect x="7" y="14" width="10" height="1" fill="#b57a52"/><rect x="17" y="14" width="1" height="1" fill="#2b3566"/><rect x="18" y="14" width="1" height="1" fill="#3d4a8a"/><rect x="19" y="14" width="1" height="1" fill="#1c2240"/><rect x="4" y="15" width="2" height="1" fill="#1c2240"/><rect x="6" y="15" width="2" height="1" fill="#2b3566"/><rect x="8" y="15" width="8" height="1" fill="#b57a52"/><rect x="16" y="15" width="2" height="1" fill="#2b3566"/><rect x="18" y="15" width="2" height="1" fill="#1c2240"/><rect x="5" y="16" width="1" height="1" fill="#1c2240"/><rect x="6" y="16" width="1" height="1" fill="#3d4a8a"/><rect x="7" y="16" width="1" height="1" fill="#2b3566"/><rect x="8" y="16" width="1" height="1" fill="#9a6442"/><rect x="9" y="16" width="2" height="1" fill="#b57a52"/><rect x="11" y="16" width="3" height="1" fill="#5a3424"/><rect x="14" y="16" width="1" height="1" fill="#b57a52"/><rect x="15" y="16" width="1" height="1" fill="#9a6442"/><rect x="16" y="16" width="1" height="1" fill="#2b3566"/><rect x="17" y="16" width="1" height="1" fill="#3d4a8a"/><rect x="18" y="16" width="1" height="1" fill="#1c2240"/><rect x="5" y="17" width="2" height="1" fill="#1c2240"/><rect x="7" y="17" width="1" height="1" fill="#3d4a8a"/><rect x="8" y="17" width="1" height="1" fill="#2b3566"/><rect x="9" y="17" width="6" height="1" fill="#b57a52"/><rect x="15" y="17" width="1" height="1" fill="#2b3566"/><rect x="16" y="17" width="1" height="1" fill="#3d4a8a"/><rect x="17" y="17" width="2" height="1" fill="#1c2240"/><rect x="4" y="18" width="4" height="1" fill="#1c2240"/><rect x="8" y="18" width="3" height="1" fill="#2b3566"/><rect x="11" y="18" width="2" height="1" fill="#9a6442"/><rect x="13" y="18" width="3" height="1" fill="#2b3566"/><rect x="16" y="18" width="4" height="1" fill="#1c2240"/><rect x="3" y="19" width="5" height="1" fill="#1c2240"/><rect x="8" y="19" width="1" height="1" fill="#f2b84b"/><rect x="9" y="19" width="1" height="1" fill="#3d4a8a"/><rect x="10" y="19" width="1" height="1" fill="#c9d3e6"/><rect x="11" y="19" width="3" height="1" fill="#2b3566"/><rect x="14" y="19" width="1" height="1" fill="#c9d3e6"/><rect x="15" y="19" width="1" height="1" fill="#1c2240"/><rect x="16" y="19" width="1" height="1" fill="#f2b84b"/><rect x="17" y="19" width="4" height="1" fill="#1c2240"/><rect x="1" y="20" width="8" height="1" fill="#1c2240"/><rect x="9" y="20" width="1" height="1" fill="#f2b84b"/><rect x="10" y="20" width="1" height="1" fill="#c9d3e6"/><rect x="11" y="20" width="3" height="1" fill="#1c2240"/><rect x="14" y="20" width="1" height="1" fill="#c9d3e6"/><rect x="15" y="20" width="1" height="1" fill="#f2b84b"/><rect x="16" y="20" width="7" height="1" fill="#1c2240"/><rect x="0" y="21" width="10" height="1" fill="#1c2240"/><rect x="10" y="21" width="1" height="1" fill="#c9d3e6"/><rect x="11" y="21" width="3" height="1" fill="#f2b84b"/><rect x="14" y="21" width="1" height="1" fill="#c9d3e6"/><rect x="15" y="21" width="9" height="1" fill="#1c2240"/><rect x="0" y="22" width="11" height="1" fill="#1c2240"/><rect x="11" y="22" width="1" height="1" fill="#f2b84b"/><rect x="12" y="22" width="1" height="1" fill="#b8822a"/><rect x="13" y="22" width="1" height="1" fill="#f2b84b"/><rect x="14" y="22" width="10" height="1" fill="#1c2240"/><rect x="0" y="23" width="11" height="1" fill="#1c2240"/><rect x="11" y="23" width="1" height="1" fill="#f2b84b"/><rect x="12" y="23" width="1" height="1" fill="#b8822a"/><rect x="13" y="23" width="1" height="1" fill="#f2b84b"/><rect x="14" y="23" width="10" height="1" fill="#1c2240"/></svg></div>
+        <div class="who">
+          <h1>Treylon Wofford</h1>
+          <ul class="edu">
+            <li class="adv"><strong>Financial crime, threat intelligence &amp; AI</strong></li>
+            <li><strong>Currently:</strong> independent investigations into crypto theft and state-sponsored cybercrime</li>
+            <li><strong>Focus:</strong> blockchain tracing, threat intelligence, fraud and AML detection, and AI tools that show their evidence</li>
+          </ul>
+        </div>
+      </div>
+      <div class="affil" aria-label="Affiliations"><img class="logo-img" src="media/uat-logo.png" alt="University of Advancing Technology" width="72" height="72"><img class="logo-img logo-sm" src="media/logo-2.png" alt="Bank of America" width="48" height="26"></div>
+    </div>
+    <p class="oneliner">I work where cybercrime, crypto and AI meet: tracing stolen funds, profiling the actors behind them, and building detection that analysts can trust.</p>
+    <nav class="contact" aria-label="Contact">
+      <a href="https://www.linkedin.com/in/treylon-wofford/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://scholar.google.com/citations?user=nhwWLhkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+      <a href="https://github.com/treylonwofford" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <div class="columns" id="columns">
+    <section class="col" data-col="a" aria-labelledby="col-a-h">
+      <h2 class="label" id="col-a-h" style="view-transition-name: lbl-a"></h2>
+      <div class="col-list" id="list-a"></div>
+    </section>
+    <section class="col" data-col="b" aria-labelledby="col-b-h">
+      <h2 class="label" id="col-b-h" style="view-transition-name: lbl-b"></h2>
+      <div class="col-list" id="list-b"></div>
+    </section>
+  </div>
+
+  <section class="additional" aria-labelledby="add-h">
+    <h2 class="label sm" id="add-h">Additional work</h2>
+    <div class="additional-list" id="list-c"></div>
+  </section>
+
+  <section class="pubs-section" aria-labelledby="pubs-h">
+    <h2 class="label sm" id="pubs-h">Publications</h2>
+    <ol class="pubs" id="pubs"></ol>
+  </section>
+
+  <footer>
+    <span>© 2026 Treylon Wofford</span>
+    <span><a href="https://www.linkedin.com/in/treylon-wofford/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=nhwWLhkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://github.com/treylonwofford" target="_blank" rel="noopener">GitHub</a></span>
+  </footer>
+</div>
+
+<script>
+/* Tells engine (from the Tells project) */
+/*!
+ * Tells — explainable scam message triage engine
+ * Works in the browser (window.Tells) and in Node (module.exports).
+ *
+ * Design principles
+ *  1. Score intent, not grammar. Nothing here looks at spelling or typos,
+ *     so a perfectly written AI scam is judged the same as a sloppy one.
+ *  2. Risk comes from combinations. Pressure language alone ("ASAP",
+ *     "urgent") is everywhere in normal life. It only becomes risky when it
+ *     is paired with an ASK: send money, share info, or click a link.
+ *  3. Every point of score is traceable to a flag, and every flag shows the
+ *     exact words that triggered it plus a plain-English reason.
+ */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else root.Tells = factory();
+})(typeof self !== "undefined" ? self : this, function () {
+  "use strict";
+
+  // kind: "ask"      = the message wants something from you
+  //       "pressure" = the message is pushing you or building a pretext
+  const SIGNALS = [
+    {
+      id: "credentials",
+      label: "Asks for codes, passwords or personal info",
+      kind: "ask",
+      weight: 26,
+      why: "Real banks, employers and delivery services don't ask you to confirm passwords, one-time codes, card numbers or your SSN over text or email.",
+      patterns: [
+        /\b(verify|confirm|validate|update|re-?activate)\s+(your\s+)?(account|identity|information|details|payment(\s+method)?|login|card)\b/gi,
+        /\b(password|passcode|PIN|CVV|security\s+code|social\s+security(\s+number)?|SSN|date\s+of\s+birth|card\s+number|login\s+details|credentials)\b/gi,
+        /\b(send|reply\s+with|read|tell|give)\s+(me\s+|us\s+)?(back\s+)?(the\s+|that\s+|your\s+)?(\d-digit\s+)?(code|verification\s+code|one[- ]time\s+code|OTP)\b/gi,
+        /\b(verification|one[- ]time|OTP)\s+code\b/gi,
+      ],
+    },
+    {
+      id: "payment_redirect",
+      label: "Redirects a payment to new account details",
+      kind: "ask",
+      weight: 28,
+      why: "Changing where money should go — especially by email or text — is the core move of invoice and business email compromise fraud. Always confirm bank changes by calling a number you already have.",
+      patterns: [
+        /\b(our|the|my)\s+(bank(ing)?\s+(details|information|account)?|account\s+details|payment\s+details)\s+(has|have)\s+(changed|been\s+updated)\b/gi,
+        /\b(bank|banking)\s+has\s+changed\b/gi,
+        /\b(new|updated|different)\s+(bank(ing)?\s+)?(account|bank\s+details|payment\s+details|routing|wire\s+instructions)\b/gi,
+        /\b(routing(\s+number)?|account\s*(no\.?|number|#)?|IBAN|SWIFT|sort\s+code)\s*[:#]?\s*\d{4,}/gi,
+        /\b(wire|transfer|remit|send)\s+(the\s+)?(payment|funds|money|invoice|balance)\b/gi,
+      ],
+    },
+    {
+      id: "odd_payment",
+      label: "Wants payment by gift card, crypto or cash app",
+      kind: "ask",
+      weight: 24,
+      why: "Gift cards, crypto and peer-to-peer apps are nearly impossible to reverse. That's why scammers ask for them and legitimate businesses and agencies almost never do.",
+      patterns: [
+        /\b(gift\s*cards?|apple\s+cards?|google\s+play\s+cards?|itunes|steam\s+cards?|amazon\s+cards?)\b/gi,
+        /\b(send|pay|deposit|transfer|buy)\b[^.]{0,40}\b(bitcoin|BTC|USDT|tether|crypto(currency)?|ethereum|ETH)\b/gi,
+        /\b(wallet\s+address|crypto\s+ATM|bitcoin\s+ATM)\b/gi,
+        /\b(zelle|cash\s*app|venmo|western\s+union|moneygram)\b/gi,
+        /\bphotos?\s+of\s+the\s+(codes?|cards?|back)\b/gi,
+      ],
+    },
+    {
+      id: "link",
+      label: "Pushes you to a suspicious link",
+      kind: "ask",
+      weight: 18,
+      why: "The link is where the theft happens. Look-alike domains, link shorteners and odd endings like .top or .info are common in phishing. Go to the company's site yourself instead.",
+      // Links are handled specially in analyze() so we can grade the domain.
+      patterns: [],
+    },
+    {
+      id: "urgency",
+      label: "Creates urgency or a deadline",
+      kind: "pressure",
+      weight: 14,
+      why: "A ticking clock is designed to stop you from pausing to check. On its own it's common, but paired with an ask it's a classic pressure tactic.",
+      patterns: [
+        /\b(urgent(ly)?|immediately|right\s+away|asap|act\s+now|final\s+notice|last\s+chance|expires?\s+(today|soon|tonight)|time[- ]sensitive|today\s+only|before\s+it'?s\s+too\s+late)\b/gi,
+        /\bwithin\s+\d+\s*(hours?|hrs?|minutes?|mins?|days?)\b/gi,
+        /\b(by\s+)?(end\s+of\s+(the\s+)?day|EOD|today)\b(?=[^.]*\b(pay|send|verify|confirm|update|process|wire|transfer|click)\b)/gi,
+      ],
+    },
+    {
+      id: "threat",
+      label: "Threatens a consequence",
+      kind: "pressure",
+      weight: 14,
+      why: "Fear of losing access, money or freedom (suspension, fines, arrest) is used to rush you into acting before you think.",
+      patterns: [
+        /\b(suspend(ed|sion)?|lock(ed)?|frozen|deactivat(ed|ion)|terminat(ed|ion)|closed|disabled|restricted)\b/gi,
+        /\b(legal\s+action|arrest|warrant|lawsuit|penalt(y|ies)|fines?|late\s+fees?|collections)\b/gi,
+        /\b(will\s+be\s+returned|returned\s+to\s+sender)\b/gi,
+        /\b(failure\s+to|if\s+you\s+(do\s+not|don'?t))\s+\w+/gi,
+      ],
+    },
+    {
+      id: "impersonation",
+      label: "Claims to be a trusted company or authority",
+      kind: "pressure",
+      weight: 12,
+      why: "Scammers borrow the trust of banks, government agencies, delivery companies and your own executives. The name in a message proves nothing; verify through a channel you already know.",
+      patterns: [
+        /\b(IRS|social\s+security\s+administration|SSA|medicare|USPS|UPS|FedEx|DHL|amazon|paypal|apple\s+support|microsoft|netflix|chase|wells\s+fargo|bank\s+of\s+america|citi(bank)?|capital\s+one|toll\s+(services?|authority)|E-?ZPass|DMV)\b/gi,
+        /\b(fraud\s+(prevention|department|team)|security\s+(team|department)|account\s+services|customer\s+support\s+team)\b/gi,
+        /\b(dear\s+(customer|user|valued\s+(customer|member)|account\s+holder))\b/gi,
+        /\b(CEO|CFO|COO|president|director|your\s+manager)\b/gi,
+      ],
+    },
+    {
+      id: "too_good",
+      label: "Offers something too good to be true",
+      kind: "pressure",
+      weight: 14,
+      why: "Prizes, refunds you didn't expect and guaranteed returns are bait. Nobody gives away money to strangers by text.",
+      patterns: [
+        /\b(you('ve|\s+have)\s+won|winner|prize|congratulations|selected|unclaimed|reward)\b/gi,
+        /\b(guaranteed\s+(returns?|profits?|income)|risk[- ]free|double\s+your|passive\s+income|\d+%\s+(daily|weekly|returns?|profit))\b/gi,
+        /\b(i|we)\s+made\s+\$?[\d,]+/gi,
+        /\brefund\s+of\s+\$?[\d,]+/gi,
+      ],
+    },
+    {
+      id: "rapport",
+      label: "Builds rapport with a stranger",
+      kind: "pressure",
+      weight: 16,
+      why: "\"Wrong number\" openers and friendly strangers who bring up investing are how long-con romance and investment scams (often called pig butchering) begin. The ask comes weeks later.",
+      patterns: [
+        /\b(wrong\s+number|is\s+this\s+[A-Z][a-z]+\?|sorry,?\s+(i\s+)?(think\s+)?(i\s+)?(have|got)\s+the\s+wrong)\b/gi,
+        /\b(you\s+seem\s+(nice|kind|sweet)|nice\s+to\s+meet\s+you|it'?s\s+fate|meant\s+to\s+be)\b/gi,
+        /\b(my\s+(uncle|aunt|mentor|cousin|friend)\s+(taught|showed|introduced)\s+me)\b/gi,
+        /\b(crypto(currency)?\s+(trading|investing|investment)|bitcoin\s+trading)\b/gi,
+        /\b(trading\s+(strategy|platform|app|signals?)|investment\s+(platform|opportunity|app)|(i\s+)?can\s+(show|teach)\s+you)\b/gi,
+      ],
+    },
+    {
+      id: "secrecy",
+      label: "Asks for secrecy or moves you off-channel",
+      kind: "pressure",
+      weight: 16,
+      why: "Keeping it secret and moving to WhatsApp, Telegram or a personal number cuts you off from the people and systems that would catch the scam.",
+      patterns: [
+        /\b(keep\s+(this|it)\s+(between\s+us|quiet|confidential|private)|don'?t\s+tell|it'?s\s+a\s+surprise|confidential)\b/gi,
+        /\b(whats\s*app|telegram|signal\s+app|text\s+me\s+(at|on)|my\s+personal\s+(number|email))\b/gi,
+        /\b(i'?m\s+in\s+(a\s+)?meetings?|can'?t\s+talk|email\s+is\s+best|don'?t\s+call)\b/gi,
+        /\b(are\s+you\s+(available|free|at\s+your\s+desk)\??)\b/gi,
+      ],
+    },
+  ];
+
+  // Language that real services use to PROTECT you. Used to reduce false
+  // positives on genuine two-factor and security messages.
+  const PROTECTIVE = [
+    /\b(don'?t|do\s+not|never)\s+share\s+(this|the|your)\s+code\b/gi,
+    /\bwe\s+(will\s+)?never\s+(call|text|email|ask)\b/gi,
+    /\bif\s+you\s+didn'?t\s+request\s+this,?\s+(you\s+can\s+)?(ignore|disregard)\b/gi,
+  ];
+
+  const SHORTENERS = /^(bit\.ly|tinyurl\.com|t\.co|goo\.gl|is\.gd|ow\.ly|rb\.gy|cutt\.ly|shorturl\.at|tiny\.cc)$/i;
+  const RISKY_TLDS = /\.(top|xyz|info|click|link|live|shop|online|site|icu|cyou|buzz|rest|support|help|vip|cc|tk|ml|ga|cf|gq)$/i;
+  const BRANDS = /(usps|ups|fedex|dhl|amazon|paypal|apple|icloud|microsoft|netflix|chase|wellsfargo|bankofamerica|citi|irs|ezpass|toll|coinbase|venmo|zelle)/i;
+  const OFFICIAL = /(^|\.)(usps\.com|ups\.com|fedex\.com|dhl\.com|amazon\.com|paypal\.com|apple\.com|microsoft\.com|netflix\.com|chase\.com|wellsfargo\.com|bankofamerica\.com|citi\.com|irs\.gov|e-zpassny\.com|coinbase\.com|venmo\.com|zellepay\.com)$/i;
+  const URL_RE = /\b((?:https?:\/\/|www\.)[^\s<>"')]+|(?:[a-z0-9-]+\.)+(?:com|net|org|gov|top|xyz|info|click|link|live|shop|online|site|icu|support|help|vip|cc|ly|co|io)(?:\/[^\s<>"')]*)?)/gi;
+
+  const ARCHETYPES = [
+    {
+      id: "codetheft",
+      name: "One-time code theft",
+      test: (h, ctx) => ctx.asksForCodeBack && (h.impersonation || h.urgency || h.threat),
+      floor: 85,
+      story: "someone posing as a trusted company asks you to read back or send a security code. That code is the key to your account, and no real company will ever ask for it",
+    },
+    {
+      id: "smish",
+      name: "Delivery / toll text scam",
+      test: (h, ctx) => h.link && ctx.brandLink && (h.urgency || h.threat),
+      floor: 76,
+      story: "it uses a fake delivery or toll problem with a deadline to get you onto a look-alike website",
+    },
+    {
+      id: "pig",
+      name: "Pig butchering opener (romance / investment long con)",
+      test: (h, ctx) => h.rapport && ctx.counts.rapport >= 2 && (h.odd_payment || h.too_good || h.secrecy),
+      floor: 66,
+      story: "a stranger starts a friendly chat, brings up investing or crypto profits, and tries to move you to another app. There's no ask yet — that's the point. The money request comes after weeks of trust-building",
+    },
+    {
+      id: "prize",
+      name: "Prize / refund bait",
+      test: (h) => h.too_good && (h.link || h.credentials || h.odd_payment),
+      floor: 70,
+      story: "it offers money or a prize you didn't expect and asks you to click, pay a fee or share details to claim it",
+    },
+    {
+      id: "bec",
+      name: "Invoice / payment redirect (business email compromise)",
+      test: (h) => h.payment_redirect && (h.urgency || h.secrecy || h.impersonation),
+      floor: 80,
+      story: "it asks you to send a payment to new account details and uses pressure or an authority figure to keep you from double-checking",
+    },
+    {
+      id: "giftcard",
+      name: "Gift card / boss impersonation",
+      test: (h) => h.odd_payment && (h.secrecy || h.impersonation || h.urgency),
+      floor: 82,
+      story: "it wants untraceable payment (gift cards, crypto or a cash app) and pairs it with secrecy or urgency",
+    },
+    {
+      id: "phish",
+      name: "Account phishing",
+      test: (h) => (h.credentials || h.link) && (h.threat || h.urgency) && (h.impersonation || h.link),
+      floor: 78,
+      story: "it claims to come from a trusted company, warns of a problem with a deadline, and asks you to log in or confirm details",
+    },
+  ];
+
+  function gradeDomain(raw) {
+    let host = raw.replace(/^https?:\/\//i, "").replace(/^www\./i, "").split(/[\/?#:]/)[0].toLowerCase();
+    const reasons = [];
+    let bonus = 0;
+    if (/^\d{1,3}(\.\d{1,3}){3}$/.test(host)) { reasons.push("raw IP address instead of a name"); bonus += 10; }
+    if (SHORTENERS.test(host)) { reasons.push("link shortener hides the real destination"); bonus += 8; }
+    if (RISKY_TLDS.test(host)) { reasons.push(`unusual ending (.${host.split(".").pop()})`); bonus += 8; }
+    const brandHit = BRANDS.test(host) && !OFFICIAL.test(host);
+    if (brandHit) { reasons.push("uses a brand name but isn't the brand's real domain"); bonus += 12; }
+    if (/[0-9]/.test(host.replace(/\.[a-z]+$/, "")) && BRANDS.test(host.replace(/0/g, "o").replace(/1/g, "l"))) {
+      reasons.push("swaps letters for look-alike numbers"); bonus += 10;
+    }
+    if ((host.match(/-/g) || []).length >= 2) { reasons.push("long hyphenated domain"); bonus += 4; }
+    const official = OFFICIAL.test(host);
+    return { host, reasons, bonus: official ? 0 : bonus, official, brandHit };
+  }
+
+  function collect(text, re) {
+    const out = [];
+    re.lastIndex = 0;
+    let m;
+    while ((m = re.exec(text))) {
+      if (m[0].trim().length) out.push({ start: m.index, end: m.index + m[0].length, text: m[0] });
+      if (m.index === re.lastIndex) re.lastIndex++;
+    }
+    return out;
+  }
+
+  function analyze(input) {
+    const text = String(input || "");
+    const hits = {};          // id -> true
+    const counts = {};        // id -> number of distinct matches
+    const flags = [];
+    const spans = [];
+    const asksForCodeBack = /\b(send|reply|read|tell|give)\b[^.]{0,30}\bcode\b/i.test(text) && !/\bphotos?\s+of\s+the\s+codes?\b/i.test(text);
+    const ctx = { counts, brandLink: false, links: [], asksForCodeBack };
+
+    for (const s of SIGNALS) {
+      let matches = [];
+      if (s.id === "link") {
+        for (const m of collect(text, URL_RE)) {
+          const g = gradeDomain(m.text);
+          ctx.links.push(g);
+          if (g.official) continue;
+          if (g.brandHit) ctx.brandLink = true;
+          matches.push({ ...m, note: g.reasons.length ? g.reasons.join("; ") : "unverified link", bonus: g.bonus });
+        }
+      } else {
+        for (const re of s.patterns) matches.push(...collect(text, re));
+      }
+      // de-duplicate overlapping matches within a signal
+      matches.sort((a, b) => a.start - b.start || b.end - a.end);
+      const uniq = [];
+      for (const m of matches) {
+        const last = uniq[uniq.length - 1];
+        if (last && m.start < last.end) continue;
+        uniq.push(m);
+      }
+      if (!uniq.length) continue;
+      hits[s.id] = true;
+      counts[s.id] = uniq.length;
+      const extra = Math.min(8, (uniq.length - 1) * 3) + Math.max(0, ...uniq.map((m) => m.bonus || 0));
+      const points = s.weight + extra;
+      flags.push({
+        id: s.id, label: s.label, kind: s.kind, why: s.why, points,
+        evidence: uniq.map((m) => m.text.trim()),
+        notes: uniq.map((m) => m.note).filter(Boolean),
+      });
+      for (const m of uniq) spans.push({ start: m.start, end: m.end, id: s.id });
+    }
+
+    const protective = PROTECTIVE.some((re) => collect(text, re).length > 0);
+    const askFlags = flags.filter((f) => f.kind === "ask");
+    const pressureFlags = flags.filter((f) => f.kind === "pressure");
+    const hasAsk = askFlags.length > 0;
+
+    let score = flags.reduce((a, f) => a + f.points, 0);
+    const adjustments = [];
+
+    // Combination bonus: an ask + pressure is the shape of almost every scam.
+    if (hasAsk && pressureFlags.length) {
+      const b = 8 + 4 * Math.min(3, pressureFlags.length - 1);
+      score += b;
+      adjustments.push({ type: "up", text: `Pairs a request with pressure (+${b}). That combination is the shape of most scams.` });
+    }
+
+    // Archetype detection (sets a floor so known patterns are never under-rated).
+    const archetype = ARCHETYPES.find((a) => a.test(hits, ctx)) || null;
+    if (archetype && score < archetype.floor) {
+      adjustments.push({ type: "up", text: `Matches a known scam pattern, so the score is raised to at least ${archetype.floor}.` });
+      score = archetype.floor;
+    }
+
+    // False-positive guard 1: no ask => cap.
+    if (!hasAsk && !archetype && score > 30) {
+      adjustments.push({ type: "down", text: "No request for money, information or clicks, so the score is capped at 30. Urgent or official-sounding language alone is normal in everyday messages." });
+      score = 30;
+    }
+
+    // False-positive guard 2: protective security language, no link, no ask to reply with code.
+    if (protective && !hits.link && !asksForCodeBack && !hits.payment_redirect && !hits.odd_payment) {
+      adjustments.push({ type: "down", text: "Contains protective wording (\"don't share this code\") with no link and no request to send the code back, which is how genuine security texts look. Score capped at 15." });
+      score = Math.min(score, 15);
+    }
+
+    score = Math.max(0, Math.min(99, Math.round(score)));
+    const rating = score >= 75 ? "Critical" : score >= 50 ? "High" : score >= 25 ? "Caution" : "Low";
+
+    // Plain-English explanation
+    let summary;
+    if (archetype) {
+      summary = `This matches the ${archetype.name.split(" (")[0].toLowerCase()} pattern: ${archetype.story}.`;
+    } else if (!flags.length) {
+      summary = "Nothing in this message matches common scam tactics. That's a good sign, but not a guarantee. If it asks you to do something unusual, verify with the sender through a channel you already trust.";
+    } else if (score < 25) {
+      summary = protective
+        ? "This reads like a genuine security message. It tells you not to share the code and doesn't ask you to click anything or reply with information."
+        : "There's some pressure language here, but no request for money, personal information or a click. On its own, that's ordinary everyday writing.";
+    } else {
+      const askTxt = askFlags.map((f) => f.label.toLowerCase()).join(" and ");
+      const prTxt = pressureFlags.map((f) => f.label.toLowerCase()).join(", ");
+      summary = hasAsk
+        ? `This message ${askTxt}${prTxt ? ` while it also ${prTxt}` : ""}. Treat it as suspicious until you verify it another way.`
+        : `This message ${prTxt}. There's no direct request yet, so stay alert if a follow-up asks for money or details.`;
+    }
+
+    const missing = [];
+    if (!hits.link) missing.push("no link");
+    if (!hits.credentials) missing.push("no request for codes or personal info");
+    if (!hits.payment_redirect && !hits.odd_payment) missing.push("no payment request");
+
+    const steps = nextSteps(rating, archetype, hits);
+
+    return {
+      score, rating, archetype: archetype ? archetype.name : null, summary,
+      flags: flags.sort((a, b) => b.points - a.points),
+      adjustments, spans, protective, missing, steps,
+      grammarNote: "Spelling and grammar are ignored on purpose. AI-written scams are fluent, so this engine scores what a message wants from you, not how well it's written.",
+    };
+  }
+
+  function nextSteps(rating, archetype, h) {
+    if (rating === "Low") return [
+      "No action needed if you were expecting this message.",
+      "If something still feels off, contact the sender using a number or address you already have.",
+    ];
+    const s = ["Don't reply, click links or call numbers in the message."];
+    if (h.payment_redirect) s.push("Call the vendor or colleague on a number you already have on file to confirm any bank change before paying.");
+    if (h.odd_payment) s.push("Never pay anyone with gift cards or crypto because they asked by message. No legitimate employer or agency requires it.");
+    if (h.credentials) s.push("Never share passwords, one-time codes or card numbers. If you already did, change your password and call your bank.");
+    if (h.link) s.push("Type the company's real website into your browser yourself, or use its official app, to check your account.");
+    if (archetype && archetype.id === "pig") s.push("Don't move the chat to another app, and be wary of any \"platform\" a new contact recommends.");
+    s.push("Report it: forward scam texts to 7726 (SPAM), and report fraud at reportfraud.ftc.gov. For business payment fraud or crypto losses, also file at ic3.gov.");
+    return s;
+  }
+
+  // Render the message with highlighted evidence. Returns safe HTML.
+  function highlight(text, spans) {
+    const esc = (s) => s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+    const sorted = [...spans].sort((a, b) => a.start - b.start || b.end - a.end);
+    let out = "", pos = 0;
+    for (const sp of sorted) {
+      if (sp.start < pos) continue; // skip overlaps; first (longest) wins
+      out += esc(text.slice(pos, sp.start));
+      out += `<mark class="hl hl-${sp.id}" data-flag="${sp.id}">${esc(text.slice(sp.start, sp.end))}</mark>`;
+      pos = sp.end;
+    }
+    return out + esc(text.slice(pos));
+  }
+
+  return { analyze, highlight, SIGNALS };
+});
+
+</script>
+<script>
+/* Sample messages. All fictional: names, numbers and domains are made up. */
+(function (root, factory) {
+  if (typeof module === "object" && module.exports) module.exports = factory();
+  else root.TellsSamples = factory();
+})(typeof self !== "undefined" ? self : this, function () {
+  return [
+    {
+      id: "invoice", label: "Fake invoice", expect: "Critical",
+      text: "Hi Dana, quick heads-up: our bank has changed, so please send payment for invoice #4471 ($18,450) to the new account below today.\n\nRouting: 021000089\nAccount: 7730021145\n\nI'm in meetings all afternoon so email is best.\nThanks,\nMark Ellison, CFO",
+    },
+    {
+      id: "polished", label: "AI-polished phish", expect: "Critical",
+      text: "Dear Customer,\n\nWe detected an unusual sign-in attempt on your account from a new device. To protect your funds, please confirm your identity within 24 hours using the secure link below. Failure to verify will result in a temporary suspension of online access.\n\nhttps://secure-account-review.info/verify\n\nThank you for banking with us.\nFraud Prevention Team",
+    },
+    {
+      id: "delivery", label: "Delivery text", expect: "Critical",
+      text: "USPS: Your package is on hold due to an incomplete address. Update within 12 hours or it will be returned to sender: https://usps-redeliver-help.top/track",
+    },
+    {
+      id: "pig", label: "\"Wrong number\" opener", expect: "High",
+      text: "Hi, is this Jessica? Sorry, I think I have the wrong number! You seem nice though 😊 I'm Lena, I work in finance in Seattle. My uncle taught me a crypto trading strategy and I made $8,200 last month. I can show you if you're curious. Easier to chat on WhatsApp.",
+    },
+    {
+      id: "giftcard", label: "Boss gift cards", expect: "Critical",
+      text: "Are you available? I need you to pick up 5 Apple gift cards ($200 each) for a client today. Keep this between us for now, it's a surprise. Send me photos of the codes when you have them. - Rob (CEO)",
+    },
+    {
+      id: "real2fa", label: "Real 2FA code", expect: "Low",
+      text: "Chase: Your verification code is 482913. Don't share this code with anyone. We will never call or text you asking for it.",
+    },
+    {
+      id: "friend", label: "Urgent friend", expect: "Low",
+      text: "Hey! Running late, the meeting got moved up. Can you grab the printed slides and head over ASAP? Thanks!!",
+    },
+  ];
+});
+
+</script>
+<script>
+/* =========================== EDIT YOUR CONTENT HERE ===========================
+   COLUMNS: headings for the two main columns.
+   PROJECTS: col is "a" (left), "b" (right) or "c" (Additional work).
+     clip:  the looping preview on the tile (placeholder animation names:
+            arm, walker, ball, flow, grip, plot, gears, wave, tellsHigh, tellsLow). Leave out for a "coming soon" tile.
+     media: clips shown when the project is open, two per row.
+     role, tags, links, authors, paper: all optional.
+   Write [text](https://link) inside blurb or role to add a link.
+   ============================================================================ */
+var ME = "Treylon Wofford";
+var COLUMNS = { a: "AI for Financial Crime", b: "Cybercrime Investigations" };
+
+var PROJECTS = [
+  { id: "tells", col: "a", title: "Tells", sub: "Explainable scam message triage",
+    clip: "tellsHigh", video: "media/tells-clip1-ai-phish",
+    meta: "Personal project · runs entirely in the browser",
+    media: [{ video: "media/tells-clip1-ai-phish", caption: "A perfectly written phishing email still scores 99 (Critical). The words behind the score are highlighted below it." },
+            { video: "media/tells-clip2-false-positives", caption: "A real bank verification-code text scores 15 (Low), then a “boss wants gift cards” message scores 82 (Critical)." }],
+    blurb: ["Scams no longer have typos, so Tells scores what a message wants from you, not how it's written. Paste a suspicious text, email or DM and it returns a 0–100 risk score, the red flags it found with the exact words that triggered each one, the message highlighted in place, and plain-English next steps. Nothing leaves the browser.",
+            "Every signal is either an ask (codes, payment details, gift cards, look-alike links) or pressure (urgency, threats, impersonation, secrecy). Pairing the two raises the score, pressure alone is capped at 30 so normal “ASAP” texts stay Low, and six known patterns such as invoice redirects and “wrong number” pig-butchering openers can never be under-rated. Real 2FA texts that say “don't share this code” are recognized as protective and kept Low."],
+    role: "Designed the scoring rules and false-positive safeguards, built the app, and wrote a 13-message test suite that mixes scams with look-alike legitimate messages.",
+    tags: ["Fraud detection", "Explainable AI", "Rules engine", "JavaScript"],
+    links: [["Open the full app", "tells.html"]] },
+  { id: "mandate-desk", col: "a", title: "Mandate Desk", sub: "Know Your Agent controls for AI agent payments",
+    clip: "plot", video: "media/kya-clip1-gate",
+    meta: "Personal project · simulated month of agent payments, all synthetic",
+    media: [{ video: "media/kya-clip1-gate", caption: "The gate: an email-injected payee is Declined under a strict allowlist, Held for approval under an open mandate, and a newly sanctioned counterparty is Blocked." },
+            { video: "media/kya-clip2-monitors", caption: "The monitors: agent-to-agent loops pass every gate check, so M3 flags them after the fact. Opening the alert shows the agent's credential, mandate and the cycled payments." }],
+    blurb: ["AI agents now pay for people and businesses. Know Your Agent (KYA) asks three questions before one of them moves money: who built the agent (KYB), who it acts for (KYC), and what exactly that person authorized (the mandate). Mandate Desk turns that into a working control: Ed25519-signed agent credentials, an authorization gate that runs before every payment, and AML-style monitors that look across payments.",
+            "Tested on a simulated October with 103 agents, 2,425 payment attempts and 11 planted abuse scenarios, it stopped or flagged 100 of 106 abusive attempts while approving 93% of legitimate payments and declining only 1.2%. Prompt injection is treated as a payments problem: untrusted content can't introduce a new payee without the principal. Sanctions outrank everything, including an allowlist. Splitting, loops and cloned credentials pass the gate because each payment is valid, so monitors catch them. Misuse that stays inside the mandate is missed by design, and the write-up says why."],
+    role: "Designed the gate's five check layers and the five behavioral monitors, built the simulation with planted scenarios, and verified that the browser console's gate matches the Python engine on all 2,425 attempts.",
+    tags: ["Know Your Agent", "AML monitoring", "Sanctions screening", "Ed25519", "Python", "JavaScript"],
+    links: [["Open the console", "mandate-desk.html"], ["What is Know Your Agent? (Elliptic)", "https://www.elliptic.co/blockchain-basics/what-is-know-your-agent-kya/"]] },
+  { id: "countercheck", col: "a", title: "Countercheck AML", sub: "Transaction monitoring and SAR narrative assistant",
+    clip: "plot", video: "media/aml-clip1-threshold",
+    meta: "Personal project · synthetic bank, 425,814 transactions over 90 days",
+    media: [{ video: "media/aml-clip1-threshold", caption: "Detection performance: dragging the alert threshold shows the trade-off live. At 50 the queue holds 85 alerts at 89% precision and 95% recall; at 80 precision hits 100% but 37 planted cases go unreported." },
+            { video: "media/aml-clip2-case", caption: "Case review: isolating the structuring rule's evidence, then the SAR first draft with all 22 figures traced to transactions. Filing reveals the account was a planted structurer." }],
+    blurb: ["A complete anti-money-laundering pipeline on Riverbend Community Bank, a synthetic bank with 3,014 customers and 425,814 transactions. Seven detection rules written in SQL (DuckDB) cover structuring, rapid movement, fan-in, new account velocity, high-risk outflows, multi-state cash and profile deviation. Each is measured against 80 planted suspicious accounts, and the legitimate population includes look-alikes built to trip them: cash-heavy restaurants, homebuyers, marketplace sellers, event promoters and traveling sales reps.",
+            "No rule decides alone. The risk score adds rule weights, and the default threshold of 50 catches 76 of 80 planted cases at 89% precision, favoring recall because a missed case is unreported laundering. For every alert, a drafter writes a SAR narrative in FinCEN's who/what/when/where/why/how order, citing transaction IDs, and a fact check confirms every dollar amount and date in it exists in the data. An optional Claude rewrite is rejected if it introduces any figure that isn't in the facts. Drafts never decide to file; they leave marked blanks for the analyst."],
+    role: "Designed the synthetic bank and its look-alike cohorts, wrote and tuned the seven SQL rules, built the scoring and evaluation, the fact-checked SAR drafter, and the analyst console.",
+    tags: ["AML monitoring", "SQL", "DuckDB", "SAR narratives", "LLM guardrails", "Python"],
+    links: [["Open the analyst console", "countercheck.html"]] },
+  { id: "project-four", col: "a", title: "Project Four", sub: "Ongoing work", badge: "Coming soon",
+    media: [], blurb: ["A project you're still working on. The tile shows a dashed placeholder until you add a clip."], role: false },
+
+  { id: "bybit-trace", col: "b", title: "Bybit Heist Trace", sub: "On-chain flow-of-funds investigation · Case TR-2025-0221",
+    clip: "flow", video: "media/bybit-clip-trace",
+    meta: "Blockchain investigation · public sources only, data collected 7 Nov 2026",
+    media: [{ video: "media/bybit-clip-trace", caption: "A walkthrough of the report: the bottom line, the flow-of-funds diagram across three branches, the evidence log where every confirmed hop links to its Ethereum transaction, and the address-poisoning table." }],
+    blurb: ["A flow-of-funds investigation of the February 2025 Bybit hack ($1.4–1.5B, attributed by the FBI to North Korea’s “TraderTraitor”). It follows three representative laundering branches from the exploiter’s wallet to their exits and checks 20 hops against the raw Ethereum record. Liquidation: 98,047.84 ETH of stETH and mETH swap proceeds through ParaSwap, Uniswap and DODO within 71 minutes of the theft. Conversion: 257.27 ETH to THORChain in 16 minutes through two single-use wallets, with the deposit memo decoded to a Bitcoin destination. Layering: a split from Exploiter 5, a 2,083 ETH merge from six wallets, a 1 ETH test, then 70 days of dormancy before May 2025 outflows.",
+            "It also documents address poisoning aimed at the launderers themselves: about 98% of Exploiter 1’s 4,418 transactions are incoming dust from look-alike addresses. Findings are graded Confirmed, Reported or Not traced, open leads are listed, and the report ends with compliance recommendations and 15 screening addresses."],
+    role: "Chose the three branches, verified each hop on Etherscan, decoded the THORChain memo, graded confidence and wrote the report. AI assisted with research, decoding and drafting.",
+    tags: ["Blockchain tracing", "Cross-chain", "THORChain", "Laundering typologies", "Sanctions screening"],
+    links: [["Read the report", "bybit-trace.html"], ["PDF version", "media/bybit-heist-trace-report.pdf"]] },
+  { id: "tradertraitor", col: "b", title: "TraderTraitor Threat Profile", sub: "Threat intelligence brief on North Korea's exchange-heist unit",
+    clip: "plot", video: "media/tradertraitor-clip",
+    meta: "CTI-2026-11 · open sources only, information cutoff 8 Nov 2026",
+    media: [{ video: "media/tradertraitor-clip", caption: "A walkthrough of the brief: key figures, the five key judgments with confidence levels, the ATT&CK v20.1 technique matrix, and the detection playbook with its Sigma rules." }],
+    blurb: ["A threat actor profile of TraderTraitor, the North Korean group behind the October 2026 Binance theft ($6.36B), Bybit ($1.46B), DMM Bitcoin ($308M) and KelpDAO ($292M), written for security and financial-crime teams at exchanges, custodians and wallet providers. It opens with five key judgments and their confidence levels, then covers the seven-stage operation lifecycle, incident history, 30 procedure-level ATT&CK mappings, laundering patterns compared across three thefts, an 11-control detection playbook, indicators and intelligence gaps. All 16 sources are graded on the Admiralty scale.",
+            "The brief is generated from a single data file, which also produces a STIX 2.1 bundle, an ATT&CK Navigator layer, 6 Sigma rules and an indicator CSV. A build step checks every technique ID, name and tactic against MITRE ATT&CK v20.1, parses the STIX bundle back, and validates each Sigma rule with pySigma. One original finding: getstockprice[.]com appears both in 2025 coding-challenge infrastructure and in the Safe{Wallet} compromise behind the Bybit theft, linking the lure campaign to the heist."],
+    role: "Graded the sources, set the confidence levels, wrote the judgments and recommendations, and built the validated STIX, Navigator and Sigma outputs. AI assisted with research, ATT&CK mapping and drafting.",
+    tags: ["Threat intelligence", "MITRE ATT&CK", "STIX 2.1", "Sigma", "Admiralty grading", "Python"],
+    links: [["Read the brief", "tradertraitor-profile.html"], ["STIX 2.1 bundle", "tt-files/tradertraitor.stix.json"], ["ATT&CK Navigator layer", "tt-files/attack-navigator-layer.json"], ["Indicators (CSV)", "tt-files/iocs.csv"]] },
+  { id: "project-seven", col: "b", title: "Project Seven", sub: "Ongoing work", badge: "Coming soon",
+    media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
+  { id: "project-eight", col: "b", title: "Project Eight", sub: "Ongoing work", badge: "Coming soon",
+    media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
+  { id: "side-a", col: "c", title: "Side Project A", sub: "Ongoing work", badge: "Coming soon",
+    media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
+  { id: "side-b", col: "c", title: "Side Project B", sub: "Ongoing work", badge: "Coming soon",
+    media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
+  { id: "side-c", col: "c", title: "Side Project C", sub: "Ongoing work", badge: "Coming soon",
+    media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
+];
+
+var PUBS = [
+  { year: "2026", title: "Choosing not to Choose: Self-Authored Contradictions Suppress Arbitration in a Memory-Augmented LLM",
+    authors: "Treylon Wofford, R. Lin, A. Iskakova",
+    venue: "Apart Research · Digital Minds Research Sprint, August 2026",
+    url: "https://apartresearch.com/sprints/projects/choosing-not-to-choose-selfauthored-contradictions-suppress-arbitration-in-a-memoryaugmented-llm-gez8" },
+  { year: "2021", title: "Assessment of Autonomous Vehicle Sharing for Evacuation and Disaster Relief",
+    authors: "Bhavya Padmanabhan, Thomas Shirley, Pamela Murray-Tuite, Nathan Huynh, Gurcan Comert, Jiayun Shen, Hiwot Tadesse, Treylon Wofford",
+    venue: "Final report, Center for Connected Multimodal Mobility (C2M2), Clemson University · USDOT University Transportation Centers Program",
+    url: "https://rosap.ntl.bts.gov/view/dot/60927" }
+];
+
+/* ======================== rendering (no need to edit below) ======================== */
+var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+/* ---------- light / dark switch (remembers the visitor's choice) ---------- */
+(function () {
+  var root = document.documentElement, btn = document.getElementById("theme-toggle");
+  var sys = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;
+  try { var saved = localStorage.getItem("theme"); if (saved === "light" || saved === "dark") root.setAttribute("data-theme", saved); } catch (e) {}
+  function isDark() { var t = root.getAttribute("data-theme"); return t ? t === "dark" : !!(sys && sys.matches); }
+  function sync() { var d = isDark(); root.classList.toggle("is-dark", d); btn.setAttribute("aria-label", d ? "Switch to light mode" : "Switch to dark mode"); }
+  btn.addEventListener("click", function () {
+    var next = isDark() ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("theme", next); } catch (e) {}
+    sync();
+  });
+  if (sys && sys.addEventListener) sys.addEventListener("change", sync);
+  new MutationObserver(sync).observe(root, { attributes: true, attributeFilter: ["data-theme"] });
+  sync();
+})();
+var byId = {}; PROJECTS.forEach(function (p) { byId[p.id] = p; });
+var openId = null, pushed = false, homeScroll = 0;
+document.getElementById("col-a-h").textContent = COLUMNS.a;
+document.getElementById("col-b-h").textContent = COLUMNS.b;
+
+function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); }
+function rich(s) { return esc(s).replace(/\[([^\]]+)\]\((https?:\/\/[^)\s]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>'); }
+function boldMe(s) { return esc(s).split(esc(ME)).join("<strong>" + esc(ME) + "</strong>"); }
+function videoTag(path, controls) {
+  return '<video data-loop muted loop playsinline preload="metadata"' + (controls ? " controls" : "") +
+    ' poster="' + esc(path) + '.jpg" src="' + esc(path) + '.mp4" aria-label="Demo video"></video>';
+}
+var vio = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
+  es.forEach(function (e) { var v = e.target; if (e.isIntersecting && !reduce) { var q = v.play(); if (q && q.catch) q.catch(function () {}); } else v.pause(); });
+}, { threshold: .2 }) : null;
+function watchVideos() {
+  document.querySelectorAll("video[data-loop]").forEach(function (v) {
+    v.muted = true;
+    if (vio) { vio.unobserve(v); vio.observe(v); } else if (!reduce) v.play().catch(function () {});
+  });
+}
+function paperURL(p) { if (p.paper) return p.paper; var l = (p.links || []).filter(function (x) { return /^paper/i.test(x[0]); })[0]; return l ? l[1] : null; }
+
+function tileHTML(p) {
+  var paper = paperURL(p), soon = !p.clip;
+  return '<div class="tile-wrap' + (paper ? " has-paper" : "") + '" style="view-transition-name: p-' + esc(p.id) + '">' +
+    '<button type="button" class="tile' + (soon ? " soon" : "") + '" data-project="' + esc(p.id) + '"' + (p.badge ? ' data-badge="' + esc(p.badge) + '"' : "") + ' aria-expanded="false">' +
+    (soon ? "" : p.video ? videoTag(p.video, false) : '<canvas data-clip="' + esc(p.clip) + '" aria-hidden="true"></canvas>') +
+    (p.years ? '<span class="years">' + esc(p.years) + "</span>" : "") +
+    '<span class="name">' + esc(p.title) + '<span class="sub">' + esc(p.sub || "") + "</span></span></button>" +
+    (paper ? '<a class="paper-btn" href="' + esc(paper) + '" target="_blank" rel="noopener">Paper</a>' : "") + "</div>";
+}
+function panelHTML(p) {
+  return '<article class="panel" id="panel-' + esc(p.id) + '" style="view-transition-name: p-' + esc(p.id) + '" aria-labelledby="t-' + esc(p.id) + '">' +
+    '<div class="panel-head"><div><h3 id="t-' + esc(p.id) + '">' + esc(p.title) + "</h3>" +
+    ((p.years || p.meta) ? '<p class="meta">' + esc([p.years, p.meta].filter(Boolean).join(" · ")) + "</p>" : "") +
+    (p.authors ? '<p class="authors">Authors: ' + boldMe(p.authors) + "</p>" : "") + "</div>" +
+    '<button type="button" class="close" data-close aria-label="Close ' + esc(p.title) + '"><svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true"><path d="M1.5 1.5l9 9M10.5 1.5l-9 9" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></button></div>' +
+    (p.media && p.media.length ? '<div class="media">' + p.media.map(function (m) {
+      return '<figure' + (p.media.length === 1 ? ' class="wide"' : '') + '><div class="frame">' + (m.video ? videoTag(m.video, true) : '<span class="badge">Example clip</span><canvas data-clip="' + esc(m.clip) + '" aria-hidden="true"></canvas>') + '</div>' +
+        (m.caption ? "<figcaption>" + esc(m.caption) + "</figcaption>" : "") + "</figure>";
+    }).join("") + "</div>" : "") +
+    (p.demo ? demoHTML() : "") +
+    '<div class="blurb">' + p.blurb.map(function (t) { return "<p>" + rich(t) + "</p>"; }).join("") + "</div>" +
+    (p.role ? '<p class="role"><span>Role:</span> ' + rich(p.role) + "</p>" : "") +
+    (p.tags ? '<ul class="tags">' + p.tags.map(function (t) { return "<li>" + esc(t) + "</li>"; }).join("") + "</ul>" : "") +
+    (p.links ? '<div class="links">' + p.links.map(function (l) { return '<a href="' + esc(l[1]) + '" target="_blank" rel="noopener">' + esc(l[0]) + "</a>"; }).join("") + "</div>" : "") +
+    "</article>";
+}
+
+var tileCache = {};
+function toNode(html) { var t = document.createElement("template"); t.innerHTML = html.trim(); return t.content.firstElementChild; }
+function render() {
+  ["a", "b", "c"].forEach(function (col) {
+    var list = document.getElementById("list-" + col);
+    list.replaceChildren.apply(list, PROJECTS.filter(function (p) { return p.col === col; }).map(function (p) {
+      if (p.id === openId) return toNode(panelHTML(p));
+      return tileCache[p.id] || (tileCache[p.id] = toNode(tileHTML(p)));
+    }));
+  });
+  var col = openId ? byId[openId].col : "";
+  document.getElementById("columns").dataset.open = col === "c" ? "" : col;
+  document.querySelectorAll("[data-project]").forEach(function (b) { b.setAttribute("aria-expanded", String(b.dataset.project === openId)); });
+  watchClips();
+  watchVideos();
+  if (openId && byId[openId].demo) mountDemo();
+}
+
+/* ---------- open / close, with Back button and Esc support ---------- */
+var canMorph = typeof document.startViewTransition === "function" && !reduce;
+if (canMorph) document.documentElement.classList.add("morph");
+function withTransition(update, after) {
+  if (!canMorph || document.visibilityState === "hidden") { update(); if (after) after(); return false; }
+  document.documentElement.classList.add("vt");
+  var applied = false;
+  var t = document.startViewTransition(function () { applied = true; update(); });
+  t.updateCallbackDone.then(after || function () {}, after || function () {});
+  setTimeout(function () { if (!applied) t.skipTransition(); }, 700);
+  t.ready.catch(function () {});
+  t.finished.catch(function () {}).then(function () { document.documentElement.classList.remove("vt"); });
+  return true;
+}
+function showProject(id) {
+  openId = id;
+  var morphed = withTransition(function () {
+    render();
+    if (canMorph) { var p = document.getElementById("panel-" + id); if (p) p.scrollIntoView({ block: "start" }); }
+  }, function () { var c = document.querySelector("#panel-" + id + " [data-close]"); if (c) c.focus({ preventScroll: true }); });
+  if (!morphed) setTimeout(function () { var p = document.getElementById("panel-" + id); if (p) p.scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" }); }, reduce ? 0 : 480);
+}
+function showHome(y) {
+  var id = openId; openId = null;
+  withTransition(function () { render(); if (y != null) window.scrollTo(0, y); },
+    function () { var t = document.querySelector('[data-project="' + id + '"]'); if (t) t.focus({ preventScroll: true }); });
+}
+function open(id) {
+  if (!byId[id]) return;
+  if (!openId) { homeScroll = window.scrollY; pushed = true; location.hash = id; }
+  else { try { history.replaceState(null, "", "#" + id); } catch (e) {} showProject(id); }
+}
+function close() {
+  if (pushed) { pushed = false; history.back(); return; }
+  try { history.replaceState(null, "", location.pathname + location.search); } catch (e) {}
+  showHome(null);
+}
+function syncFromHash() {
+  var h = decodeURIComponent(location.hash.slice(1));
+  if (byId[h]) { if (h !== openId) { if (!openId) homeScroll = window.scrollY; showProject(h); } }
+  else if (openId) { pushed = false; showHome(homeScroll); }
+}
+window.addEventListener("hashchange", syncFromHash);
+document.addEventListener("click", function (e) {
+  var t = e.target.closest("[data-project]");
+  if (t) { var id = t.dataset.project; if (id === openId) close(); else open(id); return; }
+  if (e.target.closest("[data-close]")) close();
+});
+document.addEventListener("keydown", function (e) { if (e.key === "Escape" && openId) close(); });
+
+
+/* ---------- live Tells demo (engine is inlined above) ---------- */
+function demoHTML() {
+  return '<div class="demo" id="tells-demo"><div class="demo-in"><span class="live">Try it yourself · live demo in your browser</span>' +
+    '<div class="chips" id="tells-samples" aria-label="Sample messages"></div>' +
+    '<label class="lbl" for="tells-msg" style="margin:0">Paste a suspicious text, email or DM</label>' +
+    '<textarea id="tells-msg" spellcheck="false"></textarea>' +
+    '<div class="demo-actions"><button type="button" class="btn" id="tells-go">Check message</button><button type="button" class="btn ghost" id="tells-clear">Clear</button></div>' +
+    '<p class="hint">Nothing you paste leaves this page. Samples are fictional.</p></div>' +
+    '<div class="demo-out" id="tells-out" aria-live="polite"></div></div>';
+}
+function mountDemo() {
+  var root = document.getElementById("tells-demo"); if (!root || !window.Tells) return;
+  var ta = document.getElementById("tells-msg"), out = document.getElementById("tells-out"), box = document.getElementById("tells-samples");
+  var COL = { Low: "var(--low)", Caution: "var(--caution)", High: "var(--high)", Critical: "var(--critical)" };
+  function mark(b) { Array.prototype.forEach.call(box.children, function (c) { c.classList.toggle("on", c === b); }); }
+  (window.TellsSamples || []).forEach(function (sm) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = sm.label;
+    b.addEventListener("click", function (e) { e.stopPropagation(); ta.value = sm.text; mark(b); run(); });
+    box.appendChild(b);
+  });
+  function run() {
+    var text = ta.value.trim();
+    if (!text) { out.innerHTML = '<p class="res-sum">Paste a message or pick a sample to see its risk score.</p>'; return; }
+    var r = Tells.analyze(text), col = COL[r.rating] || "var(--muted)", C = 2 * Math.PI * 46;
+    var flags = r.flags.length ? r.flags.map(function (f) {
+      return '<div class="flag" data-flag="' + esc(f.id) + '" style="--fc:var(--c-' + esc(f.id) + ')"><div class="hd"><span>' + esc(f.label) + '</span><span class="pts">+' + f.points + '</span></div>' +
+        '<div class="ev">' + f.evidence.slice(0, 3).map(function (e) { return "“" + esc(e.length > 48 ? e.slice(0, 46) + "…" : e) + "”"; }).join(" · ") + '</div>' +
+        '<p class="why">' + esc(f.why) + '</p></div>';
+    }).join("") : '<p class="res-sum">No red flags found.</p>';
+    out.innerHTML =
+      '<div class="res-top"><div class="gauge" role="img" aria-label="Risk score ' + r.score + ' out of 100"><svg width="108" height="108" viewBox="0 0 108 108">' +
+      '<circle cx="54" cy="54" r="46" fill="none" stroke="var(--line)" stroke-width="9"/>' +
+      '<circle class="arc" cx="54" cy="54" r="46" fill="none" stroke="' + col + '" stroke-width="9" stroke-linecap="round" stroke-dasharray="' + C + '" stroke-dashoffset="' + C + '" style="transition:stroke-dashoffset .9s cubic-bezier(.2,.8,.2,1)"/></svg>' +
+      '<div class="num"><div><b class="n">0</b><small>risk / 100</small></div></div></div>' +
+      '<div style="min-width:0"><span class="rating" style="background:' + col + '">' + esc(r.rating) + ' risk</span>' +
+      '<div class="archetype">' + esc(r.archetype || (r.rating === "Low" ? "No scam pattern detected" : "Suspicious message")) + '</div>' +
+      '<p class="res-sum">' + esc(r.summary) + '</p></div></div>' +
+      '<div><p class="lbl">' + (r.rating === "Low" ? "Signals found" : "Red flags") + ' (' + r.flags.length + ')</p><div class="flags">' + flags + '</div></div>' +
+      '<div><p class="lbl">Evidence in context</p><div class="hlmsg">' + Tells.highlight(text, r.spans) + '</div></div>' +
+      '<div><p class="lbl">What to do</p><ol class="steps">' + r.steps.map(function (s) { return "<li>" + esc(s) + "</li>"; }).join("") + '</ol></div>';
+    out.querySelectorAll("mark.hl").forEach(function (m) { m.style.setProperty("--fc", "var(--c-" + m.dataset.flag + ")"); });
+    out.querySelectorAll(".flag").forEach(function (f) {
+      f.addEventListener("mouseenter", function () { out.querySelectorAll("mark.hl").forEach(function (m) { m.classList.toggle("dim", m.dataset.flag !== f.dataset.flag); }); });
+      f.addEventListener("mouseleave", function () { out.querySelectorAll("mark.hl").forEach(function (m) { m.classList.remove("dim"); }); });
+    });
+    var arc = out.querySelector(".arc"), n = out.querySelector(".n");
+    if (reduce) { arc.style.transition = "none"; arc.style.strokeDashoffset = C * (1 - r.score / 100); n.textContent = r.score; return; }
+    requestAnimationFrame(function () { requestAnimationFrame(function () { arc.style.strokeDashoffset = C * (1 - r.score / 100); }); });
+    var t0 = performance.now();
+    (function tick(t) { var q = Math.min(1, (t - t0) / 900); n.textContent = Math.round(r.score * (1 - Math.pow(1 - q, 3))); if (q < 1) requestAnimationFrame(tick); })(t0);
+  }
+  document.getElementById("tells-go").addEventListener("click", run);
+  document.getElementById("tells-clear").addEventListener("click", function () { ta.value = ""; mark(null); run(); ta.focus(); });
+  ta.addEventListener("keydown", function (e) { if ((e.ctrlKey || e.metaKey) && e.key === "Enter") run(); });
+  ta.addEventListener("input", function () { mark(null); });
+  var first = box.children[1] || box.children[0]; if (first) first.click();
+}
+
+/* ---------- publications ---------- */
+document.getElementById("pubs").innerHTML = PUBS.map(function (b) {
+  return '<li><span class="yr">' + esc(b.year) + "</span><div>" +
+    '<a class="t" href="' + esc(b.url) + '" target="_blank" rel="noopener">' + esc(b.title) + "</a>" +
+    '<p class="a">' + boldMe(b.authors) + "</p>" +
+    '<p class="v">' + esc(b.venue) + (b.project && byId[b.project] ? ' · <a href="#' + esc(b.project) + '">See project</a>' : "") + "</p></div></li>";
+}).join("");
+document.getElementById("pubs").addEventListener("click", function (e) {
+  var a = e.target.closest('a[href^="#"]'); if (!a) return;
+  e.preventDefault(); open(a.getAttribute("href").slice(1));
+});
+
+/* ---------- placeholder "video" loops (swap for real <video> files on your own host) ---------- */
+var C = { blue: "#7EA2F5", light: "#C9D3D0", gold: "#F2B84B", bg: "#101416" };
+function line(c, a, b, x, y) { c.beginPath(); c.moveTo(a, b); c.lineTo(x, y); c.stroke(); }
+function dot(c, x, y, r, col) { c.fillStyle = col; c.beginPath(); c.arc(x, y, r, 0, 7); c.fill(); }
+function ground(c, w, h) { c.strokeStyle = "rgba(201,211,208,.25)"; c.lineWidth = 1; line(c, 0, h * .8, w, h * .8); }
+var SCENES = {
+  arm: function (c, w, h, t) {
+    ground(c, w, h);
+    var bx = w * .35, by = h * .8, L1 = h * .32, L2 = h * .26;
+    var a1 = -Math.PI / 2 + Math.sin(t * 1.3) * .7, a2 = a1 + .9 + Math.sin(t * 2.1) * .6;
+    var x1 = bx + Math.cos(a1) * L1, y1 = by + Math.sin(a1) * L1, x2 = x1 + Math.cos(a2) * L2, y2 = y1 + Math.sin(a2) * L2;
+    c.strokeStyle = C.blue; c.lineWidth = h * .04; c.lineCap = "round"; line(c, bx, by, x1, y1); line(c, x1, y1, x2, y2);
+    dot(c, bx, by, h * .045, C.light); dot(c, x1, y1, h * .033, C.light); dot(c, x2, y2, h * .028, C.gold);
+    var tx = w * .72 + Math.sin(t * .8) * w * .1; c.globalAlpha = .3; dot(c, tx, h * .4, h * .07, C.gold); c.globalAlpha = 1; dot(c, tx, h * .4, h * .035, C.gold);
+  },
+  walker: function (c, w, h, t) {
+    ground(c, w, h);
+    var x = ((t * w * .12) % (w * 1.3)) - w * .15, y = h * .5 + Math.sin(t * 6) * h * .01;
+    c.fillStyle = C.blue; c.fillRect(x - w * .1, y - h * .06, w * .2, h * .1);
+    c.strokeStyle = C.light; c.lineWidth = h * .025; c.lineCap = "round";
+    [[-.08, 0], [.08, Math.PI], [-.05, Math.PI], [.05, 0]].forEach(function (o) {
+      var hx = x + w * o[0], hy = y + h * .04, ph = t * 6 + o[1];
+      var fx = hx + Math.sin(ph) * w * .03, fy = h * .8 - Math.max(0, Math.cos(ph)) * h * .05;
+      var kx = (hx + fx) / 2 + w * .015, ky = (hy + fy) / 2; line(c, hx, hy, kx, ky); line(c, kx, ky, fx, fy);
+    });
+  },
+  ball: function (c, w, h, t) {
+    ground(c, w, h);
+    c.fillStyle = "#2A3A36"; c.fillRect(w * .48, h * .64, w * .04, h * .16);
+    var p = (t % 2) / 2, dir = Math.floor(t / 2) % 2 ? -1 : 1, xs = w * (dir > 0 ? .15 : .85), xe = w * (dir > 0 ? .85 : .15);
+    c.strokeStyle = "rgba(242,184,75,.35)"; c.lineWidth = 2; c.setLineDash([4, 5]); c.beginPath();
+    for (var i = 0; i <= 40; i++) { var q = i / 40, bx = xs + (xe - xs) * q, by = h * .76 - Math.sin(q * Math.PI) * h * .45; i ? c.lineTo(bx, by) : c.moveTo(bx, by); }
+    c.stroke(); c.setLineDash([]);
+    dot(c, xs + (xe - xs) * p, h * .76 - Math.sin(p * Math.PI) * h * .45, h * .038, C.gold);
+    c.fillStyle = C.blue; c.fillRect(w * .08, h * .56, w * .04, h * .24); c.fillRect(w * .88, h * .56, w * .04, h * .24);
+  },
+  flow: function (c, w, h, t) {
+    for (var i = 0; i < 70; i++) {
+      var s = i * 12.9898, x = ((Math.sin(s) * 43758.5 % 1 + 1) % 1) * w;
+      var y = (((Math.cos(s) * 24634.6 % 1 + 1) % 1) * h + t * 30 * (1 + i % 3)) % h, a = Math.sin(x * .02 + t) * .6;
+      c.strokeStyle = i % 5 ? "rgba(126,162,245,.6)" : "rgba(242,184,75,.85)"; c.lineWidth = 2; line(c, x, y, x + Math.sin(a) * 14, y + Math.cos(a) * 14);
+    }
+  },
+  grip: function (c, w, h, t) {
+    ground(c, w, h);
+    var o = (Math.sin(t * 1.6) + 1) / 2, cx = w / 2, top = h * .12, d = h * .2 + (1 - o) * h * .2;
+    c.strokeStyle = C.light; c.lineWidth = h * .03; line(c, cx, 0, cx, top + d);
+    c.fillStyle = C.blue; c.fillRect(cx - w * .1, top + d, w * .2, h * .06);
+    var g = w * .03 + o * w * .06; c.fillRect(cx - g - w * .02, top + d + h * .06, w * .02, h * .14); c.fillRect(cx + g, top + d + h * .06, w * .02, h * .14);
+    c.fillStyle = C.gold; c.fillRect(cx - w * .035, h * .67, w * .07, h * .13);
+  },
+  plot: function (c, w, h, t) {
+    c.strokeStyle = "rgba(201,211,208,.14)"; c.lineWidth = 1;
+    for (var i = 1; i < 6; i++) { line(c, 0, h * i / 6, w, h * i / 6); line(c, w * i / 6, 0, w * i / 6, h); }
+    [[C.blue, 0], [C.gold, 1.7]].forEach(function (s) {
+      c.strokeStyle = s[0]; c.lineWidth = 2; c.beginPath();
+      for (var x = 0; x <= w; x += 4) { var y = h / 2 + Math.sin(x * .03 + t * 2 + s[1]) * h * .22 * Math.exp(-Math.pow(x / w - .5, 2) * 2); x ? c.lineTo(x, y) : c.moveTo(x, y); }
+      c.stroke();
+    });
+  },
+  gears: function (c, w, h, t) {
+    function gear(x, y, r, n, a, col) {
+      c.fillStyle = col; c.beginPath();
+      for (var i = 0; i < n * 2; i++) { var ang = a + i * Math.PI / n, rr = i % 2 ? r * .82 : r; c.lineTo(x + Math.cos(ang) * rr, y + Math.sin(ang) * rr); }
+      c.closePath(); c.fill(); dot(c, x, y, r * .25, C.bg);
+    }
+    var r1 = h * .3, r2 = h * .2;
+    gear(w * .4, h * .5, r1, 12, t * .8, C.blue); gear(w * .4 + r1 + r2 * .82, h * .5, r2, 8, -t * .8 * 12 / 8 + .2, C.gold);
+  },
+  tellsHigh: function (c, w, h, t) { tellsScene(c, w, h, t, 99, "CRITICAL", "#F07166"); },
+  tellsLow: function (c, w, h, t) { tellsScene(c, w, h, t, 15, "LOW", "#5CC48A"); },
+  wave: function (c, w, h, t) {
+    for (var i = 0; i < 18; i++) {
+      var x = w * (i + .5) / 18, y = h * .5 + Math.sin(t * 2.4 - i * .45) * h * .25;
+      c.strokeStyle = "rgba(201,211,208,.3)"; c.lineWidth = 1; line(c, x, h * .5, x, y);
+      dot(c, x, y, h * .025, i % 6 ? C.blue : C.gold);
+    }
+  }
+};
+/* Tells stand-in: a message card whose risky words light up while the score ring fills */
+function tellsScene(c, w, h, t, score, label, col) {
+  var p = (t % 5) / 5, k = Math.min(1, p / .6); k = 1 - Math.pow(1 - k, 3);
+  var x0 = w * .07, y0 = h * .14, cw = w * .5, ch = h * .72;
+  c.fillStyle = "#182024"; c.beginPath(); if (c.roundRect) c.roundRect(x0, y0, cw, ch, 10); else c.rect(x0, y0, cw, ch); c.fill();
+  var rows = [[.9, [.18, .22]], [.75, null], [.95, [.5, .28]], [.6, null], [.85, [.05, .3]], [.5, null]];
+  rows.forEach(function (r, i) {
+    var y = y0 + ch * (.16 + i * .135), bw = cw * .84 * r[0], bx = x0 + cw * .08, bh = Math.max(3, h * .035);
+    c.fillStyle = "rgba(201,211,208,.28)"; c.fillRect(bx, y, bw, bh);
+    if (r[1] && score > 50) { var on = Math.max(0, Math.min(1, (k - i * .12) * 3)); c.fillStyle = col; c.globalAlpha = .85 * on; c.fillRect(bx + bw * r[1][0], y - bh * .4, bw * r[1][1], bh * 1.8); c.globalAlpha = 1; }
+  });
+  var cx = w * .78, cy = h * .47, R = Math.min(h * .24, w * .13);
+  c.lineCap = "round"; c.lineWidth = R * .2;
+  c.strokeStyle = "rgba(201,211,208,.15)"; c.beginPath(); c.arc(cx, cy, R, 0, Math.PI * 2); c.stroke();
+  c.strokeStyle = col; c.beginPath(); c.arc(cx, cy, R, -Math.PI / 2, -Math.PI / 2 + Math.PI * 2 * score / 100 * k); c.stroke();
+  c.fillStyle = "#E9ECEA"; c.textAlign = "center"; c.textBaseline = "middle";
+  c.font = "700 " + Math.round(R * .62) + "px 'IBM Plex Mono', monospace"; c.fillText(String(Math.round(score * k)), cx, cy);
+  c.fillStyle = col; c.font = "600 " + Math.round(R * .26) + "px 'IBM Plex Mono', monospace"; c.fillText(label, cx, cy + R * 1.5);
+}
+var visible = new Set(), drawnOnce = new WeakSet();
+var io = "IntersectionObserver" in window ? new IntersectionObserver(function (es) {
+  es.forEach(function (e) { if (e.isIntersecting) visible.add(e.target); else visible.delete(e.target); });
+}, { threshold: .05 }) : null;
+function watchClips() {
+  document.querySelectorAll("canvas[data-clip]").forEach(function (cv) {
+    if (!cv._seed) cv._seed = Math.random() * 10;
+    if (io) { io.unobserve(cv); io.observe(cv); } else visible.add(cv);
+  });
+  visible.forEach(function (cv) { if (!cv.isConnected) visible.delete(cv); });
+}
+function drawClip(cv, t) {
+  var w = cv.clientWidth, h = cv.clientHeight; if (!w || !h) return;
+  var d = Math.min(window.devicePixelRatio || 1, 2);
+  if (cv.width !== Math.round(w * d)) { cv.width = Math.round(w * d); cv.height = Math.round(h * d); drawnOnce.delete(cv); }
+  var c = cv.getContext("2d"); c.setTransform(d, 0, 0, d, 0, 0);
+  c.fillStyle = C.bg; c.fillRect(0, 0, w, h);
+  (SCENES[cv.dataset.clip] || SCENES.flow)(c, w, h, t + cv._seed);
+}
+var t0 = performance.now();
+function frame(now) {
+  var t = (now - t0) / 1000;
+  visible.forEach(function (cv) {
+    if (reduce) { if (!drawnOnce.has(cv)) { drawClip(cv, 1.2); drawnOnce.add(cv); } }
+    else drawClip(cv, t);
+  });
+  requestAnimationFrame(frame);
+}
+
+var start = decodeURIComponent(location.hash.slice(1));
+if (byId[start]) { openId = start; render(); } else render();
+requestAnimationFrame(frame);
+</script>
+
+</body></html>

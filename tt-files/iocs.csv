@@ -1,0 +1,35 @@
+type,value,context,first_seen,source,admiralty
+domain,getstockprice.com,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.clubinfo.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,getstockprice.info,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.stockinfo.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.logoeye.net,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,en.wfinance.org,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,en.stocksindex.org,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.jqueryversion.net,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,en.stockslab.org,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,update.jquerycloud.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.soccerlab.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.coinpricehub.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.leaguehub.net,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.clublogos.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.jquery-release.com,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,cdn.logosports.net,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,skypredict.org,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.bitzone.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,weatherdatahub.org,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.ethzone.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.fivebit.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,blockprices.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.coinhar.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,mavenradar.com,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,indobit.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,api.thaibit.io,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,chainanalyser.com,TraderTraitor coding-challenge C2 (Slow Pisces),2025,Palo Alto Networks Unit 42,B1
+domain,registry.hashicorp-aws.com,Typosquatted Terraform provider registry,2026-03,Cloud Security Alliance Labs,B3
+domain,registry.hashicorp-terraform.io,Typosquatted Terraform provider registry,2026-03,Cloud Security Alliance Labs,B3
+eth-address,0x47666Fab8bd0Ac7003bce3f5C3585383F09486E2,"Bybit Exploiter 1: received 401,346.77 ETH",2025-02-21,Author's own investigation,B1
+eth-address,0x0fa09C3A328792253f8dee7116848723b72a6d2e,Bybit attacker: sent sweepETH call,2025-02-21,Author's own investigation,B1
+eth-address,0xA4B2Fd68593B6F34E51cB9eDB66E71c1B4Ab449e,Bybit Exploiter 2: stETH liquidation,2025-02-21,Author's own investigation,B1
+eth-address,0xdD90071D52F20e85c89802e5Dc1eC0A7B6475f92,Bybit Exploiter 5: layering source,2025-02-21,Author's own investigation,B1
+btc-address,191du9ivk3k5YekuXFgtkoVei6pK76wZmf,Bybit funds: THORChain swap destination,2025-03-03,Author's own investigation,B1
