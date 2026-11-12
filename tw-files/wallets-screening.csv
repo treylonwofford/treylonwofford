@@ -1,0 +1,18 @@
+address,chain,risk,category,role,attribution,source,first_seen,last_seen
+0x0fa09C3A328792253f8dee7116848723b72a6d2e,Ethereum,severe,stolen funds,Attacker: sent the sweepETH call,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,,
+0x47666Fab8bd0Ac7003bce3f5C3585383F09486E2,Ethereum,severe,stolen funds,"Bybit Exploiter 1: received 401,346.77 ETH",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-02-21 14:16:11,2025-03-03 15:28:35
+0xA4B2Fd68593B6F34E51cB9eDB66E71c1B4Ab449e,Ethereum,severe,stolen funds,Bybit Exploiter 2: stETH liquidation,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-02-21 14:29:47,2025-02-21 14:45:11
+0xdD90071D52F20e85c89802e5Dc1eC0A7B6475f92,Ethereum,severe,stolen funds,Bybit Exploiter 5: branch C source,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-02-21 14:45:11,2025-03-03 18:13:47
+0x6591c65321E3c5749A2A0ecb7E9F1aEb4FA3e3ab,Ethereum,severe,stolen funds,Branch A hop wallet,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 15:28:35,2025-03-03 15:42:59
+0x8Ab1D1d3E7db399835172576CcE0bD1C200a1Ce8,Ethereum,severe,stolen funds,Branch A: deposited to THORChain,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 15:42:59,2025-03-03 15:44:47
+191du9ivk3k5YekuXFgtkoVei6pK76wZmf,Bitcoin,severe,stolen funds,Branch A: THORChain memo destination,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,,
+0x1A4559d21215cE38e8eDe6aec310316a84c5702f,Ethereum,severe,stolen funds,Branch C split wallet,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 17:58:59,2025-03-03 18:11:59
+0x1E3f59f0586e576659F1F42f69590D3d5ABE8f25,Ethereum,severe,stolen funds,Branch C split wallet,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 17:59:11,2025-03-03 18:16:11
+0x5c8CD411A4a85145Dd6Bb8a049C16f0e537aCffa,Ethereum,severe,stolen funds,Branch C split wallet,DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 18:13:47,2025-03-03 18:19:23
+0x593c22d3Bc59EB8A3CB7317F31fc9224b857f246,Ethereum,severe,stolen funds,"Branch C merge wallet (2,083 ETH)",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 17:58:47,2025-03-03 19:58:47
+0x38b1190177e8178452b851064dF73341E94A326A,Ethereum,severe,stolen funds,Branch C holding wallet (dormant 70 days),DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 18:57:47,2025-05-26 14:09:35
+0xDdb8993F0EF7629aAb5362DaCef2C2aAc3b7c5A9,Ethereum,severe,stolen funds,"Branch C: received 500.1 ETH, 12 May 2025",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-05-12 19:54:59,2025-05-12 19:54:59
+0x8aFF2582A93343f1896E70abAe90662BE189ec68,Ethereum,severe,stolen funds,"Branch C: received 513.78 ETH, 26 May 2025",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-05-26 14:09:35,2025-05-26 14:09:35
+0xD7105A4c13746fe0790A45563a2Cf014985d2c77,Ethereum,medium,possible exposure,"Merge input, origin not traced (step 17a)",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 17:58:47,2025-03-03 17:58:47
+0x1C6Cf5aD4B439402c0657C87F776FB94CC303dD4,Ethereum,medium,possible exposure,"Merge input, origin not traced (step 17b)",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 18:12:23,2025-03-03 18:12:23
+0x5445cf70dBAC449c5C400e5fFeb233E8e08B3bfa,Ethereum,medium,possible exposure,"Merge input, origin not traced (step 17c)",DPRK / TraderTraitor (FBI PSA I-022625),Bybit Heist Trace TR-2025-0221,2025-03-03 18:42:59,2025-03-03 18:42:59

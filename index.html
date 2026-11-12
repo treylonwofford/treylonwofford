@@ -1,9 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<style>html{-webkit-text-size-adjust:100%}body{margin:0}img{max-width:100%}</style>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Treylon Wofford</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -272,7 +267,7 @@ footer { margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--line);
         <div class="who">
           <h1>Treylon Wofford</h1>
           <ul class="edu">
-            <li class="adv"><strong>Financial crime, threat intelligence &amp; AI</strong></li>
+            <li class="adv"><strong>Agentic red team · Threat intel</strong></li>
             <li><strong>Currently:</strong> independent investigations into crypto theft and state-sponsored cybercrime</li>
             <li><strong>Focus:</strong> blockchain tracing, threat intelligence, fraud and AML detection, and AI tools that show their evidence</li>
           </ul>
@@ -280,9 +275,10 @@ footer { margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--line);
       </div>
       <div class="affil" aria-label="Affiliations"><img class="logo-img" src="media/uat-logo.png" alt="University of Advancing Technology" width="72" height="72"><img class="logo-img logo-sm" src="media/logo-2.png" alt="Bank of America" width="48" height="26"></div>
     </div>
-    <p class="oneliner">I work where cybercrime, crypto and AI meet: tracing stolen funds, profiling the actors behind them, and building detection that analysts can trust.</p>
+    <p class="oneliner">I work where AI agents and real attackers meet: breaking agents before adversaries do, and profiling the groups most likely to try.</p>
     <nav class="contact" aria-label="Contact">
       <a href="https://www.linkedin.com/in/treylon-wofford/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.youtube.com/@RedSignalCyber" target="_blank" rel="noopener">YouTube</a>
       <a href="https://scholar.google.com/citations?user=nhwWLhkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
       <a href="https://github.com/treylonwofford" target="_blank" rel="noopener">GitHub</a>
     </nav>
@@ -311,7 +307,7 @@ footer { margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--line);
 
   <footer>
     <span>© 2026 Treylon Wofford</span>
-    <span><a href="https://www.linkedin.com/in/treylon-wofford/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://scholar.google.com/citations?user=nhwWLhkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://github.com/treylonwofford" target="_blank" rel="noopener">GitHub</a></span>
+    <span><a href="https://www.linkedin.com/in/treylon-wofford/" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://www.youtube.com/@RedSignalCyber" target="_blank" rel="noopener">YouTube</a> · <a href="https://scholar.google.com/citations?user=nhwWLhkAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="https://github.com/treylonwofford" target="_blank" rel="noopener">GitHub</a></span>
   </footer>
 </div>
 
@@ -759,39 +755,39 @@ footer { margin-top: 72px; padding-top: 22px; border-top: 1px solid var(--line);
    Write [text](https://link) inside blurb or role to add a link.
    ============================================================================ */
 var ME = "Treylon Wofford";
-var COLUMNS = { a: "AI for Financial Crime", b: "Cybercrime Investigations" };
+var COLUMNS = { a: "Agentic Red Teaming", b: "Cybercrime Investigations" };
 
 var PROJECTS = [
-  { id: "tells", col: "a", title: "Tells", sub: "Explainable scam message triage",
-    clip: "tellsHigh", video: "media/tells-clip1-ai-phish",
-    meta: "Personal project · runs entirely in the browser",
-    media: [{ video: "media/tells-clip1-ai-phish", caption: "A perfectly written phishing email still scores 99 (Critical). The words behind the score are highlighted below it." },
-            { video: "media/tells-clip2-false-positives", caption: "A real bank verification-code text scores 15 (Low), then a “boss wants gift cards” message scores 82 (Critical)." }],
-    blurb: ["Scams no longer have typos, so Tells scores what a message wants from you, not how it's written. Paste a suspicious text, email or DM and it returns a 0–100 risk score, the red flags it found with the exact words that triggered each one, the message highlighted in place, and plain-English next steps. Nothing leaves the browser.",
-            "Every signal is either an ask (codes, payment details, gift cards, look-alike links) or pressure (urgency, threats, impersonation, secrecy). Pairing the two raises the score, pressure alone is capped at 30 so normal “ASAP” texts stay Low, and six known patterns such as invoice redirects and “wrong number” pig-butchering openers can never be under-rated. Real 2FA texts that say “don't share this code” are recognized as protective and kept Low."],
-    role: "Designed the scoring rules and false-positive safeguards, built the app, and wrote a 13-message test suite that mixes scams with look-alike legitimate messages.",
-    tags: ["Fraud detection", "Explainable AI", "Rules engine", "JavaScript"],
-    links: [["Open the full app", "tells.html"]] },
-  { id: "mandate-desk", col: "a", title: "Mandate Desk", sub: "Know Your Agent controls for AI agent payments",
-    clip: "plot", video: "media/kya-clip1-gate",
-    meta: "Personal project · simulated month of agent payments, all synthetic",
-    media: [{ video: "media/kya-clip1-gate", caption: "The gate: an email-injected payee is Declined under a strict allowlist, Held for approval under an open mandate, and a newly sanctioned counterparty is Blocked." },
-            { video: "media/kya-clip2-monitors", caption: "The monitors: agent-to-agent loops pass every gate check, so M3 flags them after the fact. Opening the alert shows the agent's credential, mandate and the cycled payments." }],
-    blurb: ["AI agents now pay for people and businesses. Know Your Agent (KYA) asks three questions before one of them moves money: who built the agent (KYB), who it acts for (KYC), and what exactly that person authorized (the mandate). Mandate Desk turns that into a working control: Ed25519-signed agent credentials, an authorization gate that runs before every payment, and AML-style monitors that look across payments.",
-            "Tested on a simulated October with 103 agents, 2,425 payment attempts and 11 planted abuse scenarios, it stopped or flagged 100 of 106 abusive attempts while approving 93% of legitimate payments and declining only 1.2%. Prompt injection is treated as a payments problem: untrusted content can't introduce a new payee without the principal. Sanctions outrank everything, including an allowlist. Splitting, loops and cloned credentials pass the gate because each payment is valid, so monitors catch them. Misuse that stays inside the mandate is missed by design, and the write-up says why."],
-    role: "Designed the gate's five check layers and the five behavioral monitors, built the simulation with planted scenarios, and verified that the browser console's gate matches the Python engine on all 2,425 attempts.",
-    tags: ["Know Your Agent", "AML monitoring", "Sanctions screening", "Ed25519", "Python", "JavaScript"],
-    links: [["Open the console", "mandate-desk.html"], ["What is Know Your Agent? (Elliptic)", "https://www.elliptic.co/blockchain-basics/what-is-know-your-agent-kya/"]] },
-  { id: "countercheck", col: "a", title: "Countercheck AML", sub: "Transaction monitoring and SAR narrative assistant",
-    clip: "plot", video: "media/aml-clip1-threshold",
-    meta: "Personal project · synthetic bank, 425,814 transactions over 90 days",
-    media: [{ video: "media/aml-clip1-threshold", caption: "Detection performance: dragging the alert threshold shows the trade-off live. At 50 the queue holds 85 alerts at 89% precision and 95% recall; at 80 precision hits 100% but 37 planted cases go unreported." },
-            { video: "media/aml-clip2-case", caption: "Case review: isolating the structuring rule's evidence, then the SAR first draft with all 22 figures traced to transactions. Filing reveals the account was a planted structurer." }],
-    blurb: ["A complete anti-money-laundering pipeline on Riverbend Community Bank, a synthetic bank with 3,014 customers and 425,814 transactions. Seven detection rules written in SQL (DuckDB) cover structuring, rapid movement, fan-in, new account velocity, high-risk outflows, multi-state cash and profile deviation. Each is measured against 80 planted suspicious accounts, and the legitimate population includes look-alikes built to trip them: cash-heavy restaurants, homebuyers, marketplace sellers, event promoters and traveling sales reps.",
-            "No rule decides alone. The risk score adds rule weights, and the default threshold of 50 catches 76 of 80 planted cases at 89% precision, favoring recall because a missed case is unreported laundering. For every alert, a drafter writes a SAR narrative in FinCEN's who/what/when/where/why/how order, citing transaction IDs, and a fact check confirms every dollar amount and date in it exists in the data. An optional Claude rewrite is rejected if it introduces any figure that isn't in the facts. Drafts never decide to file; they leave marked blanks for the analyst."],
-    role: "Designed the synthetic bank and its look-alike cohorts, wrote and tuned the seven SQL rules, built the scoring and evaluation, the fact-checked SAR drafter, and the analyst console.",
-    tags: ["AML monitoring", "SQL", "DuckDB", "SAR narratives", "LLM guardrails", "Python"],
-    links: [["Open the analyst console", "countercheck.html"]] },
+  { id: "breakwater", col: "a", title: "Breakwater", sub: "Jailbreak benchmark for open-weight models",
+    clip: "plot", video: "media/breakwater-clip1-defenses",
+    meta: "Red-team harness \u00b7 18 techniques, 6 missions, 5 defenses",
+    media: [{ video: "media/breakwater-clip1-defenses", caption: "The leaderboard under each defense: the obedient simulator falls from 98% attack success with no defense to 39% behind the input filter, 9% behind the output filter and 0% with the full stack. This is the harness self-test on reference simulators." },
+            { video: "media/breakwater-clip2-transcript", caption: "The defense table, then the transcript explorer: an output filter that looks for the exact secret misses a reply written in base64. The judge decodes it and counts the leak." }],
+    blurb: ["Breakwater runs each model as a company assistant with one rule it must keep: a secret code, its system prompt, a patient record, a refund tool it must not call, or a claim it must not make. Eighteen jailbreak techniques across nine families (instruction override, roleplay, social engineering, obfuscation, many-shot, Crescendo and more) try to make it break the rule, and 20 harmless-but-edgy questions check that it hasn't simply learned to refuse. It compares five setups: no defense, a sandwich reminder, an input filter, an output filter, and all three stacked, plus an optional LLM guard such as Llama Guard.",
+            "Judging is deterministic. Each mission plants an invented canary, so a leak is a string match rather than another model's opinion, and the judge decodes base64, hex, ROT13, reversed, spelled-out and leetspeak replies. Results carry Wilson 95% intervals. The page shown is the harness self-test: four reference simulators with known weaknesses, so the expected results are known in advance and the page proves the pipeline, judge and defenses behave correctly. It shows, for example, that a plain-text output filter misses every encoded leak. Point it at real open-weight models through Ollama to fill the leaderboard."],
+    role: "Designed the missions, attack techniques, deterministic judge and defenses, and built the harness and the report. AI assisted with the build.",
+    tags: ["AI red teaming", "Jailbreaks", "Prompt injection", "OWASP LLM01", "Python", "Ollama"],
+    links: [["Open the benchmark", "breakwater.html"]] },
+  { id: "brackish", col: "a", title: "Brackish", sub: "RAG and memory poisoning lab",
+    clip: "plot", video: "media/brackish-clip1-poisoning",
+    meta: "Red-team lab \u00b7 6 document attacks, 5 memory attacks, 4 defense profiles",
+    media: [{ video: "media/brackish-clip1-poisoning", caption: "The findings, then each attack against each defense profile: one planted wiki page that repeats the question poisons 100% of answers with no defense and 0% with the full stack. Then an outside email that the assistant summarizes plants a false rule in shared memory and poisons all four users." },
+            { video: "media/brackish-clip2-inspector", caption: "The example inspector: a planted wiki page tells employees to email their bank details to a look-alike payroll address. The detectors drop it for restating the question, and the answer goes back to the real policy." }],
+    blurb: ["Brackish attacks a company assistant that answers employee questions from 83 internal documents and a long-term memory. The attacker can write to the team wiki, upload files, send email the assistant summarizes, or chat with it. Six document attacks (a naive false claim, PoisonedRAG-style question stuffing, a fake official update, multiple copies, instruction injection and jamming) and five memory attacks, including a MINJA-style false premise, run against four defense profiles: none, source-trust provenance, detectors (near-duplicate, echo and instruction filters) and the full stack with output verification.",
+            "The lab measures what each defense buys and what it costs. The full stack stops every attack, but turning defenses on drops accuracy on FAQ-only questions from 100% to 33%, because the echo filter removes real FAQ pages that restate the question, exactly as poisoned pages do. One \u201cremember that\u201d message poisoned all four users even with a memory write gate, and only the full memory defense stopped it. Retrieval-stage numbers are exact for any model. Answers in this run come from an extractive baseline reader rather than an LLM, and the same experiments run against real models through Ollama."],
+    role: "Designed the attacks, defense profiles and experiments, built the corpus, retrievers and memory, and wrote the report. AI assisted with the build.",
+    tags: ["AI red teaming", "RAG poisoning", "Memory poisoning", "OWASP LLM04", "MITRE ATLAS", "Python"],
+    links: [["Open the lab", "brackish.html"]] },
+  { id: "undertow", col: "a", title: "Undertow", sub: "Red-team harness for tool-using AI agents",
+    clip: "plot", video: "media/undertow-clip1-hijack",
+    meta: "Agent red teaming \u00b7 23 scenarios, 3 defense profiles, MITRE ATLAS and OWASP",
+    media: [{ video: "media/undertow-clip1-hijack", caption: "What each defense layer buys, then the scenario grid. With no defenses, an invoice email planted in the inbox gets the agent to pay $4,250 to the attacker's bank account. This is the harness self-test against a scripted stand-in agent." },
+            { video: "media/undertow-clip2-defenses", caption: "The same inbox attack against the full stack: across six attacker strategies, the least-privilege tool policy blocks the agent from reading the API key file. The clip ends on what still gets through with every defense on." }],
+    blurb: ["Undertow plants attacks wherever a tool-using AI agent reads: email, shared files, web pages, the knowledge base, long-term memory, tool descriptions (MCP-style), tool outputs and handoffs from other agents, plus direct and multi-turn attacks. Each of 23 scenarios has a concrete goal, such as exfiltrating a payments API key, redirecting a vendor payment or planting a persistent memory rule. A deterministic oracle checks the ledger of what the agent actually did, so there is no LLM judge. When a plain attempt fails, the attacker adapts through authority, urgency, delimiter escape, hidden, encoded and roleplay variants.",
+            "Three defense profiles are compared: none; prompt defenses (instruction hierarchy plus spotlighting untrusted content); and the full stack, which adds a least-privilege tool policy and data-loss checks on outbound arguments and answers. In the self-test, adaptive attack success falls from 23 of 23 scenarios to 22 with prompt defenses and 3 with the full stack, while every task still completes. The three that get through name the residual risk: goal hijacking, a poisoned scam phone number and system-prompt extraction. Results map to MITRE ATLAS and the OWASP Top 10 for LLM and agentic applications. The page shown is the harness self-test against a scripted stand-in agent; the same run points at real tool-calling models through Ollama."],
+    role: "Designed the scenarios, adaptive attacker strategies, deterministic oracle and defense profiles, and built the harness and report. AI assisted with the build.",
+    tags: ["Agentic red teaming", "Prompt injection", "Tool misuse", "MITRE ATLAS", "OWASP Agentic Top 10", "Python"],
+    links: [["Open the results", "undertow.html"]] },
   { id: "project-four", col: "a", title: "Project Four", sub: "Ongoing work", badge: "Coming soon",
     media: [], blurb: ["A project you're still working on. The tile shows a dashed placeholder until you add a clip."], role: false },
 
@@ -813,8 +809,16 @@ var PROJECTS = [
     role: "Graded the sources, set the confidence levels, wrote the judgments and recommendations, and built the validated STIX, Navigator and Sigma outputs. AI assisted with research, ATT&CK mapping and drafting.",
     tags: ["Threat intelligence", "MITRE ATT&CK", "STIX 2.1", "Sigma", "Admiralty grading", "Python"],
     links: [["Read the brief", "tradertraitor-profile.html"], ["STIX 2.1 bundle", "tt-files/tradertraitor.stix.json"], ["ATT&CK Navigator layer", "tt-files/attack-navigator-layer.json"], ["Indicators (CSV)", "tt-files/iocs.csv"]] },
-  { id: "project-seven", col: "b", title: "Project Seven", sub: "Ongoing work", badge: "Coming soon",
-    media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
+  { id: "tidewatch", col: "b", title: "Tidewatch CTI Lab", sub: "My own intel shipped to OpenCTI, MISP, TAXII and SIEMs",
+    clip: "plot", video: "media/tidewatch-clip1-graph",
+    meta: "Intelligence-as-code \u00b7 STIX 2.1, MISP, TAXII 2.1, Sigma",
+    media: [{ video: "media/tidewatch-clip1-graph", caption: "The knowledge graph as OpenCTI would draw it: TraderTraitor with its techniques, malware, campaigns and thefts, then the Bybit flow of funds, ending on the Branch C merge wallet and every transfer into and out of it." },
+            { video: "media/tidewatch-clip2-checks", caption: "The checks behind it: 491 STIX objects with 0 invalid, every validation that runs on each build, what survives each route between the tools, and a Sigma rule converted to an Elastic query." }],
+    blurb: ["Tidewatch takes my own threat intelligence, the TraderTraitor (North Korea) profile and the Bybit Heist Trace, models it once as code, and ships it to the tools CTI teams use: a 491-object STIX 2.1 knowledge graph for OpenCTI, two MISP events and a MISP feed, a TAXII 2.1 server with full and indicators-only collections, and hunting content (Suricata, Zeek, Sigma converted to Splunk, Elastic and KQL, plus a 17-address AML screening list). A Docker lab runs OpenCTI and MISP side by side, wired together with connectors.",
+            "Every build runs offline checks: the OASIS STIX validator (0 invalid), reference integrity (0 dangling), OpenCTI's own bundle splitter (491 accepted, 0 rejected), MISP schema and strict templates, a feed round-trip, and a live TAXII read-back. Moving the same intel along every route between the tools showed what each one loses: OpenCTI's MISP connector turns Ethereum wallets into plain text and drops Bitcoin addresses and the flows between wallets, so the lab sends STIX and TAXII to OpenCTI and the feed to MISP."],
+    role: "Modeled the intel, built the STIX, MISP, TAXII and hunting outputs and the validation suite, set up the OpenCTI and MISP lab, and tested every route between the tools. AI assisted with the build.",
+    tags: ["OpenCTI", "MISP", "STIX 2.1", "TAXII 2.1", "Sigma", "Docker", "Python"],
+    links: [["Open the dashboard", "tidewatch.html"], ["STIX 2.1 bundle", "tw-files/tidewatch-bundle.json"], ["Wallet screening list (CSV)", "tw-files/wallets-screening.csv"]] },
   { id: "project-eight", col: "b", title: "Project Eight", sub: "Ongoing work", badge: "Coming soon",
     media: [], blurb: ["A project in progress. Details and demo clips will be added when it's finished."], role: false },
   { id: "side-a", col: "c", title: "Side Project A", sub: "Ongoing work", badge: "Coming soon",
@@ -1177,4 +1181,4 @@ if (byId[start]) { openId = start; render(); } else render();
 requestAnimationFrame(frame);
 </script>
 
-</html>
+</body></html>
