@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quantum Docs Assistant (RAG) · Treylon Wofford</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root { --bg:#F3F4F1; --surface:#FFFFFF; --ink:#16191B; --muted:#5B6360; --line:#DADED8; --accent:#1F5BD6; --accent-soft:#E4EBFA;
+  --f-display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif; --f-body:"IBM Plex Sans","Segoe UI",Roboto,Arial,sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace; }
+@media (prefers-color-scheme: dark) { :root { --bg:#111416; --surface:#181C1F; --ink:#E9ECEA; --muted:#9AA39F; --line:#2A3033; --accent:#86A8F5; --accent-soft:#1B2540; color-scheme:dark; } }
+*,*::before,*::after { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--ink); font:400 16.5px/1.65 var(--f-body); }
+a { color:var(--accent); text-underline-offset:3px; }
+.wrap { max-width:960px; margin:0 auto; padding:56px max(20px, env(safe-area-inset-left)) 64px; }
+.back { font-size:14px; font-weight:500; }
+h1,h2,h3 { font-family:var(--f-display); margin:0; text-wrap:balance; }
+h1 { font-size:clamp(32px,5vw,48px); line-height:1.08; letter-spacing:-.02em; margin-top:18px; }
+h2 { font-size:26px; margin:56px 0 14px; letter-spacing:-.01em; }
+h3 { font-size:18px; margin:26px 0 8px; }
+p { margin:0 0 12px; max-width:72ch; }
+.meta { color:var(--muted); font-size:15px; margin-top:10px; }
+.lede { font-size:19px; margin-top:22px; }
+.note { border:1px solid var(--line); border-left:4px solid var(--accent); background:var(--surface); border-radius:10px; padding:14px 16px; font-size:15px; margin:22px 0; max-width:none; }
+.stats { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; margin:28px 0 8px; }
+.stat { background:var(--surface); border:1px solid var(--line); border-radius:12px; padding:14px 16px; }
+.stat b { display:block; font:700 28px/1.1 var(--f-display); font-variant-numeric:tabular-nums; }
+.stat span { font-size:13.5px; color:var(--muted); line-height:1.4; display:block; margin-top:4px; }
+ol.findings { padding-left:22px; display:grid; gap:10px; max-width:76ch; }
+ol.findings strong { font-weight:600; }
+figure { margin:18px 0 6px; }
+figure img { display:block; width:100%; height:auto; background:#fff; border:1px solid var(--line); border-radius:12px; padding:10px; }
+figcaption { font-size:14px; color:var(--muted); margin-top:8px; }
+.tablewrap { overflow-x:auto; border:1px solid var(--line); border-radius:12px; background:var(--surface); margin:14px 0; }
+table { border-collapse:collapse; width:100%; font-size:14.5px; font-variant-numeric:tabular-nums; }
+th,td { padding:9px 12px; text-align:right; border-top:1px solid var(--line); white-space:nowrap; }
+th:first-child,td:first-child,th:nth-child(2),td:nth-child(2) { text-align:left; }
+thead th { border-top:0; font-weight:600; color:var(--muted); font-size:13px; }
+td.best { font-weight:700; color:var(--accent); }
+ul { max-width:76ch; padding-left:22px; }
+li { margin-bottom:6px; }
+.tags { display:flex; flex-wrap:wrap; gap:6px; list-style:none; padding:0; margin:18px 0 0; }
+.tags li { font:500 12px/1 var(--f-mono); color:var(--accent); background:var(--accent-soft); padding:6px 8px; border-radius:4px; margin:0; }
+code { font:500 13.5px var(--f-mono); background:var(--accent-soft); padding:1px 5px; border-radius:4px; }
+footer { margin-top:64px; padding-top:18px; border-top:1px solid var(--line); color:var(--muted); font-size:14px; }
+@media (max-width:720px) { .stats { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="index.html">← Back to portfolio</a>
+  <h1>Quantum Docs Assistant: Cited, Code-Checked RAG over Qiskit and PennyLane</h1>
+  <p class="meta">Quantum AI · Python, rank-bm25, scikit-learn, Qiskit 2.6.2, PennyLane 0.45.1 · 14,648 chunks from 1,893 documentation pages</p>
+  <p class="lede">An assistant that answers Qiskit and PennyLane questions using only their official documentation. Every answer cites its sources, the code example it returns is executed against the installed library versions before it's shown, and questions the docs don't cover are refused rather than guessed.</p>
+
+  <div class="stats">
+    <div class="stat"><b>77%</b><span>right doc page in the top 3 (held-out test questions)</span></div>
+    <div class="stat"><b>89%</b><span>of returned code examples ran on the installed versions (48 of 54)</span></div>
+    <div class="stat"><b>7 / 8</b><span>out-of-scope questions refused; 29 / 30 in-scope answered (test split)</span></div>
+    <div class="stat"><b>2.1 s</b><span>median time per answer, including running the example</span></div>
+  </div>
+
+  <h2>Demo</h2>
+  <figure>
+    <video src="rag-files/rag-clip1-qiskit.mp4" poster="rag-files/rag-clip1-qiskit.jpg" controls muted loop playsinline preload="metadata" style="width:100%;border-radius:12px;display:block;background:#101416"></video>
+    <figcaption>A Qiskit question: cited answer, four sources, and the example executed in a sandbox on Qiskit 2.6.2.</figcaption>
+  </figure>
+  <figure>
+    <video src="rag-files/rag-clip2-pennylane-refusal.mp4" poster="rag-files/rag-clip2-pennylane-refusal.jpg" controls muted loop playsinline preload="metadata" style="width:100%;border-radius:12px;display:block;background:#101416"></video>
+    <figcaption>A PennyLane question answered and its example run, then a Cirq question it refuses: its key terms don't co-occur in any retrieved chunk (coverage 0.35, below the 0.53 threshold).</figcaption>
+  </figure>
+  <p class="note"><strong>About the demos:</strong> both clips are rendered from the assistant's real output, saved in <code>results/demo_answers.json</code>. Answers use the default extractive mode (sentences picked from the docs, not written by a model). An optional Claude mode writes answers from the same numbered sources, but it could only be tested with a mock client in the environment this was built in.</p>
+
+  <h2>Why this design</h2>
+  <ol class="findings">
+    <li><strong>Quantum SDKs change fast.</strong> Qiskit 1.0 removed <code>execute</code>, 2.0 removed Pulse, and PennyLane's docs now write <code>qp.</code>. So the corpus is pinned to the installed versions: Qiskit 2.6.2 API docs, qiskit-ibm-runtime 0.52.1, and PennyLane v0.45.1 docs plus the installed package's docstrings.</li>
+    <li><strong>"Looks right" isn't enough for code.</strong> Candidate examples are executed in an isolated subprocess, in rank order, and the first one that runs is shown. The checker caught a migration-guide snippet that imports the removed <code>execute()</code>.</li>
+    <li><strong>A refusal beats a confident wrong answer.</strong> The refusal signal requires the question's key terms to appear together in a single retrieved chunk, with unseen terms weighted heavily. The threshold was calibrated on a dev split and reported on a held-out split.</li>
+  </ol>
+
+  <h2>Results</h2>
+  <h3>Retrieval, held-out test split (30 questions)</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Retriever</th><th></th><th>Hit@1</th><th>Hit@3</th><th>Hit@5</th><th>MRR@5</th></tr></thead>
+    <tbody>
+      <tr><td>LSA only (semantic)</td><td></td><td>27%</td><td>47%</td><td>53%</td><td>0.35</td></tr>
+      <tr><td>BM25 only</td><td></td><td>43%</td><td>77%</td><td>87%</td><td>0.61</td></tr>
+      <tr><td>Hybrid (BM25 + LSA)</td><td></td><td>50%</td><td>73%</td><td>77%</td><td>0.61</td></tr>
+      <tr><td>Hybrid + framework routing</td><td>shipped</td><td>47%</td><td class="best">77%</td><td>80%</td><td class="best">0.61</td></tr>
+    </tbody>
+  </table></div>
+  <p>With 30 questions, one question is worth 3.3 points, so BM25 and hybrid are within noise of each other. The clear results: the semantic model trained on the corpus is weak by itself, and framework routing helps PennyLane questions (93% top-5 across all 30). A pretrained embedding model is the obvious next upgrade; it couldn't be downloaded in the build environment.</p>
+
+  <h3>Code checks, all 60 in-scope questions</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Outcome</th><th></th><th>Count</th></tr></thead>
+    <tbody>
+      <tr><td>Answer included a code example</td><td></td><td>54</td></tr>
+      <tr><td>Example ran on the installed versions</td><td></td><td class="best">48 (89%)</td></tr>
+      <tr><td>…on the first candidate / after falling back</td><td></td><td>34 / 14</td></tr>
+      <tr><td>Skipped (optional package, local file, shell command, not self-contained)</td><td></td><td>5</td></tr>
+      <tr><td>Failed: removed <code>execute()</code> in a migration-guide snippet</td><td></td><td>1</td></tr>
+    </tbody>
+  </table></div>
+
+  <h3>Refusal</h3>
+  <p>On the test split it answered 29 of 30 in-scope questions and refused 7 of 8 out-of-scope ones. Across all 76 questions there was one miss each way. A question about Quirk's drag-and-drop editor was answered from IBM Quantum Composer's page, which is also a drag-and-drop editor. "Prepare a state from a vector of amplitudes" was refused at coverage 0.47, even though the retrieved page was relevant.</p>
+
+  <h2>Method</h2>
+  <ul>
+    <li><strong>Ingestion:</strong> Qiskit guides, tutorials and API reference (MDX and notebooks; API pages split into one chunk per method), plus PennyLane RST guides and docstrings. JSX, RST roles and links are stripped, code is kept, and every chunk records its section and deep link.</li>
+    <li><strong>Retrieval:</strong> BM25 with an identifier-aware tokenizer (<code>QuantumCircuit</code> → quantum, circuit; <code>qml.expval</code> → expval) and LSA (TF-IDF + SVD), fused with reciprocal rank fusion. Questions are routed by framework, and a document-type prior favors guides and API pages over long tutorials.</li>
+    <li><strong>Answers:</strong> extractive by default (the top-ranked sentences, each cited), with an optional Claude mode restricted to the numbered sources.</li>
+    <li><strong>Code execution:</strong> isolated subprocess with a 60 s timeout. Doctest blocks are converted, standard imports are added, and earlier cells from the same page run as best-effort context. Examples that need an IBM account, network or an optional package are skipped rather than failed.</li>
+    <li><strong>Evaluation:</strong> 60 in-scope questions labeled with their gold documentation pages, plus 16 out-of-scope questions. All tuning used the dev split; numbers above come from the held-out test split unless stated. 11 pytest checks.</li>
+  </ul>
+
+  <h2>Limitations</h2>
+  <ul>
+    <li>Extractive answers read like excerpts, not explanations. The LLM mode addresses this, but it was only tested with a mock client.</li>
+    <li>76 labeled questions give wide error bars.</li>
+    <li>A corpus-trained semantic model can't match pretrained embeddings on paraphrases.</li>
+    <li>A passing example ran without errors; its output wasn't checked.</li>
+  </ul>
+
+  <ul class="tags">
+    <li>RAG</li><li>Information retrieval</li><li>BM25</li><li>Evaluation</li><li>Sandboxed execution</li><li>Qiskit</li><li>PennyLane</li><li>Python</li>
+  </ul>
+
+  <footer>
+    Designed and built the ingestion, retrieval, refusal calibration, code-execution sandbox and evaluation benchmark. AI assisted with the build; every number comes from a measured run.
+    · <a href="index.html">Portfolio</a>
+  </footer>
+</div>
+</body>
+</html>
